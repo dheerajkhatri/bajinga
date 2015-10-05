@@ -13,6 +13,19 @@ Node* createNode(int n){
 	return newnode;
 }
 
+Node* makeTree(){
+	Node *root = createNode(1);
+    root->left = createNode(2);
+    root->right = createNode(3);
+    root->left->left = createNode(4);
+    root->left->right = createNode(5);
+    root->right->left = createNode(6);
+    root->right->right = createNode(7);
+    root->right->left->right = createNode(8);
+    root->right->right->right = createNode(9);
+    return root;
+}
+
 void printInorder(Node* root){
 	if(root){
 		cout<<root->data<<" ";
@@ -24,11 +37,18 @@ void printInorder(Node* root){
 void printMap(map<int,vector<int>>& mm){
 	for(auto it:mm){
 		cout<<it.first<<" ..";
-		for(auto jt:it){
+		for(auto jt:it.second){
 			cout<<jt<<" ";
 		}
 		cout<<endl;
 	}
+}
+
+void printVec(vector<int>&v){
+	for(auto it:v){
+		cout<<it<<" ";
+	}
+	cout<<endl;
 }
 
 void vertical(Node* root,map<int,vector<int>>&mm, int level){
@@ -44,7 +64,7 @@ void vertical(Node* root,map<int,vector<int>>&mm, int level){
 
 /*TODO
 height of tree
-levelOrder zigZag
+levelOrder zigZa
 left view right view top view
 boundary elements
 inorder,preorder,postorder by stack
@@ -56,6 +76,34 @@ Node* inprePostUtil(){
 }
 
 Node* inprePost(){
+
+}
+
+vector<int>inOrder(Node* node){
+	if(!node)return vector<int>();
+	Node* cur = node;
+	stack<Node*>s;
+	vector<int>result;
+
+	while(!s.empty() || cur){
+		if(cur){
+			s.push(cur);
+			cur = cur->left;
+		}else{
+			Node* st = s.top();
+			s.pop();
+			result.push_back(st->data);
+			cur = st->right;			
+		}
+	}
+	return result;
+}
+
+vector<int>preOrder(Node* node){
+	if(!node)return vector<int>();
+}
+
+vector<int>preOrder(Node* node){
 
 }
 
@@ -104,7 +152,22 @@ int main(){
 	vector<int> in = {4,2,5,1,6,8,3,7,9};
 	vector<int>post = {4,5,2,8,6,9,7,3,1};
 	vector<int>pre = {1,2,4,5,3,6,8,7,9};
+	
 
+	//get preorder from inorder and postorder
 	Node* root = inpostPre(in,post);
-	cout<<"INorder...";printInorder(root);cout<<endl;
+	cout<<"Inorder of pre <-- in+post ...\n";
+	printInorder(root);cout<<endl;
+
+	root = makeTree();
+	
+	//get inorder vector
+	cout<<"Inorder by stack.."<<endl;
+	vector<int>invec = inOrder(root);
+	printVec(invec);
+
+	cout<<"Preorder by stack.."<<endl;
+	vector<int>prevec = preOrder(root);
+	printVec(prevec);	
+
 }
