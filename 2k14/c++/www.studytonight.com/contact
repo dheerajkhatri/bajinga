@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Contact Studytonight for anything</title>
+<meta name="keywords" content="Core java Notes, C++ Notes, C language Notes, Studytonight, Lessons, Notes, Subjects, High School Notes, easy short lessons, Database technology Notes, DBMS, Tutorials, Programming Subjects"/> 
+<meta name="description" content="Contact Studytonight for any query, feedback, suggestion or just to say hello. We love to hear from you. Stay in touch always.">
+<meta property="og:image" content="http://www.studytonight.com/css/resource/favicon.png"/>
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Le styles -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/docs.css" rel="stylesheet">
+<link rel="icon" type="image/png" href="css/resource/favicon.png">
+
+
+</head>
+<body>
+
+<style>
+
+.dropdown:hover ul{
+    display:block;
+}
+.dropdown ul { 
+    display: none;  
+    position:absolute;
+    background: rgba(0, 0, 0, 0.80); 
+    width: 150px;   
+    list-style-type:none;
+    padding:10px;
+} 
+.dropdown ul li{
+    padding:4px;
+}
+.dropdown ul li a{ 
+    line-height:30px;
+    cursor:pointer;
+    text-decoration:none;
+    color:white;
+} 
+.dropdown ul li a:hover{
+   color:orange;
+} 
+.dropdown ul.second
+{
+    left: 300px;
+}
+
+</style>
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=183470395085546";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="navbar navbar-inverse navbar-fixed-top">
+<div class="navbar-inner">
+<div class="nav-container">
+<a class="brand" href="index.html" title="Take me Home :)"><img id="brand-icon" src="css/resource/st-icon.png" alt="studytonight logo"/></a>
+
+<!-- <font color="orange">Study</font>tonight<sup><span id="beta">&#946;eta</span></sup> -->
+
+<ul class="nav navbar-nav nav-left-responsive">
+<li><a href="http://studytonight.com/online-courses/">VIDEO PLAYLISTS</a></li>
+<li class="dropdown"><a href="http://studytonight.com/library/">TUTORIALS</a>
+
+	<ul class="first">
+            <li><a href="android-app-using-mit-appinventor">ANDROID</a></li>
+            <li><a href="maven">APACHE MAVEN</a></li>
+            <li><a href="c">C LANGUAGE</a></li>
+            <li><a href="cpp.1">C++</a></li>
+            <li><a href="computer-networks">COMPUTER NETWORKS</a></li>
+            <li><a href="java">CORE JAVA</a></li>
+      </ul>
+      <ul class="second">
+      	    <li><a href="dbms">DBMS</a></li>
+            <li><a href="data-structures">DATA STRUCTURE</a></li>
+            <li><a href="jenkins">JENKINS</a></li>
+            <li><a href="jsp">JSP</a></li>
+            <li><a href="operating-system">OPERATING SYSTEM</a></li>
+            <li><a href="servlet">SERVLET</a></li>
+       </ul>
+
+</li>
+<li><a href="http://studytonight.com/studyroom/">Q &amp; A FORUM</a></li>
+<li><a href="http://studytonight.com/tests/">TESTS</a></li>
+<li><a href="http://studytonight.com/code/">HTML COURSE<sup id='beta'>NEW</sup></a></li>
+</ul>
+
+
+<ul class="nav nav-fb-responsive">
+<li class="nav-header">
+<div class="fb-like" data-href="http://facebook.com/studytonight" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
+</li>
+</ul>
+
+
+<ul class="nav pull-right-menuoption nav-right-responsive">
+<li>
+<form class="navbar-search" action="http://www.studytonight.com/search.php" method="GET"> 
+<table>
+<tr>
+<td><input type="text" name="q" maxlength="255" value="" class="search-query span2" placeholder="Search" title="Search Studytonight for Lessons and Topics"/></td>
+</tr>
+</table>
+</form>
+</li>
+<li><a href="login">LogIn</a></li>
+<li><a style="font-weight:bold;color:#f84906;" href="register">SignUp</a></li>
+<li><a href="suggest">Suggest</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div style="float:right;margin-right:100px;">
+<div class="bookmark-responsive">
+<div class="bookmark-ribbon traditional font-calibri">
+<a href="collaborate" target="_blank"><div id="bookmark-text">
+<div>WRITE</div><div>FOR US &amp;</div><div>GET PAID!</div>
+</div></a>
+</div></div></div><div class="container">
+
+<div style="margin-top:20px;">
+
+
+<div class="row">
+<div class="span3">
+<ul class="nav nav-tabs nav-stacked">  
+<li>  
+<a href="about">About Us</a></li>    
+<li><a href="howitworks">How it Works</a></li> 
+<li><a href="suggest">Suggest</a></li>  
+<li><a href="terms">Terms</a></li>   
+<li class="active"><a href="contact">Contact</a></li>
+<li><a href="collaborate">Collaborate</a></li>  </ul>
+
+<div class="sidebar-info-box">
+<div class="lessbold-title">Stay in Touch</div>
+<br/><p>Like us on Facebook to stay up to date with updates and news</p>
+<p><div class="fb-like" data-href="http://facebook.com/studytonight" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div></p>
+<p><a class="twitter-follow-button"
+  href="https://twitter.com/studytonight"
+  data-show-count="false"
+  data-lang="en">
+Follow Us
+</a></p>
+<script type="text/javascript">
+window.twttr = (function (d, s, id) {
+  var t, js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src= "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+  return window.twttr || (t = { _e: [], ready: function (f) { t._e.push(f) } });
+}(document, "script", "twitter-wjs"));
+</script>
+</div>  
+</div>
+
+<div class="span9">
+<div id="infopage-content">
+<h1>Contact Us<small> for anything</small></h1>
+<hr/>
+<div>
+<p>We at <strong>Studytonight</strong> deeply cherish your views regarding our website's performance. Whether it is doing it's job well, up to the mark or marvellously.</p>
+<p>And for this we require your involvement, for any type of suggestion, question, complaint or something that you think is missing with us, or you have any new idea, Please feel free to contact us.</p><br/>
+
+<script type="text/javascript"> id = 164252; </script>
+<script type="text/javascript" src="http://kontactr.com/wp.js"></script>
+						
+
+<br/><p>You can mail us directly at : <span class="label label-warning">we@studytonight.com</span></p>
+<p>Or, Drop in a message on Facebook at : <a href="http://www.facebook.com/Studytonight" target="_blank"><b>facebook.com/Studytonight</b></a></p>
+<p>Or, if you have any suggestion, share your suggestions with us here : <a href="suggest"><b>Suggest Changes</b></a></p><br/>
+<p>Being a very small team, it becomes difficult sometimes to handle the enormous amount of work we do, so we apologize in advance for our late reply, if that happens. We will try to revert back as soon as possible.</p>
+</div>
+</div>
+</div>
+</div>
+</div><!-- Container Ends here--> 
+
+</div>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39722043-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<div id="footer">
+<div class="container">
+<div id="footer-box">
+
+<div id="footer-box-right">Check Out :  
+<a href="library"><span class="label">Library</span></a>&nbsp;&nbsp;
+<a href="online-courses"><span class="label">Video Courses</span></a>&nbsp;&nbsp;
+<a href="studyroom"><span class="label">Studyroom</span></a>&nbsp;&nbsp;
+<a href="flashcards"><span class="label">Flashcards</span></a>&nbsp;&nbsp;
+</div>
+
+<div id="footer-box-left">
+
+<p>&copy; Studytonight 2014 &middot; <span><img src="css/resource/icon-heart-small.png"/>Handcrafted with Love</span></p>
+
+<p><a href="about">About Us</a> &middot; <a href="suggest">Suggest</a> &middot; <a href="terms">Terms</a> &middot; <a href="contact">Contact Us</a> &middot; <a href="collaborate">Collaborate</a> &middot; <a href="authors.1">Authors</a> &middot; <a href="http://studytonight.tumblr.com/">Blog</a></p>
+
+
+</div>
+
+</div>  <!-- /footer-box -->
+<div class="row">
+<div class="span12 center">
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive Footer Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6137246359299957"
+     data-ad-slot="1965829825"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+</div> <!-- /container -->
+</div>  <!-- /footer -->      
+
+
+  </body>
+</html>

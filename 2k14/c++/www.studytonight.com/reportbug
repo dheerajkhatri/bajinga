@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Report a Bug - Studytonight</title>
+<meta name="description" content=""> 
+<meta property="og:image" content="http://www.studytonight.com/css/resource/favicon.png"/>
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Le styles -->
+<link href="css/bootstrap.v2.css" rel="stylesheet">
+<link rel="icon" type="image/png" href="css/resource/favicon.png">
+
+</head>
+
+<body>
+<!-- Fixed navbar -->
+<div class="navbar">
+<div style="margin:0px 15px;">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="index.html">
+			<img id="brand-icon" src="css/resource/st-icon.png" alt="studytonight.com" title="Take me Home"/>
+		</a>
+	</div>
+	
+	
+			<ul class="nav navbar-nav">
+			<li><a href="library">Tutorials</a></li>
+			<li><a href="online-courses">Video Playlists</a></li>
+			<li><a href="studyroom">Q & A Forum</a></li>
+			<li><a href="tests.1">Tests</a></li>
+			<li><a href="code/index.html">HTML Course</a></li>
+		</ul>
+	
+<ul class="nav navbar-nav pull-right">
+		<li><a href="login?url=%252Freportbug">Login</a></li>
+		<li><a href="suggest">Suggest</a></li>
+</ul>
+<div class="navbar-form navbar-right">
+	<a class="btn btn-warning" href="register"><b>Signup</b></a>
+</div>
+</div>
+</div><div class="navbar-border-bottom"><div class="container"></div></div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-offset-2 col-8 text-center">
+			<p class="margin-50"><img src="css/resource.v2/icons/basic/Bug-128.png" /></p>
+			<h2 class="roboto">REPORT A (flying)BUG</h2>
+			<p class="roboto margin-20">Though we know our website has no <span class="malibu">BUGS</span>, still if you think you&apos;ve found one, do let us know.</p>
+			<div class="margin-50">
+				<form action="reportbug" method="POST">
+					<div class="form-group"><input class="form-control" type="text" value="" name="name" placeholder="Your Name ..."/></div>
+					<div class="form-group"><input class="form-control" type="email" value="" name="email" placeholder="Your Email Address..."/></div>
+					<div class="form-group">
+						<textarea name="issue" class="form-control" placeholder="Please explain the issue in detail. We will get in touch with you very soon."></textarea>
+					</div>
+										<div class="form-group margin-10"><input type="submit" value="SUBMIT" class="btn btn-lg btn-success"/></div>
+				</form>
+			</div>	
+		</div>
+	</div>
+</div>
+<br><br>
+<div class="border-top">
+	<div class="container margin-30">
+		<div class="row darkest-grey roboto">
+			<div class="col-3">
+				<p >What is Studytonight?</p>
+				<div>
+					<p><a href="about">About Us</a></p>
+					<p><a href="howitworks">How it Works</a></p>
+					<p><a href="authors.1">Authors</a></p>
+					<p><a href="collaborate">Collaborate</a></p>
+					<p><a href="contact">Contact Us</a></p>
+					<p><a href="suggest">Suggest</a></p>
+					<p><a href="http://www.studytonight.com/studytonight.tumblr.com" target="_blank">Blog</a></p>
+				</div>
+			</div>
+			<div class="col-3">
+				<p>Tutorials</p>
+				<div>
+					<p><a href="java">Core Java</a></p>
+					<p><a href="cpp.1">C++</a></p>
+					<p><a href="data-structures">Data Structures</a></p>
+					<p><a href="jenkins">Jenkins Server</a></p>
+					<p><a href="dbms">DBMS</a></p>
+					<p><a href="servlet">Servlet</a></p>
+					<p><a href="library">More...</a></p>
+				</div>
+			</div>
+			<div class="col-3">
+				<p>Tests</p>
+				<div>
+					<p><a href="tests.1">Core Java</a></p>
+					<p><a href="tests?%252F?subject=cpp">C++</a></p>
+					<p><a href="tests?%252F?subject=dbms">DBMS</a></p>
+					<p><a href="tests?%252F?subject=c">C Language</a></p>
+					<p><a href="tests.1">More...</a></p>
+				</div>
+			</div>
+			<div class="col-3">
+				<p>Learn to Code</p>
+				<div>
+					<p><a href="code/html">HTML</a></p>
+					<br><br>
+					<p>
+						<a href="http://facebook.com/Studytonight" target="_blank"><span class="facebook-32"></span></a>&nbsp;&nbsp;
+						<a href="http://twitter.com/studytonight" target="_blank"><span class="twitter-32"></span></a>&nbsp;&nbsp;
+						<a href="https://plus.google.com/+Studytonight/" target="_blank"><span class="googleplus-32"></span></a>
+					</p>
+					<br>
+					<p>&copy; 2015 Studytonight
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39722043-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script></body>
+</html>

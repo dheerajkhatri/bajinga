@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Free Online College Courses - Studytonight</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Core java Notes, C++ Notes, C language Notes, Studytonight, Lessons, Notes, Subjects, High School Notes, easy short lessons, Database technology Notes, DBMS, Tutorials, Programming Subjects, Video Courses"/> 
+<meta name="description" content="Video Courses from some of the best universities and other Internet Sources, collected and organized for you.">
+<meta property="og:image" content="http://www.studytonight.com/css/resource/flat-ui-icon/Search-icon.png"/>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="css/resource/favicon.png">
+    <style>
+    /* CSSTerm.com Simple CSS menu */
+
+br { clear:left }
+
+.menu_simple {
+    width: 100%;
+    background-color: #fff;
+    border-bottom:solid 1px #bbb;
+}
+
+.menu_simple ul {
+    margin: 0; padding: 0;
+    float: left;
+}
+
+.menu_simple ul li {
+    display: inline;
+}
+
+.menu_simple ul li a {
+    float: left; text-decoration: none;
+    color: #555; 
+    font-weight:bold;
+    padding: 10.5px 11px;
+    background-color:  #fff;
+    border-right:solid 2px #cccccc;
+}
+ 
+.menu_simple ul li a:hover, .menu_simple ul li .current {
+    color: orange;
+    font-weight:bold;
+    background-color: #ffffff;
+}
+
+    </style>
+  </head>
+
+  <body>
+
+<style>
+
+.dropdown:hover ul{
+    display:block;
+}
+.dropdown ul { 
+    display: none;  
+    position:absolute;
+    background: rgba(0, 0, 0, 0.80); 
+    width: 150px;   
+    list-style-type:none;
+    padding:10px;
+} 
+.dropdown ul li{
+    padding:4px;
+}
+.dropdown ul li a{ 
+    line-height:30px;
+    cursor:pointer;
+    text-decoration:none;
+    color:white;
+} 
+.dropdown ul li a:hover{
+   color:orange;
+} 
+.dropdown ul.second
+{
+    left: 300px;
+}
+
+</style>
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=183470395085546";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="navbar navbar-inverse navbar-fixed-top">
+<div class="navbar-inner">
+<div class="nav-container">
+<a class="brand" href="index.html" title="Take me Home :)"><img id="brand-icon" src="css/resource/st-icon.png" alt="studytonight logo"/></a>
+
+<!-- <font color="orange">Study</font>tonight<sup><span id="beta">&#946;eta</span></sup> -->
+
+<ul class="nav navbar-nav nav-left-responsive">
+<li class="active"><a href="http://studytonight.com/online-courses/">VIDEO PLAYLISTS</a></li>
+<li class="dropdown"><a href="http://studytonight.com/library/">TUTORIALS</a>
+
+	<ul class="first">
+            <li><a href="android-app-using-mit-appinventor">ANDROID</a></li>
+            <li><a href="maven">APACHE MAVEN</a></li>
+            <li><a href="c">C LANGUAGE</a></li>
+            <li><a href="cpp.1">C++</a></li>
+            <li><a href="computer-networks">COMPUTER NETWORKS</a></li>
+            <li><a href="java">CORE JAVA</a></li>
+      </ul>
+      <ul class="second">
+      	    <li><a href="dbms">DBMS</a></li>
+            <li><a href="data-structures">DATA STRUCTURE</a></li>
+            <li><a href="jenkins">JENKINS</a></li>
+            <li><a href="jsp">JSP</a></li>
+            <li><a href="operating-system">OPERATING SYSTEM</a></li>
+            <li><a href="servlet">SERVLET</a></li>
+       </ul>
+
+</li>
+<li><a href="http://studytonight.com/studyroom/">Q &amp; A FORUM</a></li>
+<li><a href="http://studytonight.com/tests/">TESTS</a></li>
+<li><a href="http://studytonight.com/code/">HTML COURSE<sup id='beta'>NEW</sup></a></li>
+</ul>
+
+
+<ul class="nav nav-fb-responsive">
+<li class="nav-header">
+<div class="fb-like" data-href="http://facebook.com/studytonight" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
+</li>
+</ul>
+
+
+<ul class="nav pull-right-menuoption nav-right-responsive">
+<li>
+<form class="navbar-search" action="http://www.studytonight.com/search.php" method="GET"> 
+<table>
+<tr>
+<td><input type="text" name="q" maxlength="255" value="" class="search-query span2" placeholder="Search" title="Search Studytonight for Lessons and Topics"/></td>
+</tr>
+</table>
+</form>
+</li>
+<li><a href="login">LogIn</a></li>
+<li><a style="font-weight:bold;color:#f84906;" href="register">SignUp</a></li>
+<li><a href="suggest">Suggest</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div style="float:right;margin-right:100px;">
+<div class="bookmark-responsive">
+<div class="bookmark-ribbon traditional font-calibri">
+<a href="collaborate" target="_blank"><div id="bookmark-text">
+<div>WRITE</div><div>FOR US &amp;</div><div>GET PAID!</div>
+</div></a>
+</div></div></div>
+<div class="basic-hero-unit">
+<div class="container">
+
+<div class="row">
+
+<div class="span8">
+  <h2>Free Online College <span class="orange">Courses</span>.</h2>
+  <p>Video Courses from some of the best universities and other Internet Sources, collected and organized for you.</p>
+ </div>
+ <div class="span4 center"><img src="css/resource/flat-ui-icon/Search-icon.png" alt="Free Online College Courses"/></div>
+</div>
+</div></div>
+
+
+<div class="grey-body">
+<!-- Menu Start -->
+<div class="menu_simple">
+<div class="container">
+<ul>
+<li><a class="current" href="online-courses#" id="show-comp-prog">COMPUTER PROGRAMMING</a></li>
+<li><a href="online-courses#" id="show-google-edu">GOOGLE EDU</a></li>
+<li><a href="online-courses#" id="show-high-school">HIGH SCHOOL</a></li>
+</ul>
+<br />
+</div>
+</div>
+<!-- Menu ends -->
+
+<!-- Container containing Computer programming video-->
+<div class="container" id="comp-prog">
+<div class="row">   <!--Thumbnail row starts-->
+<br/>
+<div class="span4">
+<div class="thumbnail">
+<div class="thumbnail-body">
+<div class="caption"><a href="courses/java-spring-framework.1" class="bold-link-inverse">Spring beginners Course</a></div>
+<div class="para">This Video course will cover all the basics of Java's Spring Framework.</div>
+</div><!-- Thumbnail body ends -->
+<div>
+<div class="right-corner"><span class="file-count" title="45 Videos">45</span></div>
+<div><a href="courses/java-spring-framework.1" class="btn btn-success">View Course</a></div>
+</div>
+</div>
+</div>
+
+<div class="span4">
+<div class="thumbnail">
+<div class="thumbnail-body">
+<div class="caption"><a href="http://www.extension.harvard.edu/open-learning-initiative/intensive-introduction-computer-science" target="_blank" class="bold-link-inverse">Harvard Programming Introduction</a></div>
+<div class="para">This will take the students through a complete introduction of programming and coding, with the skill enhancement excersices.</div>
+</div><!-- Thumbnail body ends -->
+<div>
+<div class="right-corner"><span class="file-count" title="22 Videos">22</span></div>
+<div><a href="http://www.extension.harvard.edu/open-learning-initiative/intensive-introduction-computer-science" target="_blank" class="btn btn-success">View Course</a></div>
+</div>
+</div>
+</div>
+
+<div class="span4">
+<div class="thumbnail">
+<div class="thumbnail-body">
+<div class="caption"><a href="courses/javascript/index.html" class="bold-link-inverse">Javascript by Douglas Crockford</a></div>
+<div class="para">This video series will help students in understanding Javascript, from beginning to the end. Starting from the basic, to the high end knowledge.</div>
+</div><!-- Thumbnail body ends -->
+<div>
+<div class="right-corner"><span class="file-count" title="14 Videos">14</span></div>
+<div><a href="courses/javascript/index.html" class="btn btn-success">View Course</a></div>
+</div>
+</div>
+</div>
+
+</div> <!--Thumbnail row ends-->
+
+
+<div class="row">   <!--Thumbnail row starts-->
+<br/>
+<div class="span4">
+<div class="thumbnail">
+<div class="thumbnail-body">
+<div class="caption"><a href="courses/jbpm/index.html" class="bold-link-inverse">Complete Introduction to JBPM</a></div>
+<div class="para">In these videos students can have a detailed introduction of JBPM engine. Why it is needed and how it works with excellent real world examples and programs.</div>
+</div><!-- Thumbnail body ends -->
+<div>
+<div class="right-corner"><span class="file-count" title="3 Videos">3</span></div>
+<div><a href="courses/jbpm/index.html" class="btn btn-success">View Course</a></div>
+</div>
+</div>
+</div>
+
+<div class="span4">
+<div class="thumbnail">
+<div class="thumbnail-body">
+<div class="caption"><a href="courses/java-struts-framework/index.html" class="bold-link-inverse">Struts 2 Complete Course</a></div>
+<div class="para">Studying Struts 2 was never this simple. Here students can learn about how to begin programming using Struts framework. This will enhance their Java understanding also.</div>
+</div><!-- Thumbnail body ends -->
+<div>
+<div class="right-corner"><span class="file-count" title="19 Videos">19</span></div>
+<div><a href="courses/java-struts-framework/index.html" class="btn btn-success">View Course</a></div>
+</div>
+</div>
+</div>
+
+<div class="span4">
+<div class="thumbnail">
+<div class="thumbnail-body">
+<div class="caption"><a href="courses/programming-paradigm/index.html" class="bold-link-inverse">Introduction to Programming Paradigm</a></div>
+<div class="para">This class introduces several programming languages, like C, C++, Concurrent Programming, Python etc, and aims to teach students how to write code for each of these individual languages.</div>
+</div><!-- Thumbnail body ends -->
+<div>
+<div class="right-corner"><span class="file-count" title="30 Videos">30</span></div>
+<div><a href="courses/programming-paradigm/index.html" class="btn btn-success">View Course</a></div>
+</div>
+</div>
+</div> 
+
+</div><!--Thumbnail row ends-->
+
+
+<div class="row">   <!--Thumbnail row starts-->
+<br/>
+<div class="span4">
+<div class="thumbnail">
+<div class="thumbnail-body">
+<div class="caption"><a href="courses/junit/index.html" class="bold-link-inverse">JUNIT for Programmers</a></div>
+<div class="para">A video series to explain the benefits of Junits and how to write Junits, in Java projects.</div>
+</div><!-- Thumbnail body ends -->
+<div>
+<div class="right-corner"><span class="file-count" title="8 Videos">8</span></div>
+<div><a href="courses/junit/index.html" class="btn btn-success">View Course</a></div>
+</div>
+</div>
+</div>
+
+<div class="span4">
+<div class="thumbnail">
+<div class="thumbnail-body">
+<div class="caption"><a href="courses/data-structures/index.html" class="bold-link-inverse">IIT-Delhi Data Structures Lectures</a></div>
+<div class="para">A great video course to help students learn and understand Data Structures in depth.</div>
+</div><!-- Thumbnail body ends -->
+<div>
+<div class="right-corner"><span class="file-count" title="36 Videos">36</span></div>
+<div><a href="courses/data-structures/index.html" class="btn btn-success">View Course</a></div>
+</div>
+</div>
+</div>
+
+<div class="span4">
+<div class="thumbnail">
+<div class="thumbnail-body">
+<div class="caption"><a href="courses/android-application/index.html" class="bold-link-inverse">Android Application Development</a></div>
+<div class="para">Complete Video Course to teach you Android Application Development from the scratch. Exellently explained with code example for real application development.</div>
+</div><!-- Thumbnail body ends -->
+<div>
+<div class="right-corner"><span class="file-count" title="50 Videos">50</span></div>
+<div><a href="courses/android-application/index.html" class="btn btn-success">View Course</a></div>
+</div>
+</div>
+</div>
+</div><!--Thumbnail row ends-->
+<br/>
+
+<div class="row">   <!--Thumbnail row starts-->
+<br/>
+<div class="span4">
+<div class="thumbnail">
+<div class="thumbnail-body">
+<div class="caption"><a href="courses/cpp-video-tutorial/index.html" class="bold-link-inverse">Complete C++ Tutorial</a></div>
+<div class="para">These Video courses will cover the C++ programming language for beginners. Best videos to start your C++ journey.</div>
+</div><!-- Thumbnail body ends -->
+<div>
+<div class="right-corner"><span class="file-count" title="39 Videos">39</span></div>
+<div><a href="courses/cpp-video-tutorial/index.html" class="btn btn-success">View Course</a></div>
+</div>
+</div>
+</div>
+
+<!-- COMMENTED
+<div class="span4">
+<div class="thumbnail">
+<div class="thumbnail-body">
+<div class="caption"><a href="http://www.extension.harvard.edu/open-learning-initiative/intensive-introduction-computer-science" target="_blank" class="bold-link-inverse">Harvard Programming Introduction</a></div>
+<div class="para">This will take the students through a complete introduction of programming and coding, with the skill enhancement excersices.</div>
+</div>
+<div>
+<div class="right-corner"><span class="file-count" title="22 Videos">22</span></div>
+<div><a href="http://www.extension.harvard.edu/open-learning-initiative/intensive-introduction-computer-science" target="_blank" class="btn btn-success">View Course</a></div>
+</div>
+</div>
+</div>
+
+<div class="span4">
+<div class="thumbnail">
+<div class="thumbnail-body">
+<div class="caption"><a href="http://www.studytonight.com/courses/javascript/" class="bold-link-inverse">Javascript by Douglas Crockford</a></div>
+<div class="para">This video series will help students in understanding Javascript, from beginning to the end. Starting from the basic, to the high end knowledge.</div>
+</div>
+<div>
+<div class="right-corner"><span class="file-count" title="14 Videos">14</span></div>
+<div><a href="http://www.studytonight.com/courses/javascript/" class="btn btn-success">View Course</a></div>
+</div>
+</div>
+</div> -->
+
+</div> <!--Thumbnail row ends-->
+<br/>
+
+</div><!-- COMPUTER PROGRAMMING Container Ends here--> 
+
+<!-- HIGH SCHOOL STARTS-->
+<div class="container" id="high-school" style="display:none;">
+<div class="row">   <!--Thumbnail row starts-->
+<br/>
+<div class="span4">
+<div class="thumbnail">
+<div class="thumbnail-body">
+<div class="caption"><a href="courses/mathematics/index.html" class="bold-link-inverse">Mathematics</a></div>
+<div class="para">These Video courses by Khan Academy, covers almost all the major topics of highschool mathematics.</div>
+</div><!-- Thumbnail body ends -->
+<div>
+<div class="right-corner"><span class="file-count" title="86 Videos">86</span></div>
+<div><a href="courses/mathematics/index.html" class="btn btn-success">View Course</a></div>
+</div>
+</div>
+</div>
+
+<!-- COMMENTED
+<div class="span4">
+<div class="thumbnail">
+<div class="thumbnail-body">
+<div class="caption"><a href="http://www.extension.harvard.edu/open-learning-initiative/intensive-introduction-computer-science" target="_blank" class="bold-link-inverse">Harvard Programming Introduction</a></div>
+<div class="para">This will take the students through a complete introduction of programming and coding, with the skill enhancement excersices.</div>
+</div>
+<div>
+<div class="right-corner"><span class="file-count" title="22 Videos">22</span></div>
+<div><a href="http://www.extension.harvard.edu/open-learning-initiative/intensive-introduction-computer-science" target="_blank" class="btn btn-success">View Course</a></div>
+</div>
+</div>
+</div>
+
+<div class="span4">
+<div class="thumbnail">
+<div class="thumbnail-body">
+<div class="caption"><a href="http://www.studytonight.com/courses/javascript/" class="bold-link-inverse">Javascript by Douglas Crockford</a></div>
+<div class="para">This video series will help students in understanding Javascript, from beginning to the end. Starting from the basic, to the high end knowledge.</div>
+</div>
+<div>
+<div class="right-corner"><span class="file-count" title="14 Videos">14</span></div>
+<div><a href="http://www.studytonight.com/courses/javascript/" class="btn btn-success">View Course</a></div>
+</div>
+</div>
+</div> -->
+
+</div> <!--Thumbnail row ends-->
+<br/>
+</div> <!-- HIGH SCHOOL ENDS-->
+
+<!-- GOOGLE EDU STARTS-->
+<div class="container" id="google-edu" style="display:none;">
+<div class="row">   <!--Thumbnail row starts-->
+<br/>
+<div class="span4">
+<div class="thumbnail">
+<div class="thumbnail-body">
+<div class="caption"><a href="courses/google-python-class/index.html" class="bold-link-inverse">Two Days Of Python</a></div>
+<div class="para">These video lectures will cover Python Language from starting to end in a fast paced manner. You must have basic knowledge about OOPS to utilize this course efficiently.</div>
+</div><!-- Thumbnail body ends -->
+<div>
+<div class="right-corner"><span class="file-count" title="5 Videos">5</span></div>
+<div><a href="courses/google-python-class/index.html" class="btn btn-success">View Course</a></div>
+</div>
+</div>
+</div>
+
+
+<div class="span4">
+<div class="thumbnail">
+<div class="thumbnail-body">
+<div class="caption"><a href="courses/three-software-design-flaws/index.html" target="_blank" class="bold-link-inverse">Three Flaws In Software Design</a></div>
+<div class="para">This will take the students through a complete review about their development Habits. What they must do, and what they shouldn't while desiging a software.</div>
+</div>
+<div>
+<div class="right-corner"><span class="file-count" title="4 Videos">4</span></div>
+<div><a href="courses/three-software-design-flaws/index.html" target="_blank" class="btn btn-success">View Course</a></div>
+</div>
+</div>
+</div>
+
+<div class="span4">
+<div class="thumbnail">
+<div class="thumbnail-body">
+<div class="caption"><a href="courses/r-language/index.html" class="bold-link-inverse">R Programming Language Tutorial</a></div>
+<div class="para">R is a free software programming language and software environment for statistical computing and graphics. This tutorial will cover all the basics of R Programming Language. If you are looking to study something new, go ahead.</div>
+</div>
+<div>
+<div class="right-corner"><span class="file-count" title="21 Videos">21</span></div>
+<div><a href="courses/r-language/index.html" class="btn btn-success">View Course</a></div>
+</div>
+</div>
+</div>
+
+</div> <!--Thumbnail row ends-->
+<br/>
+</div> <!-- GOOGLE EDU ENDS-->
+
+
+</div> <!-- GREY CONTAINER ENDS-->
+
+<div class="container">
+<div class="row">
+<div class="span12">
+<center>
+<div style='width:270px;margin-top:15px;'>
+		<div style='width:80px; float:right'>
+		
+		<div class="fb-like" data-href="http://www.studytonight.com/online-courses/" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false" data-font="arial"></div>
+
+		</div>
+		<!-- Place this tag in your head or just before your close body tag -->
+		<div style='width:70px; float:right;margin-right:10px'>
+		<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+
+		<!-- Place this tag where you want the +1 button to render -->
+		<g:plusone size="medium" href="http://www.studytonight.com/online-courses/"></g:plusone>
+		</div>
+		<div style='width:86px; float:right;margin-right:10px'>
+		<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.studytonight.com/online-courses/" data-text="Video Courses from the best universities and Internet Sources, collected and organized for you." data-count="horizontal" data-via="studytonight">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+		</div>
+		</div>
+</center>
+</div>
+</div>
+</div>
+
+       
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39722043-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<div id="footer">
+<div class="container">
+<div id="footer-box">
+
+<div id="footer-box-right">Check Out :  
+<a href="library"><span class="label">Library</span></a>&nbsp;&nbsp;
+<a href="online-courses"><span class="label">Video Courses</span></a>&nbsp;&nbsp;
+<a href="studyroom"><span class="label">Studyroom</span></a>&nbsp;&nbsp;
+<a href="flashcards"><span class="label">Flashcards</span></a>&nbsp;&nbsp;
+</div>
+
+<div id="footer-box-left">
+
+<p>&copy; Studytonight 2014 &middot; <span><img src="css/resource/icon-heart-small.png"/>Handcrafted with Love</span></p>
+
+<p><a href="about">About Us</a> &middot; <a href="suggest">Suggest</a> &middot; <a href="terms">Terms</a> &middot; <a href="contact">Contact Us</a> &middot; <a href="collaborate">Collaborate</a> &middot; <a href="authors.1">Authors</a> &middot; <a href="http://studytonight.tumblr.com/">Blog</a></p>
+
+
+</div>
+
+</div>  <!-- /footer-box -->
+<div class="row">
+<div class="span12 center">
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive Footer Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6137246359299957"
+     data-ad-slot="1965829825"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+</div> <!-- /container -->
+</div>  <!-- /footer --><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+$("#show-high-school").on('click',function(){
+$("#show-high-school").addClass("current");
+$("#show-comp-prog").removeClass("current");
+$("#show-google-edu").removeClass("current");
+$("#comp-prog").hide();
+$("#google-edu").hide();
+$("#high-school").fadeIn();
+return false;
+});
+$("#show-comp-prog").on('click',function(){
+$("#show-comp-prog").addClass("current");
+$("#show-high-school").removeClass("current");
+$("#show-google-edu").removeClass("current");
+$("#high-school").hide();
+$("#google-edu").hide();
+$("#comp-prog").fadeIn();
+return false;
+});
+$("#show-google-edu").on('click',function(){
+$("#show-google-edu").addClass("current");
+$("#show-comp-prog").removeClass("current");
+$("#show-high-school").removeClass("current");
+$("#high-school").hide();
+$("#comp-prog").hide();
+$("#google-edu").fadeIn();
+return false;
+});
+</script>
+</body>
+</html>

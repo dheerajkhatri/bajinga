@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Guide to Go Live! - Make a Website | Studytonight</title>
+<meta name="description" content="Learn How to Code Webpages using HTML with Practical examples, Live Code Outputs, Simple Tutorial, Instructions and Hints."> 
+<meta property="og:image" content="http://www.studytonight.com/resource/favicon.png"/>
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    
+    <script type="text/javascript">
+        	var boxOpen = 'false';
+        	var previousBox = '';
+        	function showDetails(what){
+        		debugger;
+        		var marginValue = (($("#"+what+"Heading").parent().width())/2) - (($("#"+what+"Heading span").width())/2);
+        		if(boxOpen=="false") {
+        			previousBox = what;
+        			boxOpen = 'true';
+        			$("#"+what+"Details").slideToggle();
+        			$("#"+what+"Heading").animate({"margin-left": marginValue,"margin-right": '0px',}, 500, function() {});
+        		}
+        		else {
+        			if(previousBox==what) {
+        				$("#"+what+"Details").slideToggle();
+        				$("#"+what+"Heading").animate({"margin-left": '0px',"margin-right": '0px',}, 500, function() {});
+        				boxOpen = 'false';
+        			}
+        			else {
+        				//close previous box
+        				$("#"+previousBox+"Details").slideToggle();
+        				$("#"+previousBox+"Heading").animate({"margin-left": '0px',"margin-right": '0px',}, 500, function() {});
+        				//and open new one
+        				$("#"+what+"Details").slideToggle();
+        				$("#"+what+"Heading").animate({"margin-left": marginValue,"margin-right": '0px',}, 500, function() {});
+        				//set new previous
+        				previousBox=what;
+        				boxOpen = 'true';
+        			}
+        		}
+        	}
+    </script>
+
+<!-- Le styles -->
+<link href="../../css/bootstrap.v2.css" rel="stylesheet">
+
+<link rel="icon" type="image/png" href="../../css/resource/favicon.png">
+<link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+
+<style >
+
+.roboto {
+font-family: 'Roboto', sans-serif;
+}
+
+.guide-box {
+border:solid 2px #eee;
+cursor:pointer;
+}
+
+</style>
+
+</head>
+
+<body>
+<!-- Fixed navbar -->
+<div class="navbar">
+<div style="margin:0px 15px;">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="../../index.html">
+			<img id="brand-icon" src="../../css/resource/st-icon.png" alt="studytonight.com" title="Take me Home"/>
+		</a>
+	</div>
+	
+	
+			<ul class="nav navbar-nav">
+			<li><a href="../../library">Tutorials</a></li>
+			<li><a href="../../online-courses">Video Playlists</a></li>
+			<li><a href="../../studyroom">Q & A Forum</a></li>
+			<li><a href="../../tests.1">Tests</a></li>
+			<li><a href="../index.html">HTML Course</a></li>
+		</ul>
+	
+<ul class="nav navbar-nav pull-right">
+		<li><a href="../../login?url=%252Fcode%252Fhtml%252Fguide">Login</a></li>
+		<li><a href="../../suggest">Suggest</a></li>
+</ul>
+<div class="navbar-form navbar-right">
+	<a class="btn btn-warning" href="../../register"><b>Signup</b></a>
+</div>
+</div>
+</div><div class="navbar-border-bottom"><div class="container"></div></div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-12 text-center space-50">
+			<h1 class="roboto">GUIDE TO GO <span class="malibu">LIVE</span>!</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="guide-block col-offset-1 col-10 space-20 guide-box" onclick="showDetails('intro')">
+			<h2 class="roboto" id="introHeading"><span><img src="../../css/resource.v2/icons/basic/Book-Open-48.png" />&nbsp;Introduction</span></h2>
+            <div>
+                <div id="introDetails" style="display:none;">
+                    <p>Before we start getting a domain name and hosting our website, let&apos;s know a little about what all this is.</p>
+                    <h3>DOMAIN NAME</h3>
+                    <p>Whenever you want to access facebook, you type <code>facebook.com</code> in the address bar of your browser and boom! Facebook Website appears. <code>facebook.com</code> is the domain name or web address for Facebook website. Every website has a unqiue domain name, which you have to register by paying the ICANN(The Internet Corporation for Assigned Names and Numbers) some fees. You can easily buy domain names through online registrars like Bigrock, GoDaddy etc.</p>
+                    <h3>DOMAIN NAME SERVER</h3>
+                    <p>Do you know what an IP Address is? Ip Address is an address for a Computer or any other device that is on a network. When we are connected to internet, our computer has an IP address, which usually changes frequently. Using this address someone on the same network can access our system.</p>
+                    <p>While our computer&apos;s IP address changes frequently, IP addresses can be fixed too. In that case your computer will have a fixed address always, hence you can give the IP address to your friends or anyone and they can connect to your computer using the fixed address.</p>
+                    <p>Internet is also a network. The Domain name we choose is always mapped to an IP address, a fixed one. The IP address is of the system on which the files of our website are saved.</p>
+                    <p>Hence whenever you enter a domain name in the address bar of your browser, the request is directed to <b>Domain Name Server</b>, which maintains a directory, in the directory it looks for the IP address associated with the domain name and then forwards the request there, and boom again, the website loads.</p>
+                    <p>IP addresses are numeric combinations which are difficult to remember hence, domain names are used which can be easily remembered. And on the Domain Name Servers, these domain names are mapped to the correct IP address.</p>
+                    <h3>HOSTING SERVICE</h3>
+                    <p>Hosting service is the service who provides you a server where you can keep all your website&apos;s files(.html, .css etc files) and the server system has a static IP Address, to which your domain name is mapped and saved on the Domain Name Server.</p>
+                </div>
+            </div>
+		</div>
+	</div><br>
+	<div class="row">
+		<div class="col-offset-1 col-10 space-20 guide-box" onclick="showDetails('domain')">
+			<h2 class="roboto" id="domainHeading"><span><img src="../../css/resource.v2/icons/basic/Web-48.png" />&nbsp;Choosing a Domain Name and Registering it</span></h2>
+            <div>
+                <div id="domainDetails" style="display:none;">
+                    <p>Before we register any domain name, we have to check whether it is available or it has already been taken. You can think of domain names and check whether they are availbale or not using <a href="http://checkdomain.com" target="_blank">CheckDomain</a> service.</p>
+                    <p>Domain names are of different types. We have <code>.com</code>, <code>.in</code>, <code>.net</code>, <code>.org</code>, <code>.ly</code>, <code>.me</code> etc. Same name with different suffix is different, for example: <code>studytonight.com</code> is different from <code>studytonight.in</code>, so if you select a domain name for which the <code>.com</code> name is not available you can try <code>.in</code> or some other suffix.</p>
+                    <p>Although you can get any domain name for your website, all these have meanings, like <code>.com</code> is for commercial websites, <code>.net</code> for networking ones, <code>.org</code> for non profit organizations, <code>.edu</code> for educational institutions, then there are country specific domains <code>.in</code> for India, <code>.pk</code> for Paikistan, <code>.us</code> for United States. You can register the one that you like and the one which suits the context of your website.</p>
+                    <p>For a complete list, visit <a href="http://www.domainregister.com/comorg.html" target="_blank">Domains List</a></p>
+                    <h3>REGISTERING DOMAIN NAME</h3>
+                    <p>Once the domain name is finalized, do not waste any more time, and register it. We recommend using the <a href="http://bigrock.com" target="_blank">Bigrock</a> service for doing so. BigRock is an easy to use service to register domain names at a good price. You can register your domain from other services also if you want.</p>
+                    <p><b>NOTE :</b> We will be explaining the Hosting part using the Bigrock Hosting Service and if you are a beginner, it will be easier for you, if you register the domain name from the same source where you Host your website.</p>
+                </div>
+            </div>
+		</div>
+	</div><br>
+	<div class="row">
+		<div class="col-offset-1 col-10 space-20 guide-box" onclick="showDetails('hosting')">
+			<h2 id="hostingHeading" class="roboto"><span><img src="../../css/resource.v2/icons/basic/Gear-48.png" />&nbsp;Setting up Hosting</span></h2>
+            <div>
+                <div id="hostingDetails" style="display:none;">
+                    <p>Getting a Hosting means you are renting a server with a static IP address where your website&apos;s files will be saved.</p>
+                    <p>We once again recommend Bigrock as it is easy to setup for a beginner.  Studytonight is also hosted on Bigrock as our Founder found it very easy to setup, when he was a rookie in this area.</p>
+                    <p>You can get a hosting for as low as Rs. 2500 (INR) for a year. The CPanel is easy to use, and you will be get going in minutes if you have bought the domain name from Bigrock, as in that case most of the setting are automatically done by the Bigrock Service.</p>
+                    <h3>Setting Up your Website on Server</h3>
+                    <p>Steps for Login and Opening CPanel with Snapshots.</p>
+                    <ul>
+                    	<li>In the CPanel click on File Manager and you will be redirected to your file system.</li>
+			<li>Click on <code>public_html</code>, this is where we will keep all our files.</li>
+			<li>Upload you HTML file and name it index.html</li>
+			<li>index.html is the default file which is opened when you access a domain name.</li>
+			<li>From there you can create hyperlinks and can create more html files with different names.</li>
+			<li>You know all about HTML, so go on and create a great Website for yourself.</li>
+                    </ul>
+                </div>
+            </div>
+		</div>
+	</div><br>
+	<div class="row">
+		<div class="col-offset-1 col-10 space-20 guide-box" onclick="showDetails('end')">
+			<h2 id="endHeading" class="roboto"><span><img src="../../css/resource.v2/icons/basic/Graduate-Hat-48.png" />&nbsp;End of Course</span></h2>
+            <div>
+                <div id="endDetails" style="display:none;">
+                    <p>Hope the Course helped you in learning HTML and setting up your website. If you faced any problem during the course or if you still have any doubt regarding the Hosting or some HTML concept, go ahead and use our <a href="http://studytonight.com/studyroom">Q &amp; A Forum</a> to post your questions. We will definitely answer them.</p>
+                </div>
+            </div>
+		</div>
+	</div><br>
+</div>
+
+
+<div class="border-top">
+	<div class="container margin-30">
+		<div class="row darkest-grey roboto">
+			<div class="col-3">
+				<p >What is Studytonight?</p>
+				<div>
+					<p><a href="../../about">About Us</a></p>
+					<p><a href="../../howitworks">How it Works</a></p>
+					<p><a href="../../authors.1">Authors</a></p>
+					<p><a href="../../collaborate">Collaborate</a></p>
+					<p><a href="../../contact">Contact Us</a></p>
+					<p><a href="../../suggest">Suggest</a></p>
+					<p><a href="http://www.studytonight.com/code/html/studytonight.tumblr.com" target="_blank">Blog</a></p>
+				</div>
+			</div>
+			<div class="col-3">
+				<p>Tutorials</p>
+				<div>
+					<p><a href="../../java">Core Java</a></p>
+					<p><a href="../../cpp.1">C++</a></p>
+					<p><a href="../../data-structures">Data Structures</a></p>
+					<p><a href="../../jenkins">Jenkins Server</a></p>
+					<p><a href="../../dbms">DBMS</a></p>
+					<p><a href="../../servlet">Servlet</a></p>
+					<p><a href="../../library">More...</a></p>
+				</div>
+			</div>
+			<div class="col-3">
+				<p>Tests</p>
+				<div>
+					<p><a href="../../tests.1">Core Java</a></p>
+					<p><a href="../../tests?%252F?subject=cpp">C++</a></p>
+					<p><a href="../../tests?%252F?subject=dbms">DBMS</a></p>
+					<p><a href="../../tests?%252F?subject=c">C Language</a></p>
+					<p><a href="../../tests.1">More...</a></p>
+				</div>
+			</div>
+			<div class="col-3">
+				<p>Learn to Code</p>
+				<div>
+					<p><a href="../html">HTML</a></p>
+					<br><br>
+					<p>
+						<a href="http://facebook.com/Studytonight" target="_blank"><span class="facebook-32"></span></a>&nbsp;&nbsp;
+						<a href="http://twitter.com/studytonight" target="_blank"><span class="twitter-32"></span></a>&nbsp;&nbsp;
+						<a href="https://plus.google.com/+Studytonight/" target="_blank"><span class="googleplus-32"></span></a>
+					</p>
+					<br>
+					<p>&copy; 2015 Studytonight
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39722043-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script></body>
+</html>

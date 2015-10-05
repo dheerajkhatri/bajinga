@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Spring Beginners Course - Studytonight</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Spring framework, Java Spring Videos, Spring for beginners, Bean Factory, Constructor Injection, Application Context, Dependency Injection, AOP, "/> 
+<meta name="description" content="This Video course will cover all the basics of Java's Spring Framework. Starting from the beginning you will learn concepts like AOP, Dependency Injection, Application Context and a lot more.">
+<meta property="og:image" content="http://www.studytonight.com/css/resource/favicon.png"/>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/docs.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../css/resource/favicon.png">
+  </head>
+
+  <body>
+
+<style>
+
+.dropdown:hover ul{
+    display:block;
+}
+.dropdown ul { 
+    display: none;  
+    position:absolute;
+    background: rgba(0, 0, 0, 0.80); 
+    width: 150px;   
+    list-style-type:none;
+    padding:10px;
+} 
+.dropdown ul li{
+    padding:4px;
+}
+.dropdown ul li a{ 
+    line-height:30px;
+    cursor:pointer;
+    text-decoration:none;
+    color:white;
+} 
+.dropdown ul li a:hover{
+   color:orange;
+} 
+.dropdown ul.second
+{
+    left: 300px;
+}
+
+</style>
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=183470395085546";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="navbar navbar-inverse navbar-fixed-top">
+<div class="navbar-inner">
+<div class="nav-container">
+<a class="brand" href="../index.html" title="Take me Home :)"><img id="brand-icon" src="../css/resource/st-icon.png" alt="studytonight logo"/></a>
+
+<!-- <font color="orange">Study</font>tonight<sup><span id="beta">&#946;eta</span></sup> -->
+
+<ul class="nav navbar-nav nav-left-responsive">
+<li><a href="http://studytonight.com/online-courses/">VIDEO PLAYLISTS</a></li>
+<li class="dropdown"><a href="http://studytonight.com/library/">TUTORIALS</a>
+
+	<ul class="first">
+            <li><a href="../android-app-using-mit-appinventor">ANDROID</a></li>
+            <li><a href="../maven">APACHE MAVEN</a></li>
+            <li><a href="../c">C LANGUAGE</a></li>
+            <li><a href="../cpp.1">C++</a></li>
+            <li><a href="../computer-networks">COMPUTER NETWORKS</a></li>
+            <li><a href="../java">CORE JAVA</a></li>
+      </ul>
+      <ul class="second">
+      	    <li><a href="../dbms">DBMS</a></li>
+            <li><a href="../data-structures">DATA STRUCTURE</a></li>
+            <li><a href="../jenkins">JENKINS</a></li>
+            <li><a href="../jsp">JSP</a></li>
+            <li><a href="../operating-system">OPERATING SYSTEM</a></li>
+            <li><a href="../servlet">SERVLET</a></li>
+       </ul>
+
+</li>
+<li><a href="http://studytonight.com/studyroom/">Q &amp; A FORUM</a></li>
+<li><a href="http://studytonight.com/tests/">TESTS</a></li>
+<li><a href="http://studytonight.com/code/">HTML COURSE<sup id='beta'>NEW</sup></a></li>
+</ul>
+
+
+<ul class="nav nav-fb-responsive">
+<li class="nav-header">
+<div class="fb-like" data-href="http://facebook.com/studytonight" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
+</li>
+</ul>
+
+
+<ul class="nav pull-right-menuoption nav-right-responsive">
+<li>
+<form class="navbar-search" action="http://www.studytonight.com/search.php" method="GET"> 
+<table>
+<tr>
+<td><input type="text" name="q" maxlength="255" value="" class="search-query span2" placeholder="Search" title="Search Studytonight for Lessons and Topics"/></td>
+</tr>
+</table>
+</form>
+</li>
+<li><a href="../login">LogIn</a></li>
+<li><a style="font-weight:bold;color:#f84906;" href="../register">SignUp</a></li>
+<li><a href="../suggest">Suggest</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div style="float:right;margin-right:100px;">
+<div class="bookmark-responsive">
+<div class="bookmark-ribbon traditional font-calibri">
+<a href="../collaborate" target="_blank"><div id="bookmark-text">
+<div>WRITE</div><div>FOR US &amp;</div><div>GET PAID!</div>
+</div></a>
+</div></div></div>
+<div class="basic-hero-unit">
+
+<div class="container">
+	<div class="row">
+		<div class="span12">
+		
+			<div class="lessbold-title center">ONLINE SPRING BEGINNERS COURSE</div>
+
+			
+
+			<div class="icon-sharing-button">
+				<!-- AddThis Button BEGIN -->
+				<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+				<a class="addthis_button_facebook"></a>
+				<a class="addthis_button_twitter"></a>
+				<a class="addthis_button_google_plusone_share"></a>
+				<a class="addthis_button_compact"></a><a class="addthis_counter addthis_bubble_style"></a>
+				</div>
+			</div><br>
+			<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4fcb15e01d1a671c"></script>
+			<!-- AddThis Button END -->
+		</div>
+	</div>
+</div>
+
+</div>
+
+<div class="grey-body">
+<div class="container">
+
+<div class="row"> 
+<br/>
+<div class="span9">
+<div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=GB8k2-Egfv0'><img src='http://img.youtube.com/vi/GB8k2-Egfv0/0.jpg' alt='Spring Tutorial 01 - Understanding Dependency Injection' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:14:52</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=GB8k2-Egfv0'>Spring Tutorial 01 - Understanding Dependency Injection</a></div><p>In this tutorial, we'll understand the concept of Dependency Injection.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=Z5gubdHLJIc'><img src='http://img.youtube.com/vi/Z5gubdHLJIc/0.jpg' alt='Spring Tutorial 02 - Setting Up' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:03:48</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=Z5gubdHLJIc'>Spring Tutorial 02 - Setting Up</a></div><p>In this tutorial, we'll learn how to set up our Eclipse development environment to write Spring code.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=xlWwMSu5I70'><img src='http://img.youtube.com/vi/xlWwMSu5I70/0.jpg' alt='Spring Tutorial 03 - Understanding Spring Bean Factory' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:06:53</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=xlWwMSu5I70'>Spring Tutorial 03 - Understanding Spring Bean Factory</a></div><p>In this tutorial, we'll discuss the role of Spring as a bean container. We'll also have a quick discussion on the Factory pattern, and I'll introduce you to the Spring Bean Factory object.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=7c6ZTF6cF88'><img src='http://img.youtube.com/vi/7c6ZTF6cF88/0.jpg' alt='Spring Tutorial 04 - Writing Code Using the Bean Factory' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:11:22</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=7c6ZTF6cF88'>Spring Tutorial 04 - Writing Code Using the Bean Factory</a></div><p>In this tutorial, we'll write code to implement the BeanFactory concept that we learnt in our previous tutorial. We'll write a Spring XML to configure a Spring bean. Then we'll use the BeanFactory to instantiate our bean in the Spring container.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=ZxLaEovze3M'><img src='http://img.youtube.com/vi/ZxLaEovze3M/0.jpg' alt='Spring Tutorial 05 - ApplicationContext and Property Initialization' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:07:37</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=ZxLaEovze3M'>Spring Tutorial 05 - ApplicationContext and Property Initialization</a></div><p>We'll first replace the BeanFactory with the more powerful ApplicationContext. We'll then make Spring initialize a property of an object by specifying the value in the configuration XML.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=IOZzxmJVus0'><img src='http://img.youtube.com/vi/IOZzxmJVus0/0.jpg' alt='Spring Tutorial 06 - Using Constructor Injection' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:14:00</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=IOZzxmJVus0'>Spring Tutorial 06 - Using Constructor Injection</a></div><p>We'll now use constructors to set the member variable values for our Spring beans. We'll also look at some techniques to resolve conflicts in the case of overloaded constructors.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=g15RcFyEcrk'><img src='http://img.youtube.com/vi/g15RcFyEcrk/0.jpg' alt='Spring Tutorial 07 - Injecting Objects' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:15:19</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=g15RcFyEcrk'>Spring Tutorial 07 - Injecting Objects</a></div><p>In this tutorial, we'll use dependency injection to inject an object dependency to a Spring bean.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=TW51XsixMqA'><img src='http://img.youtube.com/vi/TW51XsixMqA/0.jpg' alt='Spring Tutorial 08 - Inner Beans, Aliases and idref' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:09:51</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=TW51XsixMqA'>Spring Tutorial 08 - Inner Beans, Aliases and idref</a></div><p>In this tutorial, we'll look at some concepts related to bean naming and usage like alias and idref. We'll also understand how to write inner beans.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=MgYURkcYeDQ'><img src='http://img.youtube.com/vi/MgYURkcYeDQ/0.jpg' alt='Spring Tutorial 09 - Initializing Collections' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:06:02</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=MgYURkcYeDQ'>Spring Tutorial 09 - Initializing Collections</a></div><p>In this tutorial, we'll initialize a member variable that's a collection and each of the elements are references to other beans.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=suiEGbKf21g'><img src='http://img.youtube.com/vi/suiEGbKf21g/0.jpg' alt='Spring Tutorial 10 - Bean Autowiring' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:07:27</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=suiEGbKf21g'>Spring Tutorial 10 - Bean Autowiring</a></div><p>We'll now look at a configuration feature provided by Spring to wire dependencies automatically: Bean Autowiring. We'll learn about different types of autowiring, and we'll write some code to implement bean autowiring by name.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=NnNvDknQJt0'><img src='http://img.youtube.com/vi/NnNvDknQJt0/0.jpg' alt='Spring Tutorial 11 - Understanding Bean Scopes' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:11:53</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=NnNvDknQJt0'>Spring Tutorial 11 - Understanding Bean Scopes</a></div><p>This tutorial covers the concepts of Bean Scopes in Spring. We'll understand when beans are created and how to configure different scopes for the beans.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=WUqyoH_G4Ko'><img src='http://img.youtube.com/vi/WUqyoH_G4Ko/0.jpg' alt='Spring Tutorial 12 - Using ApplicationContextAware' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:08:58</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=WUqyoH_G4Ko'>Spring Tutorial 12 - Using ApplicationContextAware</a></div><p>We'll provide our beans with access to the ApplicationContext object by implementing the ApplicationContextAware interface. We'll also use BeanNameAware interface to get the name of the bean configured in the Spring XML.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=LxRiFFEXs5I'><img src='http://img.youtube.com/vi/LxRiFFEXs5I/0.jpg' alt='Spring Tutorial 13 - Bean Definition Inheritance' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:09:56</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=LxRiFFEXs5I'>Spring Tutorial 13 - Bean Definition Inheritance</a></div><p>In this tutorial, we'll learn what bean definition inheritance is, and how to configure a parent bean definition and have children beans inherit the bean definitions.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=8LCpo4sfdQU'><img src='http://img.youtube.com/vi/8LCpo4sfdQU/0.jpg' alt='Spring Tutorial 14 - Lifecycle Callbacks' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:15:24</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=8LCpo4sfdQU'>Spring Tutorial 14 - Lifecycle Callbacks</a></div><p>We'll use two different ways to run methods on initialization and destruction of beans.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=-ycOZTpMkow'><img src='http://img.youtube.com/vi/-ycOZTpMkow/0.jpg' alt='Spring Tutorial 15 - Writing a BeanPostProcessor' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:11:38</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=-ycOZTpMkow'>Spring Tutorial 15 - Writing a BeanPostProcessor</a></div><p>In this tutorial, we'll understand what a BeanPostProcessor is. We'll also write a BeanPostProcessor that prints a message upon initializing each and every bean in the Spring XML.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=szNWTBlewQI'><img src='http://img.youtube.com/vi/szNWTBlewQI/0.jpg' alt='Spring Tutorial 16 - Writing a BeanFactoryPostProcessor' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:15:16</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=szNWTBlewQI'>Spring Tutorial 16 - Writing a BeanFactoryPostProcessor</a></div><p>In this tutorial, we'll learn about and write our own BeanFactoryPostProcessor. We'll also try out a handy BeanFactoryPostProcessor that comes with Spring: the PropertyPlaceholderConfigurer.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=5IDIEMxdkC8'><img src='http://img.youtube.com/vi/5IDIEMxdkC8/0.jpg' alt='Spring Tutorial 17 - Coding To Interfaces' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:10:39</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=5IDIEMxdkC8'>Spring Tutorial 17 - Coding To Interfaces</a></div><p>When using Spring for dependency injection, it's a good practice to use interfaces for referencing dependencies. In this tutorial, we'll learn how to "code to interfaces".</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=Fs_IoEGSP-A'><img src='http://img.youtube.com/vi/Fs_IoEGSP-A/0.jpg' alt='Spring Tutorial 18 - Introduction to Annotations and the Required Annotation' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:09:54</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=Fs_IoEGSP-A'>Spring Tutorial 18 - Introduction to Annotations and the Required Annotation</a></div><p>Here we'll have our first look at Spring annotations. We'll understand and implement the Required annotation, and we'll also learn how it's actually a BeanPostProcessor that's working behind the scenes.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=IVIhVJJGo68'><img src='http://img.youtube.com/vi/IVIhVJJGo68/0.jpg' alt='Spring Tutorial 19 - The Autowired Annotation' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:14:20</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=IVIhVJJGo68'>Spring Tutorial 19 - The Autowired Annotation</a></div><p>In this tutorial, we'll use the Autowired annotation to wire up dependencies. We'll learn how to add dependencies by type and name. We'll also use Qualifiers to narrow down dependency contenders.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=apTEbKPW3ow'><img src='http://img.youtube.com/vi/apTEbKPW3ow/0.jpg' alt='Spring Tutorial 20 - Some JSR-250 Annotations' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:08:25</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=apTEbKPW3ow'>Spring Tutorial 20 - Some JSR-250 Annotations</a></div><p>We'll learn and implement three JSR-250 annotations that Spring supports:Resource, PostConstruct and PreDestroy.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=oTcSW4-_1Ew'><img src='http://img.youtube.com/vi/oTcSW4-_1Ew/0.jpg' alt='Spring Tutorial 21 - Component and Stereotype Annotations' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:12:23</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=oTcSW4-_1Ew'>Spring Tutorial 21 - Component and Stereotype Annotations</a></div><p>We'll now use the Component annotation to define Spring beans. We'll also look at some Stereotype annotations.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=cUqquQDZR-c'><img src='http://img.youtube.com/vi/cUqquQDZR-c/0.jpg' alt='Spring Tutorial 22 - Using MessageSource To Get Text From Property Files' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:21:55</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=cUqquQDZR-c'>Spring Tutorial 22 - Using MessageSource To Get Text From Property Files</a></div><p>In this tutorial, we'll use the MessageSource interface to retrieve messages out of property files.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=ZUe1Xz7DAcY'><img src='http://img.youtube.com/vi/ZUe1Xz7DAcY/0.jpg' alt='Spring Tutorial 23 - Event Handling in Spring' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:16:16</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=ZUe1Xz7DAcY'>Spring Tutorial 23 - Event Handling in Spring</a></div><p>We'll now look at Spring's support for Event Handling. We'll write an event listener in this tutorial. i'll also show you how to write custom events and publish them anywhere in the code.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=QdyLsX0nG30'><img src='http://img.youtube.com/vi/QdyLsX0nG30/0.jpg' alt='Spring Tutorial 24 - Introduction to AOP' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:15:09</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=QdyLsX0nG30'>Spring Tutorial 24 - Introduction to AOP</a></div><p>This video provides a brief introduction to Aspect Oriented Programming concepts.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=4P0TME-AbSw'><img src='http://img.youtube.com/vi/4P0TME-AbSw/0.jpg' alt='Spring Tutorial 25 - Setting Up AOP Dependencies' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:06:05</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=4P0TME-AbSw'>Spring Tutorial 25 - Setting Up AOP Dependencies</a></div><p>In this tutorial, we'll add the additional dependencies required for Spring AOP and we'll configure our project's class path with these dependencies.
+
+The links for the dependencies are:
+AspectJ: http://www.eclipse.org/aspectj/downloads.php
+AOP Alliance: http://aopalliance.sourceforge.net/
+CGILIB: </p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=D0ekfQNGgpY'><img src='http://img.youtube.com/vi/D0ekfQNGgpY/0.jpg' alt='Spring Tutorial 26 - Writing Our First Aspect Part 1' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:14:48</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=D0ekfQNGgpY'>Spring Tutorial 26 - Writing Our First Aspect Part 1</a></div><p>In this first part of the tutorial, we'll create a Spring project that forms the basis for our Aspect. This is a good refresher of some of the core Spring concepts, and it also give us an opportunity to introduce a service layer in our code that we'll build on in the subsequent tutorials.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=4-z-YsRfSF0'><img src='http://img.youtube.com/vi/4-z-YsRfSF0/0.jpg' alt='Spring Tutorial 27 - Writing Our First Aspect Part 2' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:12:48</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=4-z-YsRfSF0'>Spring Tutorial 27 - Writing Our First Aspect Part 2</a></div><p>Now that we have a basic Spring application, we'll implement the Logging aspect. We'll learn how to create a new Aspect using annotations and configure an advice to run before a getter method.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=h7IdaLybg9A'><img src='http://img.youtube.com/vi/h7IdaLybg9A/0.jpg' alt='Spring Tutorial 28 - Pointcuts and Wildcard Expressions' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:19:25</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=h7IdaLybg9A'>Spring Tutorial 28 - Pointcuts and Wildcard Expressions</a></div><p>We'll now learn what a Pointcut is, the Pointcut annotation and how to apply advice to multiple pointcuts.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=UxzTk57CJD8'><img src='http://img.youtube.com/vi/UxzTk57CJD8/0.jpg' alt='Spring Tutorial 29 - A Few More Pointcut Expressions' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:12:55</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=UxzTk57CJD8'>Spring Tutorial 29 - A Few More Pointcut Expressions</a></div><p>In this tutorial, we'll learn about a few other Pointcut expressions that can be used to advice different methods.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=nrAN0E_A7fc'><img src='http://img.youtube.com/vi/nrAN0E_A7fc/0.jpg' alt='Spring Tutorial 30 - JoinPoints and Advice Arguments' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:11:38</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=nrAN0E_A7fc'>Spring Tutorial 30 - JoinPoints and Advice Arguments</a></div><p>We'll now learn about join points, and how we can use arguments in the advice methods to get information about join points.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=tU6eQh9Hmqk'><img src='http://img.youtube.com/vi/tU6eQh9Hmqk/0.jpg' alt='Spring Tutorial 31 - After Advice Types' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:20:58</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=tU6eQh9Hmqk'>Spring Tutorial 31 - After Advice Types</a></div><p>We'll learn about the After Advice types: After (finally), AfterReturning and AfterThrowing.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=jwRwHOIwwdQ'><img src='http://img.youtube.com/vi/jwRwHOIwwdQ/0.jpg' alt='Spring Tutorial 32 - Around Advice Type' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:14:54</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=jwRwHOIwwdQ'>Spring Tutorial 32 - Around Advice Type</a></div><p>This tutorial covers the Around advice type. We'll learn how to use it, and we'll also look at some of the unique and powerful features that are specific to this advice type.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=Clz78J7SBKQ'><img src='http://img.youtube.com/vi/Clz78J7SBKQ/0.jpg' alt='Spring Tutorial 33 - Naming Conventions and Custom Advice Annotations' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:11:06</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=Clz78J7SBKQ'>Spring Tutorial 33 - Naming Conventions and Custom Advice Annotations</a></div><p>In this video, I share some thoughts on naming conventions, and how it helps in the case of writing aspects in Spring. We will also understand how to write our own custom annotations to apply advice to methods.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=ewWzxcNnI7k'><img src='http://img.youtube.com/vi/ewWzxcNnI7k/0.jpg' alt='Spring Tutorial 34 - AOP XML configuration' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:13:03</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=ewWzxcNnI7k'>Spring Tutorial 34 - AOP XML configuration</a></div><p>We'll learn how to configure aspects, advice and pointcuts using the traditional XML way.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=yiinKulgm4U'><img src='http://img.youtube.com/vi/yiinKulgm4U/0.jpg' alt='Spring Tutorial 35 - Understanding AOP Proxies' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:16:34</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=yiinKulgm4U'>Spring Tutorial 35 - Understanding AOP Proxies</a></div><p>In this video, we go where no Spring AOP tutorial has gone before! We'll understand how Spring AOP works and how it uses proxy classes to apply advice. And we'll do this by implementing our own simple factory service. The way Spring AOP works is much more complicated, but this simple implementation </p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=eR_JFtqyNL4'><img src='http://img.youtube.com/vi/eR_JFtqyNL4/0.jpg' alt='Spring Tutorial 36 - Introduction to Spring Data and Setting Up' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:12:12</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=eR_JFtqyNL4'>Spring Tutorial 36 - Introduction to Spring Data and Setting Up</a></div><p>This tutorial serves as an introduction to Spring Data support. We'll also install a lightweight database Apache Derby that we'll use in subsequent tutorials. We'll learn how to start Derby in Network server mode, and how to connect and run SQL queries using the ij client tool.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=B3gEbC37DAM'><img src='http://img.youtube.com/vi/B3gEbC37DAM/0.jpg' alt='Spring Tutorial 37 - Using JDBC without Spring' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:18:12</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=B3gEbC37DAM'>Spring Tutorial 37 - Using JDBC without Spring</a></div><p>We'll now implement a simple DAO class that fetches data from the database using JDBC. We'll look at all the boilerplate code we need to write to establish connections, execute queries, close objects and handle exceptions.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=f-k823MZ02Q'><img src='http://img.youtube.com/vi/f-k823MZ02Q/0.jpg' alt='Spring Tutorial 38 - Adding Spring and DataSource Configuration' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:14:58</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=f-k823MZ02Q'>Spring Tutorial 38 - Adding Spring and DataSource Configuration</a></div><p>We'll now add the Spring framework to our JDBC project. We'll add dependency injection to our Main and DAO class. We'll also learn how to configure DataSource as a Spring bean and supply connection parameters to it in the XML file.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=0LYqy0wvS20'><img src='http://img.youtube.com/vi/0LYqy0wvS20/0.jpg' alt='Spring Tutorial 39 - Using JdbcTemplate' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:17:33</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=0LYqy0wvS20'>Spring Tutorial 39 - Using JdbcTemplate</a></div><p>We'll use the JdbcTemplate class provided by Spring to implement a DAO method. We'll see how using the template class makes the DAO methods simple, and how it takes care of much of the boilerplate code we'd have to write otherwise.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=QrU6UI_bSbU'><img src='http://img.youtube.com/vi/QrU6UI_bSbU/0.jpg' alt='Spring Tutorial 40 - Returning Other Datatypes from JdbcTemplate' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:12:38</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=QrU6UI_bSbU'>Spring Tutorial 40 - Returning Other Datatypes from JdbcTemplate</a></div><p>We returned an integer datatype result from our query in the previous tutorial. In this tutorial, we'll learn how to return other datatypes. We'll implement a method that returns a String query output.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=i-_CUlER3z8'><img src='http://img.youtube.com/vi/i-_CUlER3z8/0.jpg' alt='Spring Tutorial 41 - Implementing RowMapper' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:13:35</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=i-_CUlER3z8'>Spring Tutorial 41 - Implementing RowMapper</a></div><p>In this tutorial, we implement a custom RowMapper class to map our domain objects. We then use this class to write fetch methods that return custom model objects.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=BiSIAzSZHpY'><img src='http://img.youtube.com/vi/BiSIAzSZHpY/0.jpg' alt='Spring Tutorial 42 - Performing Write Operations with JdbcTemplate' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:11:03</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=BiSIAzSZHpY'>Spring Tutorial 42 - Performing Write Operations with JdbcTemplate</a></div><p>We'll now implement some database write operations. We'll write a DAO method to update a value in the database, as well as use the execute() method to run a DDL SQL query.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=W_9DJYXuhwk'><img src='http://img.youtube.com/vi/W_9DJYXuhwk/0.jpg' alt='Spring Tutorial 43 - Named Parameter JDBC Template' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:15:21</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=W_9DJYXuhwk'>Spring Tutorial 43 - Named Parameter JDBC Template</a></div><p>We'll use the NamedParameterJdbcTemplate class to run queries with named placeholders.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=UOyjFjilPIo'><img src='http://img.youtube.com/vi/UOyjFjilPIo/0.jpg' alt='Spring Tutorial 44 - DAO Support Classes' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:14:24</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=UOyjFjilPIo'>Spring Tutorial 44 - DAO Support Classes</a></div><p>We'll wrap up discussion on the Spring JDBC support by using the DAO support classes that Spring provides out of the box. We'll see how this makes our DAO classes cleaner than ever.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=0lqlg5tnDag'><img src='http://img.youtube.com/vi/0lqlg5tnDag/0.jpg' alt='Spring Tutorial 45 - Using Hibernate with Spring' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:22:35</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=0lqlg5tnDag'>Spring Tutorial 45 - Using Hibernate with Spring</a></div><p>In this video, we'll learn how to integrate the Hibernate framework in our Spring application. We'll create a SessionFactory as a Spring singleton and use that in our DAO class to work with the database.</p></div></div></div><!--span9 Ends-->
+
+<div class="span3">
+<ul class="nav nav-tabs nav-stacked"> 
+ 
+<li class="active"><a href="java-spring-framework.1">Spring Tutorial</a></li>
+<li><a href="junit/index.html">JUNIT for Programmers</a></li>     
+<li><a href="http://www.studytonight.com/courses/programming-introduction/">Harvard Programming Introduction</a></li>  
+<li><a href="javascript/index.html">Javascript by Douglas Crockford</a></li>   
+<li><a href="mathematics/index.html">Mathematics</a></li>
+<li><a href="java-struts-framework/index.html">Struts 2 Complete Course</a></li>
+<li><a href="programming-paradigm/index.html">Introduction to Programming Paradigm</a></li>
+<li><a href="data-structures/index.html">IIT-Delhi Data Structures Lectures</a></li>
+<li><a href="android-application/index.html">Android App Development</a></li>
+<li><a href="jbpm/index.html">Complete Introduction to JBPM</a></li>
+</ul> 
+
+<div class="sidebar-info-box-inverse">
+<table>
+<tr><td rowspan="2" style="width:35px;">&nbsp;&nbsp;<img src="http://studytonight.com/css/resource/icon-tip.png" alt="Tip for Test"/></td><td>How to</td></tr>
+<tr><td><a href="http://studytonight.com/collaborate" class="bold-link">Get your Video Lessons listed here</a></td></tr>
+</table>
+</div>
+
+<div class="sidebar-info-box-inverse">
+<div class="lessbold-title">Stay in Touch</div>
+<br/><p>Like us on Facebook to stay up to date with updates and news</p>
+<p><div class="fb-like" data-href="http://facebook.com/studytonight" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div></p>
+</div>
+
+</div> 
+</div><!--Row Ends-->
+</div><!-- Container Ends here--> 
+</div>
+
+       
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39722043-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<div id="footer">
+<div class="container">
+<div id="footer-box">
+
+<div id="footer-box-right">Check Out :  
+<a href="../library"><span class="label">Library</span></a>&nbsp;&nbsp;
+<a href="../online-courses"><span class="label">Video Courses</span></a>&nbsp;&nbsp;
+<a href="../studyroom"><span class="label">Studyroom</span></a>&nbsp;&nbsp;
+<a href="../flashcards"><span class="label">Flashcards</span></a>&nbsp;&nbsp;
+</div>
+
+<div id="footer-box-left">
+
+<p>&copy; Studytonight 2014 &middot; <span><img src="../css/resource/icon-heart-small.png"/>Handcrafted with Love</span></p>
+
+<p><a href="../about">About Us</a> &middot; <a href="../suggest">Suggest</a> &middot; <a href="../terms">Terms</a> &middot; <a href="../contact">Contact Us</a> &middot; <a href="../collaborate">Collaborate</a> &middot; <a href="../authors.1">Authors</a> &middot; <a href="http://studytonight.tumblr.com/">Blog</a></p>
+
+
+</div>
+
+</div>  <!-- /footer-box -->
+<div class="row">
+<div class="span12 center">
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive Footer Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6137246359299957"
+     data-ad-slot="1965829825"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+</div> <!-- /container -->
+</div>  <!-- /footer -->
+  </body>
+</html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Auto SMS reply Application | Android App Tutorial | Studytonight</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Tutorial for Beginners to Learn How to develop an Android App to send auto reply to Text Messages using MIT AppInventor Tool"/>
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Le styles -->
+<link href="../css/bootstrap.css" rel="stylesheet">
+<link rel="icon" type="image/png" href="../css/resource/favicon.png">
+
+
+</head>
+<body>
+
+<style>
+
+.dropdown:hover ul{
+    display:block;
+}
+.dropdown ul { 
+    display: none;  
+    position:absolute;
+    background: rgba(0, 0, 0, 0.80); 
+    width: 150px;   
+    list-style-type:none;
+    padding:10px;
+} 
+.dropdown ul li{
+    padding:4px;
+}
+.dropdown ul li a{ 
+    line-height:30px;
+    cursor:pointer;
+    text-decoration:none;
+    color:white;
+} 
+.dropdown ul li a:hover{
+   color:orange;
+} 
+.dropdown ul.second
+{
+    left: 300px;
+}
+
+</style>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=183470395085546";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="navbar navbar-inverse navbar-fixed-top">
+<div class="navbar-inner">
+<div class="nav-container">
+<a class="brand" href="../index.html" title="Take me Home :)"><img id="brand-icon" src="../css/resource/st-icon.png" alt="studytonight logo"/></a>
+
+<!-- <font color="orange">Study</font>tonight<sup><span id="beta">&#946;eta</span></sup> --> 
+
+<ul class="nav navbar-nav nav-left-responsive">
+<li><a href="http://studytonight.com/online-courses/">VIDEO PLAYLISTS</a></li>
+<li class="dropdown"><a href="http://studytonight.com/library/">TUTORIALS</a>
+
+	<ul class="first">
+            <li><a href="../android-app-using-mit-appinventor">ANDROID</a></li>
+            <li><a href="../maven">APACHE MAVEN</a></li>
+            <li><a href="../c">C LANGUAGE</a></li>
+            <li><a href="../cpp.1">C++</a></li>
+            <li><a href="../computer-networks">COMPUTER NETWORKS</a></li>
+            <li><a href="../java">CORE JAVA</a></li>
+      </ul>
+      <ul class="second">
+      	    <li><a href="../dbms">DBMS</a></li>
+            <li><a href="../data-structures">DATA STRUCTURE</a></li>
+            <li><a href="../jenkins">JENKINS</a></li>
+            <li><a href="../jsp">JSP</a></li>
+            <li><a href="../operating-system">OPERATING SYSTEM</a></li>
+            <li><a href="../servlet">SERVLET</a></li>
+       </ul>
+
+</li>
+<li><a href="http://studytonight.com/studyroom/">Q &amp; A FORUM</a></li>
+<li><a href="http://studytonight.com/tests/">TESTS</a></li>
+<li><a href="http://studytonight.com/code/">HTML COURSE<sup id='beta'>NEW</sup></a></li>
+</ul>
+
+
+<ul class="nav nav-fb-responsive">
+<li class="nav-header">
+<div class="fb-like" data-href="http://facebook.com/studytonight" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
+</li>
+</ul>
+
+
+<ul class="nav pull-right-menuoption nav-right-responsive">
+<li>
+<form class="navbar-search" action="http://www.studytonight.com/search.php" method="GET"> 
+<table>
+<tr>
+<td><input type="text" name="q" maxlength="255" value="" class="search-query span2" placeholder="Search" title="Search Studytonight for Lessons and Topics"/></td>
+</tr>
+</table>
+</form>
+</li>
+<li><a href="../login">LogIn</a></li>
+<li><a style="font-weight:bold;color:#f84906;" href="../register">SignUp</a></li>
+<li><a href="../suggest">Suggest</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div style="float:right;margin-right:100px;">
+<div class="bookmark-responsive">
+<div class="bookmark-ribbon traditional font-calibri">
+<a href="../collaborate" target="_blank"><div id="bookmark-text">
+<div>WRITE</div><div>FOR US &amp;</div><div>GET PAID!</div>
+</div></a>
+</div></div></div>
+
+<!--  Event Bannner Space
+
+<div class="container">
+<div class="row">
+<div class="span12"><a href="http://studytonight.com/event"><img src="http://studytonight.com/css/codetonight-banner.png" alt="Codetonight for Java Programmers" title="Click to Register for Codetonight"/></a></div>
+</div></div> --><div class="row">
+<div class="head-bar-android">
+  <div class="container">
+	<div id="subject-name">
+	ANDROID APP DEVELOMENT
+	</div>
+   </div>
+<div id="subject-info"> <div class="container">
+
+<div id="sm-button">
+<!-- AddThis Button BEGIN -->
+<div class="addthis">
+<div class="addthis_toolbox addthis_default_style">
+<a class="addthis_button_facebook"></a>
+<a class="addthis_button_twitter"></a>
+<script type="text/javascript">
+<!--
+document.write('<a class="addthis_button_google_plusone" g:plusone:count="false"></a>');
+//-->
+</script>
+<a class="addthis_button_linkedin"></a>
+<a class="addthis_button_email"></a>
+
+<!-- <a class="addthis_button_compact"></a> -->
+
+</div>
+<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4fcb15e01d1a671c"></script>
+</div>
+<!-- AddThis Button END -->
+
+</div>
+<div>"Google Play is home to more than 1.3 million apps, it&apos;s time you create one too."</div>
+
+</div> </div>
+
+</div>
+</div><!-- Common sub nav bar for all the lesson page, currently holding Google Adsense Code -->
+
+<div class="center plain-text-ad-style" style="margin-bottom:10px;">
+<div class="container">
+<div class="row">
+<div class="span12">
+	<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Sidebar Responsive Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6137246359299957"
+     data-ad-slot="5741724623"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>	
+</div>
+</div>
+<div class="container">
+<div class="row">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="../js/jquery.tipsy.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function() {
+$('.sidebar-social-button').tipsy({gravity: 'e'});
+
+$('#slide-toggle-sidebar').on('click', function(){
+        $('#sidebar-menu').css('width','100%');
+	$('#sidebar-menu').slideToggle();
+	return false;
+});
+return false;
+});
+</script>
+<link href="../css/tipsy_title.css" rel="stylesheet">
+
+<div class="span3">
+
+<div class="sidebar-collpsed-responsive">
+<a href="creating-auto-sms-app-using-app-inventor#" id="slide-toggle-sidebar"><span class="pull-right"><img src="../css/resource/collapsed-menu.png" alt="Menu"/></span><span>SEE THE INDEX</span></a>
+</div>
+
+<div id="sidebar-menu">
+<div class="sidebar-social-button" title="Share this Lesson with your friends">
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style">
+<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+<a class="addthis_counter addthis_pill_style"></a>
+</div>
+<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4fcb15e01d1a671c"></script>
+<!-- AddThis Button END -->
+</div>
+<hr/>
+<ul class="sidebar">
+<li class="main"><b>Creating your First App</b></li>
+<li><a href="introduction-to-android-app-development">Introduction to App Development</a></li>
+<li><a href="setting-up-environment">Setting Up Environment</a></li>
+<li><a href="idea-for-first-app">Idea of our first App</a></li>
+<li><a href="designing-interface-for-our-first-app">Designing Interface of our App</a></li>
+<li><a href="adding-behaviour-to-components">Adding Behaviour to Components of App</a></li>
+<li><a href="testing-our-application">Testing our First App</a></li>
+
+<li class="main"><b>Know more about App Inventor</b></li>
+<li><a href="exploring-the-app-inventor-designer">App Inventor Designer</a></li>
+<li><a href="app-inventor-block-editor">App Inventor Block Editor</a></li>
+
+
+<li class="main"><b>One Applcation every Day</b></li>
+<li><a href="creating-theft-alarm-app-using-app-inventor">Creating Theft Alarm App</a></li>
+<li><a href="creating-easy-call-app-using-app-inventor">Shake To Call App</a></li>
+<li><a href="creating-auto-sms-app-using-app-inventor">Auto SMS reply App</a></li>
+<li><a href="uploading-app-to-google-play">Upload App to Google Play</a></li>
+<li><a href="changing-icon-of-app-inventor-app">Changing the Default Icon of App</a></li>
+<li><a href="asking-confirmation-before-user-exits">Confirmation Notification on Exit </a></li>
+
+</ul>
+<hr/>
+
+<br/>
+<p style="margin-left:2px;">
+
+<script id="mNCC" language="javascript">  medianet_width='200';  medianet_height= '200';  medianet_crid='187662268';  </script>  <script id="mNSC" src="http://contextual.media.net/nmedianet.js?cid=8CUK82SPR" language="javascript"></script>
+</p>
+</div>
+</div><div class="span9">
+<div id="body-content">
+<h2>Auto SMS reply Application</h2>
+<p>The purpose of this app is seen as the utility to work as a SMS assistant for your phone. Many a times when we are on the road or in meeting, or in some important conversation and unable to respond to incoming text messages in such a situation it is handy to set a custom message and it will be delivered to the number from which we will get next text. You can use to during sleep as well, so that you can inform your senders that you are in sleep and will respond to them after you wake up.</p>
+<hr/>
+<h4>GUI Requirements</h4>
+<p>Here as a part of GUI we will be having a text box where user can enter message text to save it to local database. A button will be there to perform the action of saving text to database. A complete list of various other components is mentioned below.</p>
+<p>We will be requiring following components for this project.
+</p>
+<table class="table table-bordered">
+<tr><th>Component Name</th><th>Purpose</th><th>Location</th></tr>
+<tr><td>Horizontal Arrangement</td><td>To arrange the child components horizontally</td><td>Palette&nbsp;&rarr;&nbsp;Layout&nbsp;&rarr;&nbsp;Horizontal Arrangement</td></tr>
+<tr><td>Label</td><td>To display a label</td><td>Palette&nbsp;&rarr;&nbsp;User Interface&nbsp;&rarr;&nbsp;Label</td></tr>
+<tr><td>Text Box</td><td>To receive input from the user</td><td>Palette&nbsp;&rarr;&nbsp;User Interface&nbsp;&rarr;&nbsp;Text Box</td></tr>
+<tr><td>Button</td><td>To confirm the user choice</td><td>Palette&nbsp;&rarr;&nbsp;User Interface&nbsp;&rarr;&nbsp;Button</td></tr>
+<tr><td>Tiny Database</td><td>To store the phone number locally</td><td>Palette&nbsp;&rarr;&nbsp;Database&nbsp;&rarr;&nbsp;Tinydb</td></tr>
+<tr><td>Texting</td><td>To control the SMS related functionality</td><td>Palette&nbsp;&rarr;&nbsp;Social&nbsp;&rarr;&nbsp;Phone Call</td></tr>
+</table>
+<hr>
+<h4>Steps for Creating the Application</h4>
+<ol class="content">
+<li>Drag and drop the components mentioned above to the viewer.</li>
+<li>Visible components will be visible to you while the non-visible components will be located beneath the viewer under tag “Non-visible”.</li>
+<li>Label and text box you need to put within the horizontal arrangement to keep them aligned.</li>
+<li>Here you might not be clearing with the notifier component, what it is and how it does. Once we reach the blocks editor you get to know the reason behind using it.</li>
+<li>If you have dragged and placed everything, the layout will look something like this.
+<p class="center"><img src="images/auto-sms-reply-app-1.png" alt="Shake Phone to Make call App"/></p>
+<p class="center"><img src="images/auto-sms-reply-app-2.png" alt="Shake Phone to Make call App"/></p></li>
+<li>Make the necessary property changes like we did in changing the text property for label and button components.</li>
+<li>We do not have any media usage so we need not to upload any image or sound to our application.</li>
+<li>So this way your graphical user interface is ready. This is exactly how the application will look like after the installation.</li>
+</ol>
+<hr/>
+<h4>Adding Behaviour to the Blocks</h4>
+<p>Now we will be heading towards the blocks editor to define the behaviors so let’s discuss what is the actual functionality that we are expecting from our application?</p>
+<ul class="content">
+<li>Within the app the user should be able to store the automated text which will be delivered to the mobile number attached with each incoming SMS. User will be typing in the text box.</li>
+<li>When any incoming message is received, the application should be able to extract the number attached with the incoming message and send back the automated message. The text will be pre-saved in the database.</li>
+</ul>
+<p>So let’s move on and add these two behaviors using the block editor. I hope you remember how to switch from designer to block editor. There is a button available right above the properties pane to switch between the designer and block editor.</p>
+<hr>
+<h4>Block Editor Blocks</h4>
+<p>I have already prepared the blocks for you. All you need to do is drag the relevant blocks from the left side palette and drop it on the viewer. Arrange the blocks the same way you are seeing in the image. I will explain you each, what it does and how it is called.</p>
+<p class="center"><img src="images/auto-sms-reply-app-3.png" alt="Shake Phone to Make call App"/></p>
+<ol class="content">
+<li>First block is for texting component. As you can see, the texting component has two inputs attached with it namely “number” and “message Text”. Both these inputs are extracted from the incoming message.</li>
+<li>Text component require a phone number and message text to complete the SMS sending action. The number we have already received as input and the text we will be fetching from the database.</li>
+<li>Second block is for the save button. Once the user will be having number typed in the text box and presses the save button it should save that number into the database.</li>
+</ol>
+<p>Now you have done with the block editor too. Next we will move to download and install the app on your phone to check how it is working.</p>
+<hr>
+<h4>Packaging and Testing</h4>
+<p>To test the app you need to get it on your phone. First you have to download the application to your computer and then move it to your phone via Bluetooth or USB cable. I’ll tell you how to download it.</p>
+<ol class="content">
+<li>On the top row click on the “Build” button. It will show you option to download the apk to your computer.</li>
+<li>Downloading will show the progress and after successful download the application will be placed to the download folder of your directory or the preferred location you have set for your downloading.</li>
+<li>Now you need to get this apk file to your mobile phone either via Bluetooth or via USB cable. Once you have placed the apk file to your SD card you need to install it. Follow the on screen instructions to install it. You might get some notification or warning saying install from un-trusted source. Allow this from the settings and after successful installation you will see the icon of your application in the menu of your mobile. Here you will see the default icon which can be changed and we will tell you as we move ahead in this course.</li>
+</ol>
+<p>I hope your application is working exactly the requirements you have given. Now depending upon your usability and customization you can change various things like image, sound and behavior also.</p>
+<hr/>
+<h4>Debugging the Application</h4>
+<p>We have just created the prototype of the application with very basic functionality and what the user might be interested in? Now comes various cases which require serious care so as not to annoy the user and your app should be able to sustain. Consider the below cases :</p>
+<ol class="content">
+<li>What will happen if the user has not stored any text?</li>
+<li>What if the user have typed the text in the text box but not pressed the save button. Will it be able to send text? Will it be able to send SMS when he next time open the app?</li>
+<li>We are responding to text messages, can we make it to respond to incoming calls as well?</li>
+</ol>
+<p>These are some of the creepiest scenarios that might occur and the user wants your application should respond to the situation with intelligence like if he has given alphabets instead of digits in the number text box and he attempts to save that, he should be alerted that you have given wrong format of numbers so that he can correct that. </p>
+<p>Think over about all these scenarios, how you can integrate these into the application? Do ask me if you fail to accomplish any of the above cases.</p>
+
+<hr/>
+<div>
+<ul class="pager">
+<li class="previous">
+<a href="creating-easy-call-app-using-app-inventor">&larr; Prev</a>
+</li>
+<li class="next">
+<a href="uploading-app-to-google-play">Next &rarr;</a>
+</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div><!-- Container Ends here--> 
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39722043-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<div id="footer">
+<div class="container">
+<div id="footer-box">
+
+<div id="footer-box-right">Check Out :  
+<a href="../library"><span class="label">Library</span></a>&nbsp;&nbsp;
+<a href="../online-courses"><span class="label">Video Courses</span></a>&nbsp;&nbsp;
+<a href="../studyroom"><span class="label">Studyroom</span></a>&nbsp;&nbsp;
+<a href="../flashcards"><span class="label">Flashcards</span></a>&nbsp;&nbsp;
+</div>
+
+<div id="footer-box-left">
+
+<p>&copy; Studytonight 2014 &middot; <span><img src="../css/resource/icon-heart-small.png"/>Handcrafted with Love</span></p>
+
+<p><a href="../about">About Us</a> &middot; <a href="../suggest">Suggest</a> &middot; <a href="../terms">Terms</a> &middot; <a href="../contact">Contact Us</a> &middot; <a href="../collaborate">Collaborate</a> &middot; <a href="../authors.1">Authors</a> &middot; <a href="http://studytonight.tumblr.com/">Blog</a></p>
+
+
+</div>
+
+</div>  <!-- /footer-box -->
+<div class="row">
+<div class="span12 center">
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive Footer Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6137246359299957"
+     data-ad-slot="1965829825"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+</div> <!-- /container -->
+</div>  <!-- /footer -->
+</body>
+</html>

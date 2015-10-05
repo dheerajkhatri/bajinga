@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Virtual Memory in OS | Operating System Tutorial | Studytonight</title>
+<meta name="description" content="Virtual Memory is a space where large programs can store themselves in form of pages while their execution and only the required pages or portions of processes are loaded into the main memory">
+<meta name="keywords" content="Operating System lessons, Operating System Tutorial, OS tutorial, OS lessons, Operating System Beginners, Thrashing in OS, Virtual Memory, Demand Paging, Page Fault, Pure Demand Paging, LRU Page Replacement, Page replacement, Free Frames"/>
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Le styles -->
+<link href="../css/bootstrap.css" rel="stylesheet">
+<link rel="icon" type="image/png" href="../css/resource/favicon.png">
+
+
+</head>
+<body>
+
+<style>
+
+.dropdown:hover ul{
+    display:block;
+}
+.dropdown ul { 
+    display: none;  
+    position:absolute;
+    background: rgba(0, 0, 0, 0.80); 
+    width: 150px;   
+    list-style-type:none;
+    padding:10px;
+} 
+.dropdown ul li{
+    padding:4px;
+}
+.dropdown ul li a{ 
+    line-height:30px;
+    cursor:pointer;
+    text-decoration:none;
+    color:white;
+} 
+.dropdown ul li a:hover{
+   color:orange;
+} 
+.dropdown ul.second
+{
+    left: 300px;
+}
+
+</style>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=183470395085546";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="navbar navbar-inverse navbar-fixed-top">
+<div class="navbar-inner">
+<div class="nav-container">
+<a class="brand" href="../index.html" title="Take me Home :)"><img id="brand-icon" src="../css/resource/st-icon.png" alt="studytonight logo"/></a>
+
+<!-- <font color="orange">Study</font>tonight<sup><span id="beta">&#946;eta</span></sup> --> 
+
+<ul class="nav navbar-nav nav-left-responsive">
+<li><a href="http://studytonight.com/online-courses/">VIDEO PLAYLISTS</a></li>
+<li class="dropdown"><a href="http://studytonight.com/library/">TUTORIALS</a>
+
+	<ul class="first">
+            <li><a href="../android-app-using-mit-appinventor">ANDROID</a></li>
+            <li><a href="../maven">APACHE MAVEN</a></li>
+            <li><a href="../c">C LANGUAGE</a></li>
+            <li><a href="../cpp.1">C++</a></li>
+            <li><a href="../computer-networks">COMPUTER NETWORKS</a></li>
+            <li><a href="../java">CORE JAVA</a></li>
+      </ul>
+      <ul class="second">
+      	    <li><a href="../dbms">DBMS</a></li>
+            <li><a href="../data-structures">DATA STRUCTURE</a></li>
+            <li><a href="../jenkins">JENKINS</a></li>
+            <li><a href="../jsp">JSP</a></li>
+            <li><a href="../operating-system">OPERATING SYSTEM</a></li>
+            <li><a href="../servlet">SERVLET</a></li>
+       </ul>
+
+</li>
+<li><a href="http://studytonight.com/studyroom/">Q &amp; A FORUM</a></li>
+<li><a href="http://studytonight.com/tests/">TESTS</a></li>
+<li><a href="http://studytonight.com/code/">HTML COURSE<sup id='beta'>NEW</sup></a></li>
+</ul>
+
+
+<ul class="nav nav-fb-responsive">
+<li class="nav-header">
+<div class="fb-like" data-href="http://facebook.com/studytonight" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
+</li>
+</ul>
+
+
+<ul class="nav pull-right-menuoption nav-right-responsive">
+<li>
+<form class="navbar-search" action="http://www.studytonight.com/search.php" method="GET"> 
+<table>
+<tr>
+<td><input type="text" name="q" maxlength="255" value="" class="search-query span2" placeholder="Search" title="Search Studytonight for Lessons and Topics"/></td>
+</tr>
+</table>
+</form>
+</li>
+<li><a href="../login">LogIn</a></li>
+<li><a style="font-weight:bold;color:#f84906;" href="../register">SignUp</a></li>
+<li><a href="../suggest">Suggest</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div style="float:right;margin-right:100px;">
+<div class="bookmark-responsive">
+<div class="bookmark-ribbon traditional font-calibri">
+<a href="../collaborate" target="_blank"><div id="bookmark-text">
+<div>WRITE</div><div>FOR US &amp;</div><div>GET PAID!</div>
+</div></a>
+</div></div></div>
+
+<!--  Event Bannner Space
+
+<div class="container">
+<div class="row">
+<div class="span12"><a href="http://studytonight.com/event"><img src="http://studytonight.com/css/codetonight-banner.png" alt="Codetonight for Java Programmers" title="Click to Register for Codetonight"/></a></div>
+</div></div> -->
+<div class="row">
+		<div class="head-bar-os">
+		<div class="container">
+			<div id="subject-name">
+				OPERATING SYSTEM
+			</div>
+		</div>
+			
+			<div id="subject-info"><div class="container">
+				<div id="sm-button">		
+
+				<!-- AddThis Button BEGIN -->
+				<div class="addthis">
+				<div class="addthis_toolbox addthis_default_style">
+				<a class="addthis_button_facebook"></a>
+				<a class="addthis_button_twitter"></a>
+<script type="text/javascript">
+<!--
+document.write('<a class="addthis_button_google_plusone" g:plusone:count="false"></a>');
+//-->
+</script>
+				<a class="addthis_button_linkedin"></a>
+				<a class="addthis_button_email"></a>
+				<!-- <a class="addthis_button_compact"></a> -->
+
+				</div>
+<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4fcb15e01d1a671c"></script>
+				</div>
+<!-- AddThis Button END -->
+
+				</div> <!-- sm-button ends -->
+<div>" Operating System allows you to communicate with the computer without knowing how to speak the computer&apos;s language."</div>
+
+</div></div> <!-- subject-info ends -->
+
+</div>
+</div>
+<!-- Common sub nav bar for all the lesson page, currently holding Google Adsense Code -->
+
+<div class="center plain-text-ad-style" style="margin-bottom:10px;">
+<div class="container">
+<div class="row">
+<div class="span12">
+	<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Sidebar Responsive Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6137246359299957"
+     data-ad-slot="5741724623"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>	
+</div>
+</div>
+
+<div class="container">
+
+<div class="row">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="../js/jquery.tipsy.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function() {
+$('.sidebar-social-button').tipsy({gravity: 'e'});
+
+$('#slide-toggle-sidebar').on('click', function(){
+        $('#sidebar-menu').css('width','100%');
+	$('#sidebar-menu').slideToggle();
+	return false;
+});
+
+});
+</script>
+<link href="../css/tipsy_title.css" rel="stylesheet">
+
+<div class="span3">
+
+<div class="sidebar-collpsed-responsive">
+<a href="virtual-memory#" id="slide-toggle-sidebar"><span class="pull-right"><img src="../css/resource/collapsed-menu.png" alt="Menu"/></span><span>SEE THE INDEX</span></a>
+</div>
+
+<div id="sidebar-menu">
+<div class="sidebar-social-button" title="Share this Lesson with your friends">
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style">
+<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+<a class="addthis_counter addthis_pill_style"></a>
+</div>
+<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4fcb15e01d1a671c"></script>
+<!-- AddThis Button END -->
+</div>
+<hr/>
+<ul class="sidebar">
+<li class="main">Operating System</li>
+<li><a href="introduction-operating-systems">Introduction to Operating System</a></li>
+<li><a href="evolution-of-os">Evolution of Operating System</a></li>
+<li><a href="types-of-os">Types of Operating System</a></li>
+
+<li class="main">Process and Multithreading</li>
+<li><a href="operating-system-processes">Operating System Processes</a></li>
+<li><a href="process-scheduling">Process Scheduling</a></li>
+<li><a href="cpu-scheduling">CPU Scheduling</a></li>
+<li><a href="multithreading">Introduction to Threads</a></li>
+<li><a href="process-synchronization">Process Synchronization</a></li>
+<li><a href="classical-synchronization-problems">Classical Synchronization Problems</a></li>
+<li><a href="deadlocks">Deadlocks</a></li>
+
+<li class="main">Memory Management</li>
+<li><a href="memory-management">Memory Management</a></li>
+<li><a href="virtual-memory">Virtual Memory</a></li>
+<li><a href="file-system">File System</a></li>
+
+</ul>
+<hr/>
+<div class="sidebar-info-box">
+<div class="lessbold-title">Test Yourself !</div>
+<br/><p>If you have studied all the lessons of Operating Systems, then evaluate yourself by taking these tests.</p>
+<p><a href="http://studytonight.com/operating-system/tests" class="btn btn-success btn-block">Take Tests</a></p>
+</div>
+<br/>
+<p style="margin-left:2px;">
+<script id="mNCC" language="javascript">  medianet_width='200';  medianet_height= '200';  medianet_crid='187662268';  </script>  <script id="mNSC" src="http://contextual.media.net/nmedianet.js?cid=8CUK82SPR" language="javascript"></script>
+</p>
+</div>
+</div>
+<div class="span9">
+<div id="body-content">
+<h3>Virtual Memory</h3> 
+<p>Virtual Memory is a space where large programs can store themselves in form of pages while their execution and only the required pages or portions of processes are loaded into the main memory. This technique is useful as large virtual memory is provided for user programs when a very small physical memory is there.</p>
+<p>In real scenarios, most processes never need all their pages at once, for following reasons :</p>
+<ul class="content">
+<li>Error handling code is not needed unless that specific error occurs, some of which are quite rare.</li>
+<li>Arrays are often over-sized for worst-case scenarios, and only a small fraction of the arrays are actually used in practice.</li>
+<li>Certain features of certain programs are rarely used.</li>
+</ul><br/>
+<p><b>Benefits of having Virtual Memory :</b></p>
+<ol class="content">
+<li>Large programs can be written, as virtual space available is huge compared to physical memory.</li>
+<li>Less I/O required, leads to faster and easy swapping of processes.</li>
+<li>More physical memory available, as programs are stored on virtual memory, so they occupy very less space on actual physical memory.</li>
+</ol>
+<hr/>
+<h4>Demand Paging</h4>
+<p>The basic idea behind demand paging is that when a process is swapped in, its pages are not swapped in all at once. Rather they are swapped in only when the process needs them(On demand). This is termed as lazy swapper, although a pager is a more accurate term.</p>
+<p class="center"><img src="images/demand-paging.png" alt="Demand Paging"/></p>
+<p>Initially only those pages are loaded which will be required the process immediately.</p>
+<p>The pages that are not moved into the memory, are marked as invalid in the page table. For an invalid entry the rest of the table is empty. In case of pages that are loaded in the memory, they are marked as valid along with the information about where to find the swapped out page.</p>
+<p>When the process requires any of the page that is not loaded into the memory, a page fault trap is triggered and following steps are followed,</p>
+<ol class="content">
+<li>The memory address which is requested by the process is first checked, to verify the request made by the process.</li>
+<li>If its found to be invalid, the process is terminated.</li>
+<li>In case the request by the process is valid, a free frame is located, possibly from a free-frame list, where the required page will be moved.</li>
+<li>A new operation is scheduled to move the necessary page from disk to the specified memory location. ( This will usually block the process on an I/O wait, allowing some other process to use the CPU in the meantime. )</li>
+<li>When the I/O operation is complete, the process&apos;s page table is updated with the new frame number, and the invalid bit is changed to valid.</li>
+<li>The instruction that caused the page fault must now be restarted from the beginning.</li>
+</ol>
+<p>There are cases when no pages are loaded into the memory initially, pages are only loaded when demanded by the process by generating page faults. This is called <b>Pure Demand Paging</b>.</p>
+<p>
+The only major issue with Demand Paging is, after a new page is loaded, the process starts execution from the beginning. Its is not a big issue for small programs, but for larger programs it affects performance drastically.</p>
+<hr/>
+<h4>Page Replacement</h4>
+<p>As studied in Demand Paging, only certain pages of a process are loaded initially into the memory. This allows us to get more number of processes into the memory at the same time. but what happens when a process requests for more pages and no free memory is available to bring them in. Following steps can be taken to deal with this problem :</p>
+<ol class="content">
+<li>Put the process in the wait queue, until any other process finishes its execution thereby freeing frames.</li>
+<li>Or, remove some other process completely from the memory to free frames.</li>
+<li>Or, find some pages that are not being used right now, move them to the disk to get free frames. This technique is called <b>Page replacement</b> and is most commonly used. We have some great algorithms to carry on page replacement efficiently.</li>
+</ol><br/>
+<h4>Basic Page Replacement</h4>
+<ul class="content">
+<li>Find the location of the page requested by ongoing process on the disk.</li>
+<li>Find a free frame. If there is a free frame, use it. If there is no free frame, use a page-replacement algorithm to select any existing frame to be replaced, such frame is known as <b>victim frame</b>.</li>
+<li>Write the victim frame to disk. Change all related page tables to indicate that this page is no longer in memory.</li>
+<li>Move the required page and store it in the frame. Adjust all related page and frame tables to indicate the change.</li>
+<li>Restart the process that was waiting for this page.</li>
+</ul><br/>
+
+<h4>FIFO Page Replacement</h4>
+<ul class="content">
+<li>A very simple way of Page replacement is FIFO (First in First Out)</li>
+<li>As new pages are requested and are swapped in, they are added to tail of a queue and the page which is at the head becomes the victim.</li>
+<li>Its not an effective way of page replacement but can be used for small systems.</li>
+</ul><br/>
+
+<h4>LRU Page Replacement</h4>
+<p>Below is a video, which will explain LRU Page replacement algorithm in details with an example. </p><br/>
+<p class="center"><iframe width="650" height="360" src="http://www.youtube.com/embed/CMsn2-diunc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></p>
+<hr/>
+<h4>Thrashing</h4>
+<p>A process that is spending more time paging than executing is said to be thrashing. In other words it means, that the process doesn&apos;t have enough frames to hold all the pages for its execution, so it is swapping pages in and out very frequently to keep executing. Sometimes, the pages which will be required in the near future have to be swapped out.</p>
+<p>Initially when the CPU utilization is low, the process scheduling mechanism, to increase the level of multiprogramming loads multiple processes into the memory at the same time, allocating a limited amount of frames to each process. As the memory fills up, process starts to spend a lot of time for the required pages to be swapped in, again leading to low CPU utilization because most of the proccesses are waiting for pages. Hence the scheduler loads more processes to increase CPU utilization, as this continues at a point of time the complete system comes to a stop.</p>
+<p class="center"><img src="images/thrashing.png" alt="Thrashing"/></p>
+<p>To prevent thrashing we must provide processes with as many frames as they really need "right now".</p>
+<hr/>
+<div><ul class="pager">
+<li class="previous">
+<a href="memory-management">&larr; Prev</a>
+</li>
+<li class="next">
+<a href="file-system">Next &rarr;</a>
+</li>
+</ul></div>
+</div>
+</div>
+
+</div>
+
+</div><!-- Container Ends here--> 
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39722043-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<div id="footer">
+<div class="container">
+<div id="footer-box">
+
+<div id="footer-box-right">Check Out :  
+<a href="../library"><span class="label">Library</span></a>&nbsp;&nbsp;
+<a href="../online-courses"><span class="label">Video Courses</span></a>&nbsp;&nbsp;
+<a href="../studyroom"><span class="label">Studyroom</span></a>&nbsp;&nbsp;
+<a href="../flashcards"><span class="label">Flashcards</span></a>&nbsp;&nbsp;
+</div>
+
+<div id="footer-box-left">
+
+<p>&copy; Studytonight 2014 &middot; <span><img src="../css/resource/icon-heart-small.png"/>Handcrafted with Love</span></p>
+
+<p><a href="../about">About Us</a> &middot; <a href="../suggest">Suggest</a> &middot; <a href="../terms">Terms</a> &middot; <a href="../contact">Contact Us</a> &middot; <a href="../collaborate">Collaborate</a> &middot; <a href="../authors.1">Authors</a> &middot; <a href="http://studytonight.tumblr.com/">Blog</a></p>
+
+
+</div>
+
+</div>  <!-- /footer-box -->
+<div class="row">
+<div class="span12 center">
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive Footer Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6137246359299957"
+     data-ad-slot="1965829825"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+</div> <!-- /container -->
+</div>  <!-- /footer -->
+</body>
+</html>

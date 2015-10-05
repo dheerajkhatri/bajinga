@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mathematics Trigonometry Beginners Course - Studytonight</title>
+    <meta name="keywords" content="Core java Notes, C++ Notes, C language Notes, Studytonight, Lessons, Notes, Subjects, High School Notes, easy short lessons, Database technology Notes, DBMS, Tutorials, Programming Subjects"/> 
+<meta name="description" content="This Video course will cover all the basics of Trigonometry along with introducing theorems and proofs..">
+<meta property="og:image" content="http://www.studytonight.com/css/resource/favicon.png"/>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="../../css/bootstrap.css" rel="stylesheet">
+    <link href="../../css/docs.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../../css/resource/favicon.png">
+  </head>
+
+  <body>
+
+<style>
+
+.dropdown:hover ul{
+    display:block;
+}
+.dropdown ul { 
+    display: none;  
+    position:absolute;
+    background: rgba(0, 0, 0, 0.80); 
+    width: 150px;   
+    list-style-type:none;
+    padding:10px;
+} 
+.dropdown ul li{
+    padding:4px;
+}
+.dropdown ul li a{ 
+    line-height:30px;
+    cursor:pointer;
+    text-decoration:none;
+    color:white;
+} 
+.dropdown ul li a:hover{
+   color:orange;
+} 
+.dropdown ul.second
+{
+    left: 300px;
+}
+
+</style>
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=183470395085546";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="navbar navbar-inverse navbar-fixed-top">
+<div class="navbar-inner">
+<div class="nav-container">
+<a class="brand" href="../../index.html" title="Take me Home :)"><img id="brand-icon" src="../../css/resource/st-icon.png" alt="studytonight logo"/></a>
+
+<!-- <font color="orange">Study</font>tonight<sup><span id="beta">&#946;eta</span></sup> -->
+
+<ul class="nav navbar-nav nav-left-responsive">
+<li><a href="http://studytonight.com/online-courses/">VIDEO PLAYLISTS</a></li>
+<li class="dropdown"><a href="http://studytonight.com/library/">TUTORIALS</a>
+
+	<ul class="first">
+            <li><a href="../../android-app-using-mit-appinventor">ANDROID</a></li>
+            <li><a href="../../maven">APACHE MAVEN</a></li>
+            <li><a href="../../c">C LANGUAGE</a></li>
+            <li><a href="../../cpp.1">C++</a></li>
+            <li><a href="../../computer-networks">COMPUTER NETWORKS</a></li>
+            <li><a href="../../java">CORE JAVA</a></li>
+      </ul>
+      <ul class="second">
+      	    <li><a href="../../dbms">DBMS</a></li>
+            <li><a href="../../data-structures">DATA STRUCTURE</a></li>
+            <li><a href="../../jenkins">JENKINS</a></li>
+            <li><a href="../../jsp">JSP</a></li>
+            <li><a href="../../operating-system">OPERATING SYSTEM</a></li>
+            <li><a href="../../servlet">SERVLET</a></li>
+       </ul>
+
+</li>
+<li><a href="http://studytonight.com/studyroom/">Q &amp; A FORUM</a></li>
+<li><a href="http://studytonight.com/tests/">TESTS</a></li>
+<li><a href="http://studytonight.com/code/">HTML COURSE<sup id='beta'>NEW</sup></a></li>
+</ul>
+
+
+<ul class="nav nav-fb-responsive">
+<li class="nav-header">
+<div class="fb-like" data-href="http://facebook.com/studytonight" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
+</li>
+</ul>
+
+
+<ul class="nav pull-right-menuoption nav-right-responsive">
+<li>
+<form class="navbar-search" action="http://www.studytonight.com/search.php" method="GET"> 
+<table>
+<tr>
+<td><input type="text" name="q" maxlength="255" value="" class="search-query span2" placeholder="Search" title="Search Studytonight for Lessons and Topics"/></td>
+</tr>
+</table>
+</form>
+</li>
+<li><a href="../../login">LogIn</a></li>
+<li><a style="font-weight:bold;color:#f84906;" href="../../register">SignUp</a></li>
+<li><a href="../../suggest">Suggest</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div style="float:right;margin-right:100px;">
+<div class="bookmark-responsive">
+<div class="bookmark-ribbon traditional font-calibri">
+<a href="../../collaborate" target="_blank"><div id="bookmark-text">
+<div>WRITE</div><div>FOR US &amp;</div><div>GET PAID!</div>
+</div></a>
+</div></div></div>
+<div class="basic-hero-unit">
+<div class="row">
+
+<div id="container-heroinfo-holder">
+<div class="lessbold-title"><div class="center">ONLINE TRIGONOMETRY BEGINNERS COURSE</div></div>
+<div class="container">
+<div class="row"><div class="span12">
+<div class="icon-sharing-button">
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+<a class="addthis_button_facebook"></a>
+<a class="addthis_button_twitter"></a>
+<a class="addthis_button_google_plusone_share"></a>
+<a class="addthis_button_compact"></a><a class="addthis_counter addthis_bubble_style"></a>
+</div>
+<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4fcb15e01d1a671c"></script>
+<!-- AddThis Button END -->
+</div>
+</div></div></div>
+</div>
+</div></div>
+
+<div class="grey-body">
+<div class="container">
+
+<div class="row"> 
+<br/>
+<div class="span9">
+<div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=F21S9Wpi0y8'><img src='http://img.youtube.com/vi/F21S9Wpi0y8/0.jpg' alt='Basic Trigonometry' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:08:45</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=F21S9Wpi0y8'>Basic Trigonometry</a></div><p>An introduction to trigonometric functions: sine, cosine, and tangent.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=G-T_6hCdMQc'><img src='http://img.youtube.com/vi/G-T_6hCdMQc/0.jpg' alt='Basic Trigonometry II' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:12:11</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=G-T_6hCdMQc'>Basic Trigonometry II</a></div><p>A few more examples using SOH CAH TOA</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=ZffZvSH285c'><img src='http://img.youtube.com/vi/ZffZvSH285c/0.jpg' alt='Unit Circle Definition of Trig Functions' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:10:11</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=ZffZvSH285c'>Unit Circle Definition of Trig Functions</a></div><p>Using the unit circle to define the sine, cosine, and tangent functions</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=9zspW8u6kQM'><img src='http://img.youtube.com/vi/9zspW8u6kQM/0.jpg' alt='Radians and degrees' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:09:55</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=9zspW8u6kQM'>Radians and degrees</a></div><p>What a radian is.  Converting radians to degrees and vice versa.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=znR9tW4AiZI'><img src='http://img.youtube.com/vi/znR9tW4AiZI/0.jpg' alt='Using Trig Functions' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:10:02</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=znR9tW4AiZI'>Using Trig Functions</a></div><p>Using Trigonometric functions to solve the sides of a right triangle</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=RoXmKYjpLGk'><img src='http://img.youtube.com/vi/RoXmKYjpLGk/0.jpg' alt='Using Trig Functions Part II' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:08:37</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=RoXmKYjpLGk'>Using Trig Functions Part II</a></div><p>A couple of more examples of using Trig functions to solve the sides of a triangle.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=6Qv_bPlQS8E'><img src='http://img.youtube.com/vi/6Qv_bPlQS8E/0.jpg' alt='The unit circle definition of trigonometric function' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:09:07</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=6Qv_bPlQS8E'>The unit circle definition of trigonometric function</a></div><p>Using the unit circle to extend the SOH CAH TOA definition of the basic trigonometric functions.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=2zoiW4PdVKo'><img src='http://img.youtube.com/vi/2zoiW4PdVKo/0.jpg' alt='Graph of the sine function' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:07:44</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=2zoiW4PdVKo'>Graph of the sine function</a></div><p>Using the unit circle definition of the sine function to make a graph of it.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=QmxMPPkZpME'><img src='http://img.youtube.com/vi/QmxMPPkZpME/0.jpg' alt='Graphs of trig functions' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:10:16</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=QmxMPPkZpME'>Graphs of trig functions</a></div><p>Exploring the graphs of trig functions</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=vHYI93UV5Kg'><img src='http://img.youtube.com/vi/vHYI93UV5Kg/0.jpg' alt='Graphing trig functions' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:09:55</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=vHYI93UV5Kg'>Graphing trig functions</a></div><p>Analyzing the amplitude and periods of the sine and cosine functions.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=NIG3l8oWKYE'><img src='http://img.youtube.com/vi/NIG3l8oWKYE/0.jpg' alt='More trig graphs' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:05:12</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=NIG3l8oWKYE'>More trig graphs</a></div><p>Determining the equations of trig functions by inspecting their graphs.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=yvW5l9W1hgE'><img src='http://img.youtube.com/vi/yvW5l9W1hgE/0.jpg' alt='Determining the equation of a trigonometric function' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:09:51</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=yvW5l9W1hgE'>Determining the equation of a trigonometric function</a></div><p>Determining the amplitude and period of sine and cosine functions.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=OLzXqIqZZz0'><img src='http://img.youtube.com/vi/OLzXqIqZZz0/0.jpg' alt='Trigonometric Identities' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:09:10</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=OLzXqIqZZz0'>Trigonometric Identities</a></div><p>Introduction to trigonometric identities</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=ZWSoyUxAQW0'><img src='http://img.youtube.com/vi/ZWSoyUxAQW0/0.jpg' alt='Trig identities part 2 (parr 4 if you watch the proofs)' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:09:56</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=ZWSoyUxAQW0'>Trig identities part 2 (parr 4 if you watch the proofs)</a></div><p>More playing around with trig identities</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=JXCiFbEMTZ4'><img src='http://img.youtube.com/vi/JXCiFbEMTZ4/0.jpg' alt='Trig identies part 3 (part 5 if you watch the proofs)' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:08:35</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=JXCiFbEMTZ4'>Trig identies part 3 (part 5 if you watch the proofs)</a></div><p>Continuation of the playing around with trig identities</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=zw0waJCEc-w'><img src='http://img.youtube.com/vi/zw0waJCEc-w/0.jpg' alt='Proof: sin(a+b)  = (cos a)(sin b) + (sin a)(cos b)' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:09:48</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=zw0waJCEc-w'>Proof: sin(a+b)  = (cos a)(sin b) + (sin a)(cos b)</a></div><p>Proof of the trig identity sin(a+b)  = (cos a)(sin b) + (sin a)(cos b)</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=V3-xCPDzQ1Q'><img src='http://img.youtube.com/vi/V3-xCPDzQ1Q/0.jpg' alt='Proof: cos(a+b) = (cos a)(cos b)-(sin a)(sin b)' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:09:22</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=V3-xCPDzQ1Q'>Proof: cos(a+b) = (cos a)(cos b)-(sin a)(sin b)</a></div><p>Proof of the trig identity: cos(a+b) = (cos a)(cos b)-(sin a)(sin b)</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=pGaDcOMdw48'><img src='http://img.youtube.com/vi/pGaDcOMdw48/0.jpg' alt='Law of cosines' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:09:26</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=pGaDcOMdw48'>Law of cosines</a></div><p>Introduction to the law of cosines to solve for a side of a triangle when 2 sides and an angle are known.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=APNkWrD-U1k'><img src='http://img.youtube.com/vi/APNkWrD-U1k/0.jpg' alt='Proof: Law of Sines' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:06:32</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=APNkWrD-U1k'>Proof: Law of Sines</a></div><p>A simple proof of the Law of Sines</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=1vamogV81Y8'><img src='http://img.youtube.com/vi/1vamogV81Y8/0.jpg' alt='Trigonometry word problems (part 1)' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:09:56</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=1vamogV81Y8'>Trigonometry word problems (part 1)</a></div><p>The first part of a problem when the captain of a ship goes off track.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=4CNnPgabrLE'><img src='http://img.youtube.com/vi/4CNnPgabrLE/0.jpg' alt='Trigonometry word problems (part 2)' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:02:51</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=4CNnPgabrLE'>Trigonometry word problems (part 2)</a></div><p>The second part of the problem of the off-track ship captain</p></div></div></div><!--span9 Ends-->
+
+<div class="span3">
+<ul class="nav nav-tabs nav-stacked"> 
+<li><a href="../java-spring-framework.1">Spring Tutorial </a></li>
+<li><a href="../junit/index.html">JUNIT for Programmers</a></li>     
+<li><a href="http://www.studytonight.com/courses/programming-introduction/">Harvard Programming Introduction</a></li>  
+<li><a href="../javascript/index.html">Javascript by Douglas Crockford</a></li>   
+<li><a href="index.html">Mathematics</a></li>
+<li><a href="../java-struts-framework/index.html">Struts 2 Complete Course</a></li>
+<li><a href="../programming-paradigm/index.html">Introduction to Programming Paradigm</a></li>
+<li><a href="../data-structures/index.html">IIT-Delhi Data Structures Lectures</a></li>
+<li><a href="../android-application/index.html">Android App Development</a></li>
+<li><a href="../jbpm/index.html">Complete Introduction to JBPM</a></li>
+
+</ul> 
+
+<div class="sidebar-info-box-inverse">
+<table>
+<tr><td rowspan="2" style="width:35px;">&nbsp;&nbsp;<img src="http://studytonight.com/css/resource/icon-tip.png" alt="Tip for Test"/></td><td>How to</td></tr>
+<tr><td><a href="http://studytonight.com/collaborate" class="bold-link">Get your Video Lessons listed here</a></td></tr>
+</table>
+</div>
+
+<div class="sidebar-info-box-inverse">
+<div class="lessbold-title">Stay in Touch</div>
+<br/><p>Like us on Facebook to stay up to date with updates and news</p>
+<p><div class="fb-like" data-href="http://facebook.com/studytonight" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div></p>
+</div>
+
+</div> 
+</div><!--Row Ends-->
+</div><!-- Container Ends here--> 
+</div>
+
+       
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39722043-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<div id="footer">
+<div class="container">
+<div id="footer-box">
+
+<div id="footer-box-right">Check Out :  
+<a href="../../library"><span class="label">Library</span></a>&nbsp;&nbsp;
+<a href="../../online-courses"><span class="label">Video Courses</span></a>&nbsp;&nbsp;
+<a href="../../studyroom"><span class="label">Studyroom</span></a>&nbsp;&nbsp;
+<a href="../../flashcards"><span class="label">Flashcards</span></a>&nbsp;&nbsp;
+</div>
+
+<div id="footer-box-left">
+
+<p>&copy; Studytonight 2014 &middot; <span><img src="../../css/resource/icon-heart-small.png"/>Handcrafted with Love</span></p>
+
+<p><a href="../../about">About Us</a> &middot; <a href="../../suggest">Suggest</a> &middot; <a href="../../terms">Terms</a> &middot; <a href="../../contact">Contact Us</a> &middot; <a href="../../collaborate">Collaborate</a> &middot; <a href="../../authors.1">Authors</a> &middot; <a href="http://studytonight.tumblr.com/">Blog</a></p>
+
+
+</div>
+
+</div>  <!-- /footer-box -->
+<div class="row">
+<div class="span12 center">
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive Footer Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6137246359299957"
+     data-ad-slot="1965829825"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+</div> <!-- /container -->
+</div>  <!-- /footer -->
+  </body>
+</html>

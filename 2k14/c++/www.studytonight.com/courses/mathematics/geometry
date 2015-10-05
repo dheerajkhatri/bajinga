@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mathematics Geometry Beginners Course - Studytonight</title>
+    <meta name="keywords" content="Core java Notes, C++ Notes, C language Notes, Studytonight, Lessons, Notes, Subjects, High School Notes, easy short lessons, Database technology Notes, DBMS, Tutorials, Programming Subjects"/> 
+<meta name="description" content="This will take the students through a complete introduction Geometrical figures and related concepts.">
+<meta property="og:image" content="http://www.studytonight.com/css/resource/favicon.png"/>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="../../css/bootstrap.css" rel="stylesheet">
+    <link href="../../css/docs.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../../css/resource/favicon.png">
+  </head>
+
+  <body>
+
+<style>
+
+.dropdown:hover ul{
+    display:block;
+}
+.dropdown ul { 
+    display: none;  
+    position:absolute;
+    background: rgba(0, 0, 0, 0.80); 
+    width: 150px;   
+    list-style-type:none;
+    padding:10px;
+} 
+.dropdown ul li{
+    padding:4px;
+}
+.dropdown ul li a{ 
+    line-height:30px;
+    cursor:pointer;
+    text-decoration:none;
+    color:white;
+} 
+.dropdown ul li a:hover{
+   color:orange;
+} 
+.dropdown ul.second
+{
+    left: 300px;
+}
+
+</style>
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=183470395085546";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="navbar navbar-inverse navbar-fixed-top">
+<div class="navbar-inner">
+<div class="nav-container">
+<a class="brand" href="../../index.html" title="Take me Home :)"><img id="brand-icon" src="../../css/resource/st-icon.png" alt="studytonight logo"/></a>
+
+<!-- <font color="orange">Study</font>tonight<sup><span id="beta">&#946;eta</span></sup> -->
+
+<ul class="nav navbar-nav nav-left-responsive">
+<li><a href="http://studytonight.com/online-courses/">VIDEO PLAYLISTS</a></li>
+<li class="dropdown"><a href="http://studytonight.com/library/">TUTORIALS</a>
+
+	<ul class="first">
+            <li><a href="../../android-app-using-mit-appinventor">ANDROID</a></li>
+            <li><a href="../../maven">APACHE MAVEN</a></li>
+            <li><a href="../../c">C LANGUAGE</a></li>
+            <li><a href="../../cpp.1">C++</a></li>
+            <li><a href="../../computer-networks">COMPUTER NETWORKS</a></li>
+            <li><a href="../../java">CORE JAVA</a></li>
+      </ul>
+      <ul class="second">
+      	    <li><a href="../../dbms">DBMS</a></li>
+            <li><a href="../../data-structures">DATA STRUCTURE</a></li>
+            <li><a href="../../jenkins">JENKINS</a></li>
+            <li><a href="../../jsp">JSP</a></li>
+            <li><a href="../../operating-system">OPERATING SYSTEM</a></li>
+            <li><a href="../../servlet">SERVLET</a></li>
+       </ul>
+
+</li>
+<li><a href="http://studytonight.com/studyroom/">Q &amp; A FORUM</a></li>
+<li><a href="http://studytonight.com/tests/">TESTS</a></li>
+<li><a href="http://studytonight.com/code/">HTML COURSE<sup id='beta'>NEW</sup></a></li>
+</ul>
+
+
+<ul class="nav nav-fb-responsive">
+<li class="nav-header">
+<div class="fb-like" data-href="http://facebook.com/studytonight" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
+</li>
+</ul>
+
+
+<ul class="nav pull-right-menuoption nav-right-responsive">
+<li>
+<form class="navbar-search" action="http://www.studytonight.com/search.php" method="GET"> 
+<table>
+<tr>
+<td><input type="text" name="q" maxlength="255" value="" class="search-query span2" placeholder="Search" title="Search Studytonight for Lessons and Topics"/></td>
+</tr>
+</table>
+</form>
+</li>
+<li><a href="../../login">LogIn</a></li>
+<li><a style="font-weight:bold;color:#f84906;" href="../../register">SignUp</a></li>
+<li><a href="../../suggest">Suggest</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div style="float:right;margin-right:100px;">
+<div class="bookmark-responsive">
+<div class="bookmark-ribbon traditional font-calibri">
+<a href="../../collaborate" target="_blank"><div id="bookmark-text">
+<div>WRITE</div><div>FOR US &amp;</div><div>GET PAID!</div>
+</div></a>
+</div></div></div>
+<div class="basic-hero-unit">
+<div class="row">
+
+<div id="container-heroinfo-holder">
+<div class="lessbold-title"><div class="center">ONLINE BEGINNERS GEOMETRY COURSE</div></div>
+<div class="container">
+<div class="row"><div class="span12">
+<div class="icon-sharing-button">
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+<a class="addthis_button_facebook"></a>
+<a class="addthis_button_twitter"></a>
+<a class="addthis_button_google_plusone_share"></a>
+<a class="addthis_button_compact"></a><a class="addthis_counter addthis_bubble_style"></a>
+</div>
+<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4fcb15e01d1a671c"></script>
+<!-- AddThis Button END -->
+</div>
+</div></div></div>
+</div>
+</div></div>
+
+<div class="grey-body">
+<div class="container">
+
+<div class="row"> 
+<br/>
+<div class="span9">
+<div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=2439OIVBgPg'><img src='http://img.youtube.com/vi/2439OIVBgPg/0.jpg' alt='Introduction to angles (old)' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:09:55</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=2439OIVBgPg'>Introduction to angles (old)</a></div><p>What an angle is.  Angles in a circle.  Complementary and supplementary angles.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=zrqzG6xKa1A'><img src='http://img.youtube.com/vi/zrqzG6xKa1A/0.jpg' alt='Angles (part 2)' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:09:04</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=zrqzG6xKa1A'>Angles (part 2)</a></div><p>More on complementary and supplementary angles.  Introduction to opposite angles.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=NLg6hfoKKlE'><img src='http://img.youtube.com/vi/NLg6hfoKKlE/0.jpg' alt='Angles (part 3)' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:09:47</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=NLg6hfoKKlE'>Angles (part 3)</a></div><p>Angles formed when a transversal intersects parallel lines.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=gRKZaojKeP0'><img src='http://img.youtube.com/vi/gRKZaojKeP0/0.jpg' alt='Angles formed between transversals and parallel lines' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:07:53</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=gRKZaojKeP0'>Angles formed between transversals and parallel lines</a></div><p>Learn more: http://www.khanacademy.org/video?v=gRKZaojKeP0
+Angles of parallel lines</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=0eDwckZOffc'><img src='http://img.youtube.com/vi/0eDwckZOffc/0.jpg' alt='Angles of parallel lines 2' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:05:15</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=0eDwckZOffc'>Angles of parallel lines 2</a></div><p>Angles of parallel lines examples</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=kqU_ymV581c'><img src='http://img.youtube.com/vi/kqU_ymV581c/0.jpg' alt='The Angle Game' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:09:01</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=kqU_ymV581c'>The Angle Game</a></div><p>Using what we know to solve for angles in the Angle Game.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=BI-rtfZVXy0'><img src='http://img.youtube.com/vi/BI-rtfZVXy0/0.jpg' alt='Similar triangles' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:09:34</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=BI-rtfZVXy0'>Similar triangles</a></div><p>Introduction to similar triangles</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=qO2cTx6DwCA'><img src='http://img.youtube.com/vi/qO2cTx6DwCA/0.jpg' alt='Similar triangles (part 2)' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:09:54</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=qO2cTx6DwCA'>Similar triangles (part 2)</a></div><p>More on similar triangles</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=ko-cYG3d6ec'><img src='http://img.youtube.com/vi/ko-cYG3d6ec/0.jpg' alt='Angle Game (part 2)' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:09:49</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=ko-cYG3d6ec'>Angle Game (part 2)</a></div><p>More examples of the Angle Game.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=ALhv3Rlydig'><img src='http://img.youtube.com/vi/ALhv3Rlydig/0.jpg' alt='Acute Right and Obtuse Angles' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:05:33</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=ALhv3Rlydig'>Acute Right and Obtuse Angles</a></div><p>The difference between acute, obtuse and right angles</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=kqqmJiJez6o'><img src='http://img.youtube.com/vi/kqqmJiJez6o/0.jpg' alt='Area and Perimeter' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:12:20</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=kqqmJiJez6o'>Area and Perimeter</a></div><p>Area of rectangles and triangles.  Perimeter of rectangles.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=jyLRpr2P0MQ'><img src='http://img.youtube.com/vi/jyLRpr2P0MQ/0.jpg' alt='Circles: Radius, Diameter and Circumference' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:11:05</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=jyLRpr2P0MQ'>Circles: Radius, Diameter and Circumference</a></div><p>Understanding the relationship between the radius diameter and circumference of a circle.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=tCrDyJsSFok'><img src='http://img.youtube.com/vi/tCrDyJsSFok/0.jpg' alt='Area of a circle' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:06:45</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=tCrDyJsSFok'>Area of a circle</a></div><p>Area of a circle and how it relates to radius and diameter</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=AA6RfgP-AHU'><img src='http://img.youtube.com/vi/AA6RfgP-AHU/0.jpg' alt='The Pythagorean Theorem' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:10:46</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=AA6RfgP-AHU'>The Pythagorean Theorem</a></div><p>Introduction to the Pythagorean Theorem</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=nMhJLn5ives'><img src='http://img.youtube.com/vi/nMhJLn5ives/0.jpg' alt='Pythagorean Theorem II' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:09:36</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=nMhJLn5ives'>Pythagorean Theorem II</a></div><p>More Pythagorean Theorem examples.  Introduction to 45-45-90 triangles.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=tSHitjFIjd8'><img src='http://img.youtube.com/vi/tSHitjFIjd8/0.jpg' alt='45-45-90 Triangles' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:09:30</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=tSHitjFIjd8'>45-45-90 Triangles</a></div><p>Introduction to 45-45-90 Triangles</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=Qwet4cIpnCM'><img src='http://img.youtube.com/vi/Qwet4cIpnCM/0.jpg' alt='Intro to 30-60-90 Triangles' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:09:39</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=Qwet4cIpnCM'>Intro to 30-60-90 Triangles</a></div><p>A few more 45-45-90 examples and an introduction to 30-60-90 triangles.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=3mLUJSoh6i0'><img src='http://img.youtube.com/vi/3mLUJSoh6i0/0.jpg' alt='30-60-90 Triangles II' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:04:49</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=3mLUJSoh6i0'>30-60-90 Triangles II</a></div><p>More examples using 30-60-90 triangles.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=ZqzAOZ9pP9Q'><img src='http://img.youtube.com/vi/ZqzAOZ9pP9Q/0.jpg' alt='Solid Geometry Volume' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:03:56</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=ZqzAOZ9pP9Q'>Solid Geometry Volume</a></div><p>Volume of triangular prisms and cubes</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=gL3HxBQyeg0'><img src='http://img.youtube.com/vi/gL3HxBQyeg0/0.jpg' alt='Cylinder Volume and Surface Area' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:08:07</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=gL3HxBQyeg0'>Cylinder Volume and Surface Area</a></div><p>Finding the volume and surface area of a cylinder</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=MyzGVbCHh5M'><img src='http://img.youtube.com/vi/MyzGVbCHh5M/0.jpg' alt='Inscribed and Central Angles' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:14:16</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=MyzGVbCHh5M'>Inscribed and Central Angles</a></div><p>Showing that an inscribed angle is half of a central angle that subtends the same arc</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=UmiZK6Hgm6c'><img src='http://img.youtube.com/vi/UmiZK6Hgm6c/0.jpg' alt='Area of Inscribed Equilateral Triangle (some basic trig used)' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:11:39</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=UmiZK6Hgm6c'>Area of Inscribed Equilateral Triangle (some basic trig used)</a></div><p>Problem that requires us to figure out the area of an equilateral triangle inscribed in a circle (A little trigonometry used)</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=b0U1NxbRU4w'><img src='http://img.youtube.com/vi/b0U1NxbRU4w/0.jpg' alt='Right Triangles Inscribed in Circles (Proof)' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:05:35</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=b0U1NxbRU4w'>Right Triangles Inscribed in Circles (Proof)</a></div><p>Proof showing that a triangle inscribed in a circle having a diameter as one side is a right triangle</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=YTRimTJ5nX4'><img src='http://img.youtube.com/vi/YTRimTJ5nX4/0.jpg' alt='Area of Diagonal Generated Triangles of Rectangle are Equal' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:04:36</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=YTRimTJ5nX4'>Area of Diagonal Generated Triangles of Rectangle are Equal</a></div><p>Area of Diagonal Generated Triangles of Rectangle are Equal</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=GiGLhXFBtRg'><img src='http://img.youtube.com/vi/GiGLhXFBtRg/0.jpg' alt='Triangle Medians and Centroids' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:08:59</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=GiGLhXFBtRg'>Triangle Medians and Centroids</a></div><p>Seeing that the centroid is 2/3 of the way along every median</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=Vc09LURoMQ8'><img src='http://img.youtube.com/vi/Vc09LURoMQ8/0.jpg' alt='Triangle Medians and Centroids (2D Proof)' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:15:15</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=Vc09LURoMQ8'>Triangle Medians and Centroids (2D Proof)</a></div><p>Showing that the centroid is 2/3 of the way along a median</p></div></div></div><!--span9 Ends-->
+
+<div class="span3">
+<ul class="nav nav-tabs nav-stacked"> 
+<li><a href="../java-spring-framework.1">Spring Tutorial </a></li>
+<li><a href="../junit/index.html">JUNIT for Programmers</a></li>     
+<li><a href="http://www.studytonight.com/courses/programming-introduction/">Harvard Programming Introduction</a></li>  
+<li><a href="../javascript/index.html">Javascript by Douglas Crockford</a></li>   
+<li><a href="index.html">Mathematics</a></li>
+<li><a href="../java-struts-framework/index.html">Struts 2 Complete Course</a></li>
+<li><a href="../programming-paradigm/index.html">Introduction to Programming Paradigm</a></li>
+<li><a href="../data-structures/index.html">IIT-Delhi Data Structures Lectures</a></li>
+<li><a href="../android-application/index.html">Android App Development</a></li>
+<li><a href="../jbpm/index.html">Complete Introduction to JBPM</a></li>
+
+</ul> 
+
+<div class="sidebar-info-box-inverse">
+<table>
+<tr><td rowspan="2" style="width:35px;">&nbsp;&nbsp;<img src="http://studytonight.com/css/resource/icon-tip.png" alt="Tip for Test"/></td><td>How to</td></tr>
+<tr><td><a href="http://studytonight.com/collaborate" class="bold-link">Get your Video Lessons listed here</a></td></tr>
+</table>
+</div>
+
+<div class="sidebar-info-box-inverse">
+<div class="lessbold-title">Stay in Touch</div>
+<br/><p>Like us on Facebook to stay up to date with updates and news</p>
+<p><div class="fb-like" data-href="http://facebook.com/studytonight" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div></p>
+</div>
+
+</div> 
+</div><!--Row Ends-->
+</div><!-- Container Ends here--> 
+</div>
+
+       
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39722043-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<div id="footer">
+<div class="container">
+<div id="footer-box">
+
+<div id="footer-box-right">Check Out :  
+<a href="../../library"><span class="label">Library</span></a>&nbsp;&nbsp;
+<a href="../../online-courses"><span class="label">Video Courses</span></a>&nbsp;&nbsp;
+<a href="../../studyroom"><span class="label">Studyroom</span></a>&nbsp;&nbsp;
+<a href="../../flashcards"><span class="label">Flashcards</span></a>&nbsp;&nbsp;
+</div>
+
+<div id="footer-box-left">
+
+<p>&copy; Studytonight 2014 &middot; <span><img src="../../css/resource/icon-heart-small.png"/>Handcrafted with Love</span></p>
+
+<p><a href="../../about">About Us</a> &middot; <a href="../../suggest">Suggest</a> &middot; <a href="../../terms">Terms</a> &middot; <a href="../../contact">Contact Us</a> &middot; <a href="../../collaborate">Collaborate</a> &middot; <a href="../../authors.1">Authors</a> &middot; <a href="http://studytonight.tumblr.com/">Blog</a></p>
+
+
+</div>
+
+</div>  <!-- /footer-box -->
+<div class="row">
+<div class="span12 center">
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive Footer Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6137246359299957"
+     data-ad-slot="1965829825"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+</div> <!-- /container -->
+</div>  <!-- /footer -->
+  </body>
+</html>

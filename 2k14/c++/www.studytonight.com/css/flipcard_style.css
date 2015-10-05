@@ -1,0 +1,73 @@
+.stage {
+  -webkit-perspective: 1000; 
+  -moz-perspective: 1000;
+  -o-perspective: 1000;
+}
+
+.flashcard {
+  height: 300px;  
+  width: 600px; 
+  margin:10px 0px 20px 60px;
+  border: 1px solid #555; 
+  -webkit-transform-style: preserve-3d; 
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;  
+  transition: all 0.3s;               
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  color:#000;
+}
+
+.flipped, .back {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg); 
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+
+.front{
+  height: 300px;          
+  width: 580px;
+  padding:0px 10px 0px 10px;
+  position: absolute;    
+  text-align: center;   
+  -webkit-backface-visibility: hidden; 
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  background:url("resource/grids.gif") repeat;      
+}
+
+.back {
+  height: 300px;          
+  width: 580px;
+  padding:0px 10px 0px 10px;
+  position: absolute;    
+  text-align: center;   
+  -webkit-backface-visibility: hidden; 
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  background:url("resource/grids.gif") repeat;      
+}
+
+.front p{
+  margin-top: 15%;       
+  font-size: 2em;
+  line-height:32px;
+  font-weight:500;
+}
+
+.back p {
+  margin-top: 10%;       
+  font-size: 14px;
+  line-height:24px;
+  font-weight:500;
+}
+
+#flashcard_tagline
+{
+font-size:30px;
+color:#000;
+font-family: 'Raleway', sans-serif;
+margin-bottom:30px;
+}

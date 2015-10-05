@@ -1,0 +1,436 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Online Interview Question-Answer Test for Core Java, Database, C++ etc | Studytonight</title>
+
+<meta name="description" content="Online Interview Question Answer Test for GATE-2016 Preparation, Core Java, Database, C Language, C++, Operating System, Computer Networks etc.">
+<meta property="og:image" content="/css/resource/flat-ui-icon/compose-icon.png"/>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/glyphicons.css" rel="stylesheet">
+    <link href="css/tipsy_title.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="css/resource/favicon.png">
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jquery.tipsy.js" type="text/javascript"></script>
+    <script type="text/javascript">
+	$(function() {
+	$('.south').tipsy({gravity: 's'});
+	
+	$('#slide-toggle-sidebar').on('click', function(){
+	$('.sidebar-responsive').slideToggle();
+	return false;
+	});
+	
+	});
+</script>
+  </head>
+
+  <body>
+
+<style>
+
+.dropdown:hover ul{
+    display:block;
+}
+.dropdown ul { 
+    display: none;  
+    position:absolute;
+    background: rgba(0, 0, 0, 0.80); 
+    width: 150px;   
+    list-style-type:none;
+    padding:10px;
+} 
+.dropdown ul li{
+    padding:4px;
+}
+.dropdown ul li a{ 
+    line-height:30px;
+    cursor:pointer;
+    text-decoration:none;
+    color:white;
+} 
+.dropdown ul li a:hover{
+   color:orange;
+} 
+.dropdown ul.second
+{
+    left: 300px;
+}
+
+</style>
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=183470395085546";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="navbar navbar-inverse navbar-fixed-top">
+<div class="navbar-inner">
+<div class="nav-container">
+<a class="brand" href="index.html" title="Take me Home :)"><img id="brand-icon" src="css/resource/st-icon.png" alt="studytonight logo"/></a>
+
+<!-- <font color="orange">Study</font>tonight<sup><span id="beta">&#946;eta</span></sup> -->
+
+<ul class="nav navbar-nav nav-left-responsive">
+<li><a href="http://studytonight.com/online-courses/">VIDEO PLAYLISTS</a></li>
+<li class="dropdown"><a href="http://studytonight.com/library/">TUTORIALS</a>
+
+	<ul class="first">
+            <li><a href="android-app-using-mit-appinventor">ANDROID</a></li>
+            <li><a href="maven">APACHE MAVEN</a></li>
+            <li><a href="c">C LANGUAGE</a></li>
+            <li><a href="cpp.1">C++</a></li>
+            <li><a href="computer-networks">COMPUTER NETWORKS</a></li>
+            <li><a href="java">CORE JAVA</a></li>
+      </ul>
+      <ul class="second">
+      	    <li><a href="dbms">DBMS</a></li>
+            <li><a href="data-structures">DATA STRUCTURE</a></li>
+            <li><a href="jenkins">JENKINS</a></li>
+            <li><a href="jsp">JSP</a></li>
+            <li><a href="operating-system">OPERATING SYSTEM</a></li>
+            <li><a href="servlet">SERVLET</a></li>
+       </ul>
+
+</li>
+<li><a href="http://studytonight.com/studyroom/">Q &amp; A FORUM</a></li>
+<li><a href="http://studytonight.com/tests/">TESTS</a></li>
+<li><a href="http://studytonight.com/code/">HTML COURSE<sup id='beta'>NEW</sup></a></li>
+</ul>
+
+
+<ul class="nav nav-fb-responsive">
+<li class="nav-header">
+<div class="fb-like" data-href="http://facebook.com/studytonight" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
+</li>
+</ul>
+
+
+<ul class="nav pull-right-menuoption nav-right-responsive">
+<li>
+<form class="navbar-search" action="http://www.studytonight.com/search.php" method="GET"> 
+<table>
+<tr>
+<td><input type="text" name="q" maxlength="255" value="" class="search-query span2" placeholder="Search" title="Search Studytonight for Lessons and Topics"/></td>
+</tr>
+</table>
+</form>
+</li>
+<li><a href="login">LogIn</a></li>
+<li><a style="font-weight:bold;color:#f84906;" href="register">SignUp</a></li>
+<li><a href="suggest">Suggest</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div style="float:right;margin-right:100px;">
+<div class="bookmark-responsive">
+<div class="bookmark-ribbon traditional font-calibri">
+<a href="collaborate" target="_blank"><div id="bookmark-text">
+<div>WRITE</div><div>FOR US &amp;</div><div>GET PAID!</div>
+</div></a>
+</div></div></div>
+<div class="basic-hero-unit">
+<div class="container">
+<div class="row">
+	<div class="span8">
+		<h2>Studytonight <span class="orange">Tests</span>.</h2>
+		<p>Hand-curated Tests/Quizes, to help you polish your skills.</p>
+  
+	</div>
+	<div class="span4 center"><img src="css/resource/flat-ui-icon/compose-icon.png" alt="Free Online Tests"/></div>
+</div>
+</div></div>
+
+
+<div class="grey-body">
+<div class="container">
+
+<div class="row"><br/>
+<div class="span3">
+
+<div class="sidebar-collpsed-responsive">
+<a href="tests?%252F?subject=cpp#" id="slide-toggle-sidebar"><span class="pull-right"><img src="css/resource/collapsed-menu.png" alt="Menu"/></span><span>SUBJECTS</span></a>
+</div>
+
+<ul class="nav nav-tabs nav-stacked sidebar-responsive"> 
+<li><a href="tests?subject=java">CORE JAVA (J2SE)</a></li>  
+<li><a href="tests?subject=cpp">C++ Language</a></li> 
+<li><a href="tests?subject=c">C Language</a></li> 
+<li><a href="tests?subject=dbms">DBMS</a></li> 
+<li><a href="tests?subject=computer-networks">Computer Networks</a></li>   
+<li><a href="tests?subject=operating-system">Operating System</a></li>  
+</ul>
+</div>
+
+<div class="span9">
+  <div class="test-holder space-10">
+  	<div class="test-btn-holder"><a href="java/tests/13" target="_blank" class="btn btn-success">Take Test</a></div>
+  	<div class="test-info-holder font-calibri">
+  		<div class="test-title"><a href="java/tests/13" target="_blank" class="link-inverse">Datatypes, Operators and Class/Object Basics Test</a></div>
+  		<div class="test-info">AVERAGE SCORE is&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;&nbsp;
+  			<span class="south" title="Number of times of Attempted"><span class="glyphicon glyphicon-eye-open"></span>&nbsp;8043</span>&nbsp;&nbsp;&nbsp;
+  			<span class="south" title="Level"><span class="glyphicon glyphicon-fire"></span>&nbsp;Beginner</span>
+  		</div>
+  	</div>
+  
+  </div>
+   <div class="test-holder space-10">
+  	<div class="test-btn-holder"><a href="java/tests/14" target="_blank" class="btn btn-success">Take Test</a></div>
+  	<div class="test-info-holder font-calibri">
+  		<div class="test-title"><a href="java/tests/14" target="_blank" class="link-inverse">Arrays and Static Keyword Basics Test</a></div>
+  		<div class="test-info">AVERAGE SCORE is&nbsp;&nbsp;9&nbsp;&nbsp;&nbsp;&nbsp;
+  			<span class="south" title="Number of times of Attempted"><span class="glyphicon glyphicon-eye-open"></span>&nbsp;4266</span>&nbsp;&nbsp;&nbsp;
+  			<span class="south" title="Level"><span class="glyphicon glyphicon-fire"></span>&nbsp;Beginner</span>
+  		</div>
+  	</div>
+  
+  </div>
+   <div class="test-holder space-10">
+  	<div class="test-btn-holder"><a href="java/tests/15" target="_blank" class="btn btn-success">Take Test</a></div>
+  	<div class="test-info-holder font-calibri">
+  		<div class="test-title"><a href="java/tests/15" target="_blank" class="link-inverse">Classes, Instance and Constructors Basics Test</a></div>
+  		<div class="test-info">AVERAGE SCORE is&nbsp;&nbsp;10&nbsp;&nbsp;&nbsp;&nbsp;
+  			<span class="south" title="Number of times of Attempted"><span class="glyphicon glyphicon-eye-open"></span>&nbsp;3854</span>&nbsp;&nbsp;&nbsp;
+  			<span class="south" title="Level"><span class="glyphicon glyphicon-fire"></span>&nbsp;Beginner</span>
+  		</div>
+  	</div>
+  
+  </div>
+   <div class="test-holder space-10">
+  	<div class="test-btn-holder"><a href="java/tests/1" target="_blank" class="btn btn-success">Take Test</a></div>
+  	<div class="test-info-holder font-calibri">
+  		<div class="test-title"><a href="java/tests/1" target="_blank" class="link-inverse">Basics of Core Java - Warmup Test</a></div>
+  		<div class="test-info">AVERAGE SCORE is&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;
+  			<span class="south" title="Number of times of Attempted"><span class="glyphicon glyphicon-eye-open"></span>&nbsp;6461</span>&nbsp;&nbsp;&nbsp;
+  			<span class="south" title="Level"><span class="glyphicon glyphicon-fire"></span>&nbsp;Beginner</span>
+  		</div>
+  	</div>
+  
+  </div>
+   <div class="test-holder space-10">
+  	<div class="test-btn-holder"><a href="java/tests/2" target="_blank" class="btn btn-success">Take Test</a></div>
+  	<div class="test-info-holder font-calibri">
+  		<div class="test-title"><a href="java/tests/2" target="_blank" class="link-inverse">Introduction to Classes and Objects - Warmup Test</a></div>
+  		<div class="test-info">AVERAGE SCORE is&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;&nbsp;
+  			<span class="south" title="Number of times of Attempted"><span class="glyphicon glyphicon-eye-open"></span>&nbsp;3517</span>&nbsp;&nbsp;&nbsp;
+  			<span class="south" title="Level"><span class="glyphicon glyphicon-fire"></span>&nbsp;Beginner</span>
+  		</div>
+  	</div>
+  
+  </div>
+   <div class="test-holder space-10">
+  	<div class="test-btn-holder"><a href="java/tests/3" target="_blank" class="btn btn-success">Take Test</a></div>
+  	<div class="test-info-holder font-calibri">
+  		<div class="test-title"><a href="java/tests/3" target="_blank" class="link-inverse">Inheritance and Related Concepts Basics Test</a></div>
+  		<div class="test-info">AVERAGE SCORE is&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;&nbsp;
+  			<span class="south" title="Number of times of Attempted"><span class="glyphicon glyphicon-eye-open"></span>&nbsp;2480</span>&nbsp;&nbsp;&nbsp;
+  			<span class="south" title="Level"><span class="glyphicon glyphicon-fire"></span>&nbsp;Beginner</span>
+  		</div>
+  	</div>
+  
+  </div>
+   <div class="test-holder space-10">
+  	<div class="test-btn-holder"><a href="java/tests/4" target="_blank" class="btn btn-success">Take Test</a></div>
+  	<div class="test-info-holder font-calibri">
+  		<div class="test-title"><a href="java/tests/4" target="_blank" class="link-inverse">Interface and Abstract Classes Basics</a></div>
+  		<div class="test-info">AVERAGE SCORE is&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;&nbsp;
+  			<span class="south" title="Number of times of Attempted"><span class="glyphicon glyphicon-eye-open"></span>&nbsp;2130</span>&nbsp;&nbsp;&nbsp;
+  			<span class="south" title="Level"><span class="glyphicon glyphicon-fire"></span>&nbsp;Beginner</span>
+  		</div>
+  	</div>
+  
+  </div>
+   <div class="test-holder space-10">
+  	<div class="test-btn-holder"><a href="java/tests/5" target="_blank" class="btn btn-success">Take Test</a></div>
+  	<div class="test-info-holder font-calibri">
+  		<div class="test-title"><a href="java/tests/5" target="_blank" class="link-inverse">Test for String Handling and related Concepts</a></div>
+  		<div class="test-info">AVERAGE SCORE is&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;&nbsp;
+  			<span class="south" title="Number of times of Attempted"><span class="glyphicon glyphicon-eye-open"></span>&nbsp;1839</span>&nbsp;&nbsp;&nbsp;
+  			<span class="south" title="Level"><span class="glyphicon glyphicon-fire"></span>&nbsp;Beginner</span>
+  		</div>
+  	</div>
+  
+  </div>
+   <div class="test-holder space-10">
+  	<div class="test-btn-holder"><a href="java/tests/6" target="_blank" class="btn btn-success">Take Test</a></div>
+  	<div class="test-info-holder font-calibri">
+  		<div class="test-title"><a href="java/tests/6" target="_blank" class="link-inverse">Exception Handling Basics Test</a></div>
+  		<div class="test-info">AVERAGE SCORE is&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;&nbsp;
+  			<span class="south" title="Number of times of Attempted"><span class="glyphicon glyphicon-eye-open"></span>&nbsp;2476</span>&nbsp;&nbsp;&nbsp;
+  			<span class="south" title="Level"><span class="glyphicon glyphicon-fire"></span>&nbsp;Beginner</span>
+  		</div>
+  	</div>
+  
+  </div>
+   <div class="test-holder space-10">
+  	<div class="test-btn-holder"><a href="java/tests/7" target="_blank" class="btn btn-success">Take Test</a></div>
+  	<div class="test-info-holder font-calibri">
+  		<div class="test-title"><a href="java/tests/7" target="_blank" class="link-inverse">Basics of Multithreading in Java</a></div>
+  		<div class="test-info">AVERAGE SCORE is&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;
+  			<span class="south" title="Number of times of Attempted"><span class="glyphicon glyphicon-eye-open"></span>&nbsp;1823</span>&nbsp;&nbsp;&nbsp;
+  			<span class="south" title="Level"><span class="glyphicon glyphicon-fire"></span>&nbsp;Beginner</span>
+  		</div>
+  	</div>
+  
+  </div>
+   <div class="test-holder space-10">
+  	<div class="test-btn-holder"><a href="java/tests/8" target="_blank" class="btn btn-success">Take Test</a></div>
+  	<div class="test-info-holder font-calibri">
+  		<div class="test-title"><a href="java/tests/8" target="_blank" class="link-inverse">Introduction to Advanced topics of Java</a></div>
+  		<div class="test-info">AVERAGE SCORE is&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;
+  			<span class="south" title="Number of times of Attempted"><span class="glyphicon glyphicon-eye-open"></span>&nbsp;1102</span>&nbsp;&nbsp;&nbsp;
+  			<span class="south" title="Level"><span class="glyphicon glyphicon-fire"></span>&nbsp;Beginner</span>
+  		</div>
+  	</div>
+  
+  </div>
+   <div class="test-holder space-10">
+  	<div class="test-btn-holder"><a href="java/tests/9" target="_blank" class="btn btn-success">Take Test</a></div>
+  	<div class="test-info-holder font-calibri">
+  		<div class="test-title"><a href="java/tests/9" target="_blank" class="link-inverse">Complete Collection Framework in Java</a></div>
+  		<div class="test-info">AVERAGE SCORE is&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;&nbsp;
+  			<span class="south" title="Number of times of Attempted"><span class="glyphicon glyphicon-eye-open"></span>&nbsp;1969</span>&nbsp;&nbsp;&nbsp;
+  			<span class="south" title="Level"><span class="glyphicon glyphicon-fire"></span>&nbsp;Beginner</span>
+  		</div>
+  	</div>
+  
+  </div>
+   <div class="test-holder space-10">
+  	<div class="test-btn-holder"><a href="java/tests/10" target="_blank" class="btn btn-success">Take Test</a></div>
+  	<div class="test-info-holder font-calibri">
+  		<div class="test-title"><a href="java/tests/10" target="_blank" class="link-inverse">Interview MCQs Test for Core Java - Level 1</a></div>
+  		<div class="test-info">AVERAGE SCORE is&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;
+  			<span class="south" title="Number of times of Attempted"><span class="glyphicon glyphicon-eye-open"></span>&nbsp;8515</span>&nbsp;&nbsp;&nbsp;
+  			<span class="south" title="Level"><span class="glyphicon glyphicon-fire"></span>&nbsp;Intermediate</span>
+  		</div>
+  	</div>
+  
+  </div>
+   <div class="test-holder space-10">
+  	<div class="test-btn-holder"><a href="java/tests/11" target="_blank" class="btn btn-success">Take Test</a></div>
+  	<div class="test-info-holder font-calibri">
+  		<div class="test-title"><a href="java/tests/11" target="_blank" class="link-inverse">Interview MCQs Test for Core Java - Level 2</a></div>
+  		<div class="test-info">AVERAGE SCORE is&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;
+  			<span class="south" title="Number of times of Attempted"><span class="glyphicon glyphicon-eye-open"></span>&nbsp;3719</span>&nbsp;&nbsp;&nbsp;
+  			<span class="south" title="Level"><span class="glyphicon glyphicon-fire"></span>&nbsp;Intermediate</span>
+  		</div>
+  	</div>
+  
+  </div>
+   <div class="test-holder space-10">
+  	<div class="test-btn-holder"><a href="java/tests/12" target="_blank" class="btn btn-success">Take Test</a></div>
+  	<div class="test-info-holder font-calibri">
+  		<div class="test-title"><a href="java/tests/12" target="_blank" class="link-inverse">Interview MCQs Test for Core Java - Level 3</a></div>
+  		<div class="test-info">AVERAGE SCORE is&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;
+  			<span class="south" title="Number of times of Attempted"><span class="glyphicon glyphicon-eye-open"></span>&nbsp;3033</span>&nbsp;&nbsp;&nbsp;
+  			<span class="south" title="Level"><span class="glyphicon glyphicon-fire"></span>&nbsp;Intermediate</span>
+  		</div>
+  	</div>
+  
+  </div>
+ </div>
+
+</div><!-- row ends here -->
+
+
+<br/>
+</div><!-- Container Ends here--> 
+</div>
+
+<div class="container">
+<div class="row">
+<div class="span12">
+<center>
+<div style='width:270px;margin-top:15px;'>
+		<div style='width:80px; float:right'>
+		
+		<div class="fb-like" data-href="http://www.studytonight.com/tests/" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false" data-font="arial"></div>
+
+		</div>
+		<!-- Place this tag in your head or just before your close body tag -->
+		<div style='width:70px; float:right;margin-right:10px'>
+		<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+
+		<!-- Place this tag where you want the +1 button to render -->
+		<g:plusone size="medium" href="http://www.studytonight.com/tests/"></g:plusone>
+		</div>
+		<div style='width:86px; float:right;margin-right:10px'>
+		<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.studytonight.com/tests/" data-text="Hand-curated Tests/Quizes, to help you polish your skills." data-count="horizontal" data-via="studytonight">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+		</div>
+		</div>
+</center>
+</div>
+</div>
+</div>
+
+       
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39722043-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<div id="footer">
+<div class="container">
+<div id="footer-box">
+
+<div id="footer-box-right">Check Out :  
+<a href="library"><span class="label">Library</span></a>&nbsp;&nbsp;
+<a href="online-courses"><span class="label">Video Courses</span></a>&nbsp;&nbsp;
+<a href="studyroom"><span class="label">Studyroom</span></a>&nbsp;&nbsp;
+<a href="flashcards"><span class="label">Flashcards</span></a>&nbsp;&nbsp;
+</div>
+
+<div id="footer-box-left">
+
+<p>&copy; Studytonight 2014 &middot; <span><img src="css/resource/icon-heart-small.png"/>Handcrafted with Love</span></p>
+
+<p><a href="about">About Us</a> &middot; <a href="suggest">Suggest</a> &middot; <a href="terms">Terms</a> &middot; <a href="contact">Contact Us</a> &middot; <a href="collaborate">Collaborate</a> &middot; <a href="authors.1">Authors</a> &middot; <a href="http://studytonight.tumblr.com/">Blog</a></p>
+
+
+</div>
+
+</div>  <!-- /footer-box -->
+<div class="row">
+<div class="span12 center">
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive Footer Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6137246359299957"
+     data-ad-slot="1965829825"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+</div> <!-- /container -->
+</div>  <!-- /footer -->
+  </body>
+</html>

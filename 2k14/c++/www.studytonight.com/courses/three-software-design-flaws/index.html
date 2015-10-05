@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Three Flaws In Software Design By Google Developers - Studytonight</title>
+    <meta name="keywords" content="software design practice video, software design tutrials, best practice software design, software design tutorials, best practice software design, software design best practice"/> 
+<meta name="description" content="This will take the students through a complete review about their development Habits. What they must do, and what they shouldn't while desiging a software.">
+<meta property="og:image" content="http://www.studytonight.com/css/resource/favicon.png"/>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="../../css/bootstrap.css" rel="stylesheet">
+    <link href="../../css/docs.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../../css/resource/favicon.png">
+  </head>
+
+  <body>
+
+<style>
+
+.dropdown:hover ul{
+    display:block;
+}
+.dropdown ul { 
+    display: none;  
+    position:absolute;
+    background: rgba(0, 0, 0, 0.80); 
+    width: 150px;   
+    list-style-type:none;
+    padding:10px;
+} 
+.dropdown ul li{
+    padding:4px;
+}
+.dropdown ul li a{ 
+    line-height:30px;
+    cursor:pointer;
+    text-decoration:none;
+    color:white;
+} 
+.dropdown ul li a:hover{
+   color:orange;
+} 
+.dropdown ul.second
+{
+    left: 300px;
+}
+
+</style>
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=183470395085546";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="navbar navbar-inverse navbar-fixed-top">
+<div class="navbar-inner">
+<div class="nav-container">
+<a class="brand" href="../../index.html" title="Take me Home :)"><img id="brand-icon" src="../../css/resource/st-icon.png" alt="studytonight logo"/></a>
+
+<!-- <font color="orange">Study</font>tonight<sup><span id="beta">&#946;eta</span></sup> -->
+
+<ul class="nav navbar-nav nav-left-responsive">
+<li><a href="http://studytonight.com/online-courses/">VIDEO PLAYLISTS</a></li>
+<li class="dropdown"><a href="http://studytonight.com/library/">TUTORIALS</a>
+
+	<ul class="first">
+            <li><a href="../../android-app-using-mit-appinventor">ANDROID</a></li>
+            <li><a href="../../maven">APACHE MAVEN</a></li>
+            <li><a href="../../c">C LANGUAGE</a></li>
+            <li><a href="../../cpp.1">C++</a></li>
+            <li><a href="../../computer-networks">COMPUTER NETWORKS</a></li>
+            <li><a href="../../java">CORE JAVA</a></li>
+      </ul>
+      <ul class="second">
+      	    <li><a href="../../dbms">DBMS</a></li>
+            <li><a href="../../data-structures">DATA STRUCTURE</a></li>
+            <li><a href="../../jenkins">JENKINS</a></li>
+            <li><a href="../../jsp">JSP</a></li>
+            <li><a href="../../operating-system">OPERATING SYSTEM</a></li>
+            <li><a href="../../servlet">SERVLET</a></li>
+       </ul>
+
+</li>
+<li><a href="http://studytonight.com/studyroom/">Q &amp; A FORUM</a></li>
+<li><a href="http://studytonight.com/tests/">TESTS</a></li>
+<li><a href="http://studytonight.com/code/">HTML COURSE<sup id='beta'>NEW</sup></a></li>
+</ul>
+
+
+<ul class="nav nav-fb-responsive">
+<li class="nav-header">
+<div class="fb-like" data-href="http://facebook.com/studytonight" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
+</li>
+</ul>
+
+
+<ul class="nav pull-right-menuoption nav-right-responsive">
+<li>
+<form class="navbar-search" action="http://www.studytonight.com/search.php" method="GET"> 
+<table>
+<tr>
+<td><input type="text" name="q" maxlength="255" value="" class="search-query span2" placeholder="Search" title="Search Studytonight for Lessons and Topics"/></td>
+</tr>
+</table>
+</form>
+</li>
+<li><a href="../../login">LogIn</a></li>
+<li><a style="font-weight:bold;color:#f84906;" href="../../register">SignUp</a></li>
+<li><a href="../../suggest">Suggest</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div style="float:right;margin-right:100px;">
+<div class="bookmark-responsive">
+<div class="bookmark-ribbon traditional font-calibri">
+<a href="../../collaborate" target="_blank"><div id="bookmark-text">
+<div>WRITE</div><div>FOR US &amp;</div><div>GET PAID!</div>
+</div></a>
+</div></div></div>
+<div class="basic-hero-unit">
+<div class="row">
+
+<div id="container-heroinfo-holder">
+<div class="lessbold-title center">THREE FLAWS IN SOFTWARE DESIGN</div>
+<div class="center"><small>by <a class="bold-link" href="https://www.youtube.com/user/GoogleDevelopers" target="_blank">Google Developers</a></small></div>
+
+<div class="container">
+<div class="row"><div class="span12">
+<div class="icon-sharing-button">
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+<a class="addthis_button_facebook"></a>
+<a class="addthis_button_twitter"></a>
+<a class="addthis_button_google_plusone_share"></a>
+<a class="addthis_button_compact"></a><a class="addthis_counter addthis_bubble_style"></a>
+</div>
+<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4fcb15e01d1a671c"></script>
+<!-- AddThis Button END -->
+</div>
+</div></div></div>
+</div>
+</div></div>
+
+<div class="grey-body">
+<div class="container">
+
+<div class="row"> 
+<br/>
+<div class="span9">
+<div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=JOAq3YN45YE'><img src='http://img.youtube.com/vi/JOAq3YN45YE/0.jpg' alt='Three Flaws in Software Design - Part 1: Writing Code that isn't Needed' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:16:23</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=JOAq3YN45YE'>Three Flaws in Software Design - Part 1: Writing Code that isn't Needed</a></div><p>In part one of the series, Jeremy Walker & Max Kanat-Alexander discuss the first Flaw of Software Design, 'Writing Code that isnt Needed,' from Max's book Code Simplicity: The Fundamentals of Software.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=eCg_VoFW46s'><img src='http://img.youtube.com/vi/eCg_VoFW46s/0.jpg' alt='Three Flaws in Software Design - Part 2: Not Making the Code Easy to Change
+' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:12:03</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=eCg_VoFW46s'>Three Flaws in Software Design - Part 2: Not Making the Code Easy to Change
+</a></div><p>In part two of the series, Jeremy Walker & Max Kanat-Alexander discuss the second Flaw of Software Design, "Not Making the Code Easy to Change," from Max's book Code Simplicity: The Fundamentals of Software.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=0wxyOng0-14'><img src='http://img.youtube.com/vi/0wxyOng0-14/0.jpg' alt='Three Flaws in Software Design - Part 3: Being Too Generic' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:10:20</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=0wxyOng0-14'>Three Flaws in Software Design - Part 3: Being Too Generic</a></div><p>In part three of the series, Jeremy Walker & Max Kanat-Alexander discuss the third Flaw in Software Design, "Being Too Generic," from Max's book Code Simplicity: The Fundamentals of Software.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=fjpkPe6-580'><img src='http://img.youtube.com/vi/fjpkPe6-580/0.jpg' alt='Three Flaws in Software Design - Part 4: Incremental Development & Design + Wrap-up' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:11:26</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=fjpkPe6-580'>Three Flaws in Software Design - Part 4: Incremental Development & Design + Wrap-up</a></div><p>In the final installment of the series, Jeremy Walker & Max Kanat-Alexander discuss a development process that allows one to avoid the Three Flaws of Software Design from Max's book Code Simplicity: The Fundamentals of Software.</p></div></div></div><!--span9 Ends-->
+
+<div class="span3">
+<ul class="nav nav-tabs nav-stacked"> 
+<li><a href="../java-spring-framework.1">Spring Tutorial </a></li>
+<li><a href="../junit/index.html">JUNIT for Programmers</a></li>     
+<li><a href="http://www.studytonight.com/courses/programming-introduction/">Harvard Programming Introduction</a></li>  
+<li><a href="../javascript/index.html">Javascript by Douglas Crockford</a></li>   
+<li><a href="../mathematics/index.html">Mathematics</a></li>
+<li><a href="../java-struts-framework/index.html">Struts 2 Complete Course</a></li>
+<li><a href="../programming-paradigm/index.html">Introduction to Programming Paradigm</a></li>
+<li><a href="../data-structures/index.html">IIT-Delhi Data Structures Lectures</a></li>
+<li><a href="../android-application/index.html">Android App Development</a></li>
+<li><a href="../jbpm/index.html">Complete Introduction to JBPM</a></li>
+
+</ul> 
+
+<div class="sidebar-info-box-inverse">
+<table>
+<tr><td rowspan="2" style="width:35px;">&nbsp;&nbsp;<img src="http://studytonight.com/css/resource/icon-tip.png" alt="Tip for Test"/></td><td>How to</td></tr>
+<tr><td><a href="http://studytonight.com/collaborate" class="bold-link">Get your Video Lessons listed here</a></td></tr>
+</table>
+</div>
+
+<div class="sidebar-info-box-inverse">
+<div class="lessbold-title">Stay in Touch</div>
+<br/><p>Like us on Facebook to stay up to date with updates and news</p>
+<p><div class="fb-like" data-href="http://facebook.com/studytonight" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div></p>
+</div>
+
+</div> 
+</div><!--Row Ends-->
+</div><!-- Container Ends here--> 
+</div>
+
+       
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39722043-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<div id="footer">
+<div class="container">
+<div id="footer-box">
+
+<div id="footer-box-right">Check Out :  
+<a href="../../library"><span class="label">Library</span></a>&nbsp;&nbsp;
+<a href="../../online-courses"><span class="label">Video Courses</span></a>&nbsp;&nbsp;
+<a href="../../studyroom"><span class="label">Studyroom</span></a>&nbsp;&nbsp;
+<a href="../../flashcards"><span class="label">Flashcards</span></a>&nbsp;&nbsp;
+</div>
+
+<div id="footer-box-left">
+
+<p>&copy; Studytonight 2014 &middot; <span><img src="../../css/resource/icon-heart-small.png"/>Handcrafted with Love</span></p>
+
+<p><a href="../../about">About Us</a> &middot; <a href="../../suggest">Suggest</a> &middot; <a href="../../terms">Terms</a> &middot; <a href="../../contact">Contact Us</a> &middot; <a href="../../collaborate">Collaborate</a> &middot; <a href="../../authors.1">Authors</a> &middot; <a href="http://studytonight.tumblr.com/">Blog</a></p>
+
+
+</div>
+
+</div>  <!-- /footer-box -->
+<div class="row">
+<div class="span12 center">
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive Footer Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6137246359299957"
+     data-ad-slot="1965829825"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+</div> <!-- /container -->
+</div>  <!-- /footer -->
+  </body>
+</html>

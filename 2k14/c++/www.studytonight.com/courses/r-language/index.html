@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>R Programming Language Tutorial By Google Developers - Studytonight</title>
+    <meta name="keywords" content="r language, r language lessons, r programming language, r language video lessons, r language video tutorials, r language tutorials, r language videos, google lessons r language, best r language lessons, r language course"/> 
+<meta name="description" content="R is a free software programming language and software environment for statistical computing and graphics. This tutorial will cover all the basics of R Programming Language. If you are looking to study something new, go ahead.">
+<meta property="og:image" content="http://www.studytonight.com/css/resource/favicon.png"/>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="../../css/bootstrap.css" rel="stylesheet">
+    <link href="../../css/docs.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../../css/resource/favicon.png">
+  </head>
+
+  <body>
+
+<style>
+
+.dropdown:hover ul{
+    display:block;
+}
+.dropdown ul { 
+    display: none;  
+    position:absolute;
+    background: rgba(0, 0, 0, 0.80); 
+    width: 150px;   
+    list-style-type:none;
+    padding:10px;
+} 
+.dropdown ul li{
+    padding:4px;
+}
+.dropdown ul li a{ 
+    line-height:30px;
+    cursor:pointer;
+    text-decoration:none;
+    color:white;
+} 
+.dropdown ul li a:hover{
+   color:orange;
+} 
+.dropdown ul.second
+{
+    left: 300px;
+}
+
+</style>
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=183470395085546";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="navbar navbar-inverse navbar-fixed-top">
+<div class="navbar-inner">
+<div class="nav-container">
+<a class="brand" href="../../index.html" title="Take me Home :)"><img id="brand-icon" src="../../css/resource/st-icon.png" alt="studytonight logo"/></a>
+
+<!-- <font color="orange">Study</font>tonight<sup><span id="beta">&#946;eta</span></sup> -->
+
+<ul class="nav navbar-nav nav-left-responsive">
+<li><a href="http://studytonight.com/online-courses/">VIDEO PLAYLISTS</a></li>
+<li class="dropdown"><a href="http://studytonight.com/library/">TUTORIALS</a>
+
+	<ul class="first">
+            <li><a href="../../android-app-using-mit-appinventor">ANDROID</a></li>
+            <li><a href="../../maven">APACHE MAVEN</a></li>
+            <li><a href="../../c">C LANGUAGE</a></li>
+            <li><a href="../../cpp.1">C++</a></li>
+            <li><a href="../../computer-networks">COMPUTER NETWORKS</a></li>
+            <li><a href="../../java">CORE JAVA</a></li>
+      </ul>
+      <ul class="second">
+      	    <li><a href="../../dbms">DBMS</a></li>
+            <li><a href="../../data-structures">DATA STRUCTURE</a></li>
+            <li><a href="../../jenkins">JENKINS</a></li>
+            <li><a href="../../jsp">JSP</a></li>
+            <li><a href="../../operating-system">OPERATING SYSTEM</a></li>
+            <li><a href="../../servlet">SERVLET</a></li>
+       </ul>
+
+</li>
+<li><a href="http://studytonight.com/studyroom/">Q &amp; A FORUM</a></li>
+<li><a href="http://studytonight.com/tests/">TESTS</a></li>
+<li><a href="http://studytonight.com/code/">HTML COURSE<sup id='beta'>NEW</sup></a></li>
+</ul>
+
+
+<ul class="nav nav-fb-responsive">
+<li class="nav-header">
+<div class="fb-like" data-href="http://facebook.com/studytonight" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
+</li>
+</ul>
+
+
+<ul class="nav pull-right-menuoption nav-right-responsive">
+<li>
+<form class="navbar-search" action="http://www.studytonight.com/search.php" method="GET"> 
+<table>
+<tr>
+<td><input type="text" name="q" maxlength="255" value="" class="search-query span2" placeholder="Search" title="Search Studytonight for Lessons and Topics"/></td>
+</tr>
+</table>
+</form>
+</li>
+<li><a href="../../login">LogIn</a></li>
+<li><a style="font-weight:bold;color:#f84906;" href="../../register">SignUp</a></li>
+<li><a href="../../suggest">Suggest</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div style="float:right;margin-right:100px;">
+<div class="bookmark-responsive">
+<div class="bookmark-ribbon traditional font-calibri">
+<a href="../../collaborate" target="_blank"><div id="bookmark-text">
+<div>WRITE</div><div>FOR US &amp;</div><div>GET PAID!</div>
+</div></a>
+</div></div></div>
+<div class="basic-hero-unit">
+<div class="row">
+
+<div id="container-heroinfo-holder">
+<div class="lessbold-title center">R PROGRAMMING LANGUAGE TUTORIAL</div>
+<div class="center"><small>by <a class="bold-link" href="https://www.youtube.com/user/GoogleDevelopers" target="_blank">Google Developers</a></small></div>
+
+<div class="container">
+<div class="row"><div class="span12">
+<div class="icon-sharing-button">
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+<a class="addthis_button_facebook"></a>
+<a class="addthis_button_twitter"></a>
+<a class="addthis_button_google_plusone_share"></a>
+<a class="addthis_button_compact"></a><a class="addthis_counter addthis_bubble_style"></a>
+</div>
+<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4fcb15e01d1a671c"></script>
+<!-- AddThis Button END -->
+</div>
+</div></div></div>
+</div>
+</div></div>
+
+<div class="grey-body">
+<div class="container">
+
+<div class="row"> 
+<br/>
+<div class="span9">
+<div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=iffR3fWv4xw'><img src='http://img.youtube.com/vi/iffR3fWv4xw/0.jpg' alt='R 1.1 - Initial Setup and Navigation' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:02:21</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=iffR3fWv4xw'>R 1.1 - Initial Setup and Navigation</a></div><p>Strategies that will make beginning R users more efficient: writing code using a 'script' and navigating through directories within R.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=S-o-sdlzhkE'><img src='http://img.youtube.com/vi/S-o-sdlzhkE/0.jpg' alt='R 1.2 - Calculations and Variables' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:02:01</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=S-o-sdlzhkE'>R 1.2 - Calculations and Variables</a></div><p>Get acquainted with performing basic computations in R, creating R objects (sometimes called 'variables'), and seeing and running earlier commands that were run in the console.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=YhQOV27pQfg'><img src='http://img.youtube.com/vi/YhQOV27pQfg/0.jpg' alt='R 1.3 - Create and Work With Vectors' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:03:30</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=YhQOV27pQfg'>R 1.3 - Create and Work With Vectors</a></div><p>Learn how to create a vector in R using the c() function and the colon-notation (e.g. 1:5), find the length of a vector using the length() function, and subset vectors with bracket-notation and the head() and tail() functions.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=GKu5tw_bIpA'><img src='http://img.youtube.com/vi/GKu5tw_bIpA/0.jpg' alt='R 1.4 - Character and Boolean Vectors' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:01:47</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=GKu5tw_bIpA'>R 1.4 - Character and Boolean Vectors</a></div><p>So far we've seen objects that use numbers, but R is also built to handle more types of objects. Here we explore vectors that contain strings or Boolean values (TRUE / FALSE).</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=u5hroyx0J4o'><img src='http://img.youtube.com/vi/u5hroyx0J4o/0.jpg' alt='R 1.5 - Vector Arithmetic' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:03:52</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=u5hroyx0J4o'>R 1.5 - Vector Arithmetic</a></div><p>This video demystifies the different ways R performs vector arithmetic (e.g. addition and multiplication), covering topics including element-wise arithmetic, vector recycling, and how some functions are automatically applied across the elements in a vector. The seq() function is also introduced.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=cR-hEUs1rRw'><img src='http://img.youtube.com/vi/cR-hEUs1rRw/0.jpg' alt='R 1.6 - Building and Subsetting Matrices' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:04:44</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=cR-hEUs1rRw'>R 1.6 - Building and Subsetting Matrices</a></div><p>Learn how to create a matrix with dimensions of your choosing, how recycle a vector when creating a matrix, and how to query specific characteristics of the vector using functions such as dim(), head(), and tail(). Details and potential pitfalls for subsetting a matrix using the bracket-notation are</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=mtu5_IYhgpg'><img src='http://img.youtube.com/vi/mtu5_IYhgpg/0.jpg' alt='R 1.7 - Section 1 Review and Help Files' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:02:36</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=mtu5_IYhgpg'>R 1.7 - Section 1 Review and Help Files</a></div><p>A quick review of the topics covered in the Section 1 videos: vectors, matrices, subsetting, and a few standard functions. Also learn how to access help files in R.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=qK1ElUMkhq0'><img src='http://img.youtube.com/vi/qK1ElUMkhq0/0.jpg' alt='R 2.1 - Loading Data and Working With Data Frames' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:04:33</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=qK1ElUMkhq0'>R 2.1 - Loading Data and Working With Data Frames</a></div><p>Get a refresher on navigating directories on your computer in R, and learn to load a CSV (comma-separated values) data set in the form of a 'data frame' using the read.csv() function, which is a special type of data matrix. This video also introduces factor variables and explores the data in a data </p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=cx_3zWo4sUs'><img src='http://img.youtube.com/vi/cx_3zWo4sUs/0.jpg' alt='R 2.2 - Loading Data, Object Summaries, and Dates' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:04:14</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=cx_3zWo4sUs'>R 2.2 - Loading Data, Object Summaries, and Dates</a></div><p>Learn how to load data in the form of a tab-delimited text file using the read.delim(), how to get a high-level overview of an R object using the str() and summary() functions, and get a crash-course into working with dates in R with an example highlighting why this skill is so useful.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=eVEx_pBEkRI'><img src='http://img.youtube.com/vi/eVEx_pBEkRI/0.jpg' alt='R 2.3 - if() Statements, Logical Operators, and the which() Function' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:05:24</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=eVEx_pBEkRI'>R 2.3 - if() Statements, Logical Operators, and the which() Function</a></div><p>if-else statements are a key component to any programming language. This video introduces how to effectively use these statements in R and also clarifies some nuances of logical operators in R. Two related functions are also introduced: ifelse() as a shortcut that can be used to create faster and </p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=djI-yfk-DZM'><img src='http://img.youtube.com/vi/djI-yfk-DZM/0.jpg' alt='R 2.4 - for() Loops and Handling Missing Observations' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:04:39</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=djI-yfk-DZM'>R 2.4 - for() Loops and Handling Missing Observations</a></div><p>This video discusses for() loops, which are a structure that can be used to execute a set of code repeatedly. Also covered in this video are the min(), max(), and append() functions, as well as how to identify and omit missing values.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=UffunYeERV0'><img src='http://img.youtube.com/vi/UffunYeERV0/0.jpg' alt='R 2.5 - Lists' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:03:04</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=UffunYeERV0'>R 2.5 - Lists</a></div><p>Learn how to create and use lists in R, which are dynamic, flexible R objects that can hold and organize other R objects.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=8oc3mIa0TCw'><img src='http://img.youtube.com/vi/8oc3mIa0TCw/0.jpg' alt='R 3.1 - Managing the Workspace and Variable Casting' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:02:57</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=8oc3mIa0TCw'>R 3.1 - Managing the Workspace and Variable Casting</a></div><p>View all the objects in the workspace using ls(), remove objects using rm(), cast a variable as a different type using an as.[type]() function, and use lists or data frames to organize data or results.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=WuCVs3bW-ZY'><img src='http://img.youtube.com/vi/WuCVs3bW-ZY/0.jpg' alt='R 3.2 - The apply() Family of Functions' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:05:45</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=WuCVs3bW-ZY'>R 3.2 - The apply() Family of Functions</a></div><p>When data are organized in a matrix or data frame, the apply() function can be used to calculate summaries (or apply a more complex function) across either the rows or columns of the data object. Or if summaries for each group (level) of one or more variables are desired, use the tapply() or by() </p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=pZ6Bnxg9E8w'><img src='http://img.youtube.com/vi/pZ6Bnxg9E8w/0.jpg' alt='R 3.3 - Access or Create Columns in Data Frames, or Simplify a Data Frame using aggregate()' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:02:10</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=pZ6Bnxg9E8w'>R 3.3 - Access or Create Columns in Data Frames, or Simplify a Data Frame using aggregate()</a></div><p>The with() function makes it easy to access many variables (columns) in a data frame for one-off calculations, the within() function can be used to create new columns that are merged with the original data frame, and aggregate() is useful for aggregating variables in a data frame across groupings </p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=Z1wB1rHAYzQ'><img src='http://img.youtube.com/vi/Z1wB1rHAYzQ/0.jpg' alt='R 4.1 - Basic Structure of a Function' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:01:53</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=Z1wB1rHAYzQ'>R 4.1 - Basic Structure of a Function</a></div><p>This video introduces the basic structure of a function, covering the declaration of the function, using an argument, and returning a result.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=DzIy6U-N6ac'><img src='http://img.youtube.com/vi/DzIy6U-N6ac/0.jpg' alt='R 4.2 - Returning a List and Providing Default Arguments' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:02:13</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=DzIy6U-N6ac'>R 4.2 - Returning a List and Providing Default Arguments</a></div><p>Become more proficient in writing functions by learning the standard way to return more complex results from functions using a list, and learn how to specify a default value for an argument.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=29TdKkUmcA4'><img src='http://img.youtube.com/vi/29TdKkUmcA4/0.jpg' alt='R 4.3 - Add a Warning or Stop the Function Execution' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:01:31</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=29TdKkUmcA4'>R 4.3 - Add a Warning or Stop the Function Execution</a></div><p>The most helpful functions return clear warnings and errors when something is wrong. This video introduces the warning() and stop() functions, which can be used within a function to report a warning to the user or stop the function's execution.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=O3Bf2hM_gNc'><img src='http://img.youtube.com/vi/O3Bf2hM_gNc/0.jpg' alt='R 4.4 - Passing Additional Arguments Using an Ellipsis' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:03:29</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=O3Bf2hM_gNc'>R 4.4 - Passing Additional Arguments Using an Ellipsis</a></div><p>Sometimes it is useful to be able to pass any extra arguments to another function. For example, if a new plotting function is created that makes use of the function called plot(), it would be useful to be able to be able to specify additional details to plot() automatically. This is possible using a</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=CHmmHfJ8hCA'><img src='http://img.youtube.com/vi/CHmmHfJ8hCA/0.jpg' alt='R 4.5 - Make a Returned Result Invisible and Build Recursive Functions' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:02:03</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=CHmmHfJ8hCA'>R 4.5 - Make a Returned Result Invisible and Build Recursive Functions</a></div><p>Use the invisible() function in place of return() in a function to prevent the output from printing to the user's screen but still allow the result to be stored into an R object. Additionally, when building a recursive function, use the Recall() function.</p></div></div><div class='lesson-holder'><div class='lesson-img-holder'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=H06_Ic_kDvI'><img src='http://img.youtube.com/vi/H06_Ic_kDvI/0.jpg' alt='R 4.6 - Custom Functions With apply()' class='video-thumbnail'/></a></div><div class='lesson-info-holder'><div class='lesson-duration'>00:02:32</div><div class='lesson-title'><a class='bold-link-inverse' target='_blank' href='http://youtube.com/watch?v=H06_Ic_kDvI'>R 4.6 - Custom Functions With apply()</a></div><p>In the last section of videos, the apply() function was introduced. A prebuilt function is often used in this function, but it is also common to write a new function within apply() or to apply a custom function.</p></div></div></div><!--span9 Ends-->
+
+<div class="span3">
+<ul class="nav nav-tabs nav-stacked"> 
+<li><a href="../java-spring-framework.1">Spring Tutorial </a></li>
+<li><a href="../junit/index.html">JUNIT for Programmers</a></li>     
+<li><a href="http://www.studytonight.com/courses/programming-introduction/">Harvard Programming Introduction</a></li>  
+<li><a href="../javascript/index.html">Javascript by Douglas Crockford</a></li>   
+<li><a href="../mathematics/index.html">Mathematics</a></li>
+<li><a href="../java-struts-framework/index.html">Struts 2 Complete Course</a></li>
+<li><a href="../programming-paradigm/index.html">Introduction to Programming Paradigm</a></li>
+<li><a href="../data-structures/index.html">IIT-Delhi Data Structures Lectures</a></li>
+<li><a href="../android-application/index.html">Android App Development</a></li>
+<li><a href="../jbpm/index.html">Complete Introduction to JBPM</a></li>
+
+</ul> 
+
+<div class="sidebar-info-box-inverse">
+<table>
+<tr><td rowspan="2" style="width:35px;">&nbsp;&nbsp;<img src="http://studytonight.com/css/resource/icon-tip.png" alt="Tip for Test"/></td><td>How to</td></tr>
+<tr><td><a href="http://studytonight.com/collaborate" class="bold-link">Get your Video Lessons listed here</a></td></tr>
+</table>
+</div>
+
+<div class="sidebar-info-box-inverse">
+<div class="lessbold-title">Stay in Touch</div>
+<br/><p>Like us on Facebook to stay up to date with updates and news</p>
+<p><div class="fb-like" data-href="http://facebook.com/studytonight" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div></p>
+</div>
+
+</div> 
+</div><!--Row Ends-->
+</div><!-- Container Ends here--> 
+</div>
+
+       
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39722043-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<div id="footer">
+<div class="container">
+<div id="footer-box">
+
+<div id="footer-box-right">Check Out :  
+<a href="../../library"><span class="label">Library</span></a>&nbsp;&nbsp;
+<a href="../../online-courses"><span class="label">Video Courses</span></a>&nbsp;&nbsp;
+<a href="../../studyroom"><span class="label">Studyroom</span></a>&nbsp;&nbsp;
+<a href="../../flashcards"><span class="label">Flashcards</span></a>&nbsp;&nbsp;
+</div>
+
+<div id="footer-box-left">
+
+<p>&copy; Studytonight 2014 &middot; <span><img src="../../css/resource/icon-heart-small.png"/>Handcrafted with Love</span></p>
+
+<p><a href="../../about">About Us</a> &middot; <a href="../../suggest">Suggest</a> &middot; <a href="../../terms">Terms</a> &middot; <a href="../../contact">Contact Us</a> &middot; <a href="../../collaborate">Collaborate</a> &middot; <a href="../../authors.1">Authors</a> &middot; <a href="http://studytonight.tumblr.com/">Blog</a></p>
+
+
+</div>
+
+</div>  <!-- /footer-box -->
+<div class="row">
+<div class="span12 center">
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive Footer Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6137246359299957"
+     data-ad-slot="1965829825"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+</div> <!-- /container -->
+</div>  <!-- /footer -->
+  </body>
+</html>

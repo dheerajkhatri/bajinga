@@ -1,0 +1,184 @@
+.wrapper {
+	width: 400px;
+	height: 250px;
+	position: relative;
+}
+
+.wrapper .bkg-blue {
+        position:absolute;
+		width: 370px;
+		height: 370px;
+
+	}
+.wrapper .desk-bottom {
+		position: absolute;
+		width: 80%;
+		left: 10%;
+		height: 150px;
+		background: #d1d3d4;
+		bottom: -15px;
+	}
+.wrapper .desk-bottom .desk-cutout {
+			position: absolute;
+			width: 80%;
+			left: 10%;
+			background: #2bb5c9;
+			height: 115px;
+			top: 20%;
+			border-radius: 25px;
+}
+.wrapper .desk-top {
+		position: absolute;
+		width: 115%;
+		background: #cb875c;
+		height: 25px;
+		bottom: 133px;
+		left: -7.5%;
+		border-bottom-left-radius: 7px;
+		border-bottom-right-radius: 7.5px;
+		z-index: 99;
+}
+
+.wrapper .desk-top .screen {
+			background: white;
+			margin: 0;
+			padding: 28% 22% 33% 16%;
+			border-top: 10px solid #d1d3d4;
+		}
+.wrapper .desk-top .chart {
+			width: 30px;
+			height: 5px;
+			background: #28687e;
+}
+.wrapper .desk-top .chart:after {
+				content: "";
+				position: absolute;
+				left: -11px;
+				top: -5px;
+				width: 13px;
+				height: 13px;
+				border-radius: 50%;
+				background: #ff6440;
+				display: inline-block;
+			}
+
+.wrapper .desk-top .chart1 {
+			transform: rotate(-25deg);
+		}
+.wrapper .desk-top .chart2 {
+			transform: rotate(25deg);
+			position: absolute;
+			left: 58px;
+		}
+.wrapper .desk-top .chart3 {
+			transform: rotate(-25deg);
+			position: absolute;
+			left: 85px;
+}
+.wrapper .desk-top .chart3:after {
+				content: "";
+				position: absolute;
+				left: -4px;
+				top: -4px;
+			}
+.wrapper .desk-top .chart3:before {
+				content: "";
+				position: absolute;
+				left: 29px;
+				top: -5px;
+				width: 13px;
+				height: 13px;
+				border-radius: 50%;
+				background: #ff6440;
+				display: inline-block;
+			}
+
+.wrapper .coffee {
+		position: absolute;
+		width: 45px;
+		height: 55px;
+		background: #28687e;
+		bottom: 20px;
+		left: 31px;
+		border-bottom-left-radius: 20px;
+		border-bottom-right-radius: 20px;
+		border-top-left-radius: 3px;
+		border-top-right-radius: 3px;
+}
+		.wrapper .coffee:before {
+			content: "";
+			position: absolute;
+			top: 8px;
+			left: -15px;
+			width: 26px;
+			height: 30px;
+			border: 9px solid #28687e;
+			border-radius: 10px;
+		}
+		.wrapper .coffee:after {
+			content: "";
+			position: absolute;
+			top: 0px;
+			right: 1px;
+			width: 0px;
+			height: 38px;
+			border: 6px solid rgba(17,96,124, 0.9);
+			border-radius: 0 1px 23px 0;
+		}
+
+.wrapper .book {
+		position: absolute;
+		top: -19px;
+		right: 0;
+		width: 75px;
+		height: 20px;
+		background-color: white;
+		box-sizing: border-box;
+		border-right: 7px solid #ff6440;
+		border-left: 0;
+		border-top: 7px solid #ff6440;
+		border-bottom: 7px solid #ff6440;
+		border-radius: 0 15px 15px 0;
+	}
+.wrapper .book2 {
+		position: absolute;
+		top: -39px;
+		right: 6px;
+		width: 75px;
+		height: 20px;
+		background-color: white;
+		box-sizing: border-box;
+		border-right: 0;
+		border-left: 7px solid #28687e;
+		border-top: 7px solid #28687e;
+		border-bottom: 7px solid #28687e;
+		border-radius:  15px 0  0  15px  ;
+	}
+.wrapper .computer-top {
+		position: absolute;
+		top: -155px;
+		left: 30%;
+		box-sizing: border-box;
+		width: 42%;
+		height: 133px;
+		background: darkgrey;
+		border: 11px solid #535556;
+		border-radius: 7.5px 7.5px 0 0;
+	}
+.wrapper .computer-bottom {
+		position: absolute;
+		top: -22px;
+		left: 28%;
+		width: 46%;
+		height: 22px;
+		background: lightgrey;
+		border-radius: 0 0 7.5px 7.5px;
+	}
+ .wrapper .computer-bottom .computer-bottom-dip {
+			width: 45px;
+			height: 13px;
+			background: darkgrey;
+			position: absolute;
+			left: 38%;
+			border-radius: 0 0 5px 5px;
+		}

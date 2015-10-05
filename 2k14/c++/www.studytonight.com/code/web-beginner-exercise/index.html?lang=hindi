@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>HTML Basics Web Beginner Exercise I | Building a Webpage - Studytonight</title>
+<meta name="description" content=""> 
+<meta property="og:image" content="http://www.studytonight.com/css/resource/favicon.png"/>
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Le styles -->
+<link href="../../css/bootstrap.v2.css" rel="stylesheet">
+<link href="../stylesheets/intro.js.css" rel="stylesheet">
+<link rel="icon" type="image/png" href="../../css/resource/favicon.png">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+$(function() {
+
+    // Toggle Nav on Click
+    $('.toggle-nav').click(function() {
+        // Calling a function in case you want to expand upon this.
+        toggleNav();
+        return false;
+    });
+
+
+});
+
+function toggleNav() {
+    if ($('#wrapper-container').hasClass('show-offcanvas-menu')) {
+        // Do things on Nav Close
+        $('#wrapper-container').removeClass('show-offcanvas-menu');
+    } else {
+        // Do things on Nav Open
+        $('#wrapper-container').addClass('show-offcanvas-menu');
+    }
+
+}
+</script>
+<script src= "../js/intro/intro.js"></script>
+<script src= "../js/google/angular.min.1.3.js"></script>
+<script src="../js/google/angular-cookies.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/editor/ace.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/editor/ace-ui.js" type="text/javascript" charset="utf-8"></script>
+<script src="http://www.studytonight.com/code/web-beginner-exercise/controller/app.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+<div ng-app="courseApp" ng-controller="courseAppController">
+
+<div id="overlay-screen" ng-hide="overlayScreenLoaderDOMLoaded && overlayScreenLoaderDataLoaded">
+            <div id="overlay-infinity-loader"></div>
+</div>
+
+<div id="wrapper-container">
+<div id="canvas-container">
+
+<div id="offcanvas-menu">
+	    
+            <div class="space-20"><a href="index.html?lang=hindi#" title="Close Menu" class="toggle-nav"><span class="malibu glyphicon glyphicon-remove"></span></a></div>
+            <div class="margin-5">
+                <ul id="offcanvas-menu-list">
+                    <!--
+                    We have to give links to lessons in order, like #!1/ , #!2/ etc, we will read that and will change the value of count
+                    variable in our controller to display that lesson. As of now, all the lessons, up-till that lesson,
+                    will be tick marked.
+
+                    [DONE]
+                    
+                    Add ng-click="jumpToLesson(lessonInfo.Number)" to the anchor tags below to enable the feature Jump To Lessons
+                    
+                    -->
+                    <li ng-repeat='lessonInfo in listOfLessons'>
+                    	<span ng-if="completed_lessons_list.split(',').indexOf(lessonInfo.Number) < 0">
+                        <a href="index.html?lang=hindi"><span class="grey glyphicon glyphicon-play-circle"></span>&nbsp;&nbsp;{{lessonInfo.Title}}</a>
+                        </span>
+                        <span ng-if="completed_lessons_list.split(',').indexOf(lessonInfo.Number) >= 0">
+                        <a href="index.html?lang=hindi"><span class="green glyphicon glyphicon-ok"></span>&nbsp;&nbsp;{{lessonInfo.Title}}</a>
+                        </span>
+                    </li>
+
+                </ul>
+            </div>
+    </div>
+
+<!-- Fixed navbar -->
+<div class="navbar">
+<div style="margin:0px 15px;">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="../../index.html">
+			<img id="brand-icon" src="../../css/resource/st-icon.png" alt="studytonight.com" title="Take me Home"/>
+		</a>
+	</div>
+	
+	
+	<ul class="nav navbar-nav"><li><a href="../../code.1">&larr; HTML COURSE</a></li></ul><a style="margin-top:10px;margin-left:30%;" href="../web-beginner-exercise" class="btn btn-success">SWITCH TO ENGLISH</a>
+<ul class="nav navbar-nav pull-right">
+		<li><a href="../../login?url=%252Fcode%252Fweb-beginner-exercise%252F?lang=hindi">Login</a></li>
+		<li><a href="../../suggest">Suggest</a></li>
+</ul>
+<div class="navbar-form navbar-right">
+	<a class="btn btn-warning" href="../../register"><b>Signup</b></a>
+</div>
+</div>
+</div>
+<div class="viewport-height dark-grey-container">
+	<div class="col-3 viewport-pane" id="lessonPanel">
+			<div class="viewport-pane white-container">
+			<div class="header-pane">LESSON 
+				<span class="pull-right" id="menuButton">
+				<!-- margin left is given to position the Intro Popup perfectly -->
+				<a href="index.html?lang=hindi" title="See List of Lessons" class="toggle-nav" style="margin-left:40px;"><img src="../../css/resource.v2/icons/basic/collapsed-menu.png" alt="Index"/></a>
+				</span>
+			</div>
+			<div class="body-viewport-pane space-5">
+				<div class="body-pane handle-overflow lesson-pane space-5" id="LessonPane">
+				
+				<div ng-bind-html="to_trusted(lessons[count].Lesson)"></div>
+				
+				<div class="light-blue-container margin-20 space-5">
+					<div class="text-center margin-10">
+						<span class="info-tab" ng-click="showInstructions()"><span class="glyphicon glyphicon-info-sign"></span>{{instructionTitle}}</span>
+						<span class="info-tab" ng-click="showHint()"><span class="glyphicon glyphicon-question-sign"></span>{{hintTitle}}</span>
+					</div>
+					<div class="margin-10">
+						<div ng-show="instructionVisible" ng-bind-html="to_trusted(lessons[count].Instruction)"></div>
+						<div ng-show="hintVisible" ng-bind-html="to_trusted(lessons[count].Hint)"></div>
+					</div>
+				</div>
+				
+				</div><!-- body pane ends here -->
+				<div class="footer-pane border-top margin-10">
+					<div class="text-center margin-10">
+						<small>
+						<a href="../../reportbug">Report Bug</a>&nbsp;&middot;&nbsp;
+						<a href="../../studyroom">Q &amp; A FORUM</a>
+						</small>
+					</div>
+					<div class="text-center margin-10">
+						<small class="dark-grey">&copy; 2015 Studytonight</small>
+					</div>
+				</div>
+			</div>
+			</div>
+	</div>
+	
+	<div class="col-6 viewport-pane" id="terminalPanel">
+			<div class="viewport-pane dark-night-container">
+			<div class="header-pane dark-night-container">TERMINAL
+				<span class="pull-right">
+										<a href="../../login.php?url=%252Fcode%252Fweb-beginner-exercise%252F?lang=hindi" class="btn btn-terminal btn-xs">SAVE PROGRESS</a>
+								</span>
+			</div>
+			<div class="body-viewport-pane">
+				<div class="body-pane">
+					<div class="editor" style="height:100%;font-size:14px;" ui-ace="aceOptions" ng-model="code_input" ng-trim="true"></div>
+				</div>
+				<div class="footer-pane dark-night-container space-20">
+					<div class="col-6">
+						<a href="index.html?lang=hindi" class="btn btn-success" ng-click="moveToNextLesson()" ng-show="nextButtonVisible"><b>
+						<span class="glyphicon glyphicon-arrow-right"></span> Start Next Lesson</b></a>
+						<a href="index.html?lang=hindi" id="submitButton" class="btn btn-info" ng-click="submit()" ng-show="submitButtonVisible"><b>
+						<span class="glyphicon glyphicon-ok"></span> Submit & Run Code</b></a>&nbsp;&nbsp;
+						<a href="index.html?lang=hindi" id="downloadButton" class="btn btn-warning" title="Download HTML File" ng-click="downloadFile()"><b>
+						<span class="glyphicon glyphicon-download-alt"></span></b></a>
+					</div>
+					<div class="col-6">
+					<div class="terminal-msg space-10 handle-overflow" ng-show="success">
+						<div class="terminal-msg-left"><span class="green glyphicon glyphicon-ok-circle"></span></div>
+						<div class="terminal-msg-right">Bingo! Let&apos;s move to the Next Lesson and check out some even more exciting excercises.</div>
+					</div>
+					<div class="terminal-msg space-10 handle-overflow" ng-show="failure">
+						<div class="terminal-msg-left"><span class="malibu glyphicon glyphicon-remove-circle"></span></div>
+						<div class="terminal-msg-right" ng-bind-html="to_trusted(failureMessage)"></div>
+					</div>
+					</div>
+				</div>
+			</div>
+			</div>
+	</div>
+	
+	<div class="col-3 viewport-pane" id="outputPanel">
+			<div class="viewport-pane white-container">
+				<div class="header-pane">OUTPUT</div>
+				<div class="body-viewport-pane space-10">
+				<p ng-bind-html="to_trusted(code_input)"></p>
+				<!-- <p>{{location}}</p> -->
+				</div>
+			</div>
+	</div>
+</div>
+
+</div></div><!-- wrapper and canvas container ends here -->
+
+</div><!-- Angular app ends here -->
+</body>
+</html>

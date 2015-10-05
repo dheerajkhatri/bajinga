@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Interface and Related Topic test | Core Java Topical Test - Studytonight</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="Core java, Java tutorials, Java notes, Topical Tests, Quick tests, Interview questions, best interview question, interview test, objective questions, core java test, java interview"/> 
+<meta name="description" content="Core java Topical Tests have the best questions to make you understand the topic well. After each section you study, give the related topical test."/>
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="../../js/studytonight.js" type="text/javascript"></script>
+
+<!-- Le styles -->
+<link href="../../css/bootstrap.css" rel="stylesheet">
+<link href="../../css/docs.css" rel="stylesheet">
+<link rel="icon" type="image/png" href="../../css/resource/favicon.png">
+
+<script type="text/javascript">
+$(function() {
+$("#get_result").click(function() 
+{
+var ans1 = $('input:radio[name=que1]:checked').val();
+var ans2 = $('input:radio[name=que2]:checked').val();
+var ans3 = $('input:radio[name=que3]:checked').val();
+var ans4 = $('input:radio[name=que4]:checked').val();
+var ans5 = $('input:radio[name=que5]:checked').val();
+var ans6 = $('input:radio[name=que6]:checked').val();
+var ans7 = $('input:radio[name=que7]:checked').val();
+var ans8 = $('input:radio[name=que8]:checked').val();
+var ans9 = $('input:radio[name=que9]:checked').val();
+var ans10 = $('input:radio[name=que10]:checked').val();
+
+dataString = 'ans1='+ ans1+ '&ans2=' +ans2 + '&ans3=' +ans3 + '&ans4=' +ans4 + '&ans5=' +ans5 + '&ans6=' +ans6 + '&ans7=' +ans7 + '&ans8=' +ans8 + '&ans9=' +ans9 + '&ans10=' +ans10;
+
+$.ajax({
+type: "POST",
+url: "4_result.php?subject=java&number=4",
+data: dataString,
+cache: false,
+success: function(html){
+$("#result").html(html);
+}
+});
+return false;
+}); 
+});
+
+</script>
+
+</head>
+<body>
+
+<style>
+
+.dropdown:hover ul{
+    display:block;
+}
+.dropdown ul { 
+    display: none;  
+    position:absolute;
+    background: rgba(0, 0, 0, 0.80); 
+    width: 150px;   
+    list-style-type:none;
+    padding:10px;
+} 
+.dropdown ul li{
+    padding:4px;
+}
+.dropdown ul li a{ 
+    line-height:30px;
+    cursor:pointer;
+    text-decoration:none;
+    color:white;
+} 
+.dropdown ul li a:hover{
+   color:orange;
+} 
+.dropdown ul.second
+{
+    left: 300px;
+}
+
+</style>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=183470395085546";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="navbar navbar-inverse navbar-fixed-top">
+<div class="navbar-inner">
+<div class="nav-container">
+<a class="brand" href="../../index.html" title="Take me Home :)"><img id="brand-icon" src="../../css/resource/st-icon.png" alt="studytonight logo"/></a>
+
+<!-- <font color="orange">Study</font>tonight<sup><span id="beta">&#946;eta</span></sup> --> 
+
+<ul class="nav navbar-nav nav-left-responsive">
+<li><a href="http://studytonight.com/online-courses/">VIDEO PLAYLISTS</a></li>
+<li class="dropdown"><a href="http://studytonight.com/library/">TUTORIALS</a>
+
+	<ul class="first">
+            <li><a href="../../android-app-using-mit-appinventor">ANDROID</a></li>
+            <li><a href="../../maven">APACHE MAVEN</a></li>
+            <li><a href="../../c">C LANGUAGE</a></li>
+            <li><a href="../../cpp.1">C++</a></li>
+            <li><a href="../../computer-networks">COMPUTER NETWORKS</a></li>
+            <li><a href="../../java">CORE JAVA</a></li>
+      </ul>
+      <ul class="second">
+      	    <li><a href="../../dbms">DBMS</a></li>
+            <li><a href="../../data-structures">DATA STRUCTURE</a></li>
+            <li><a href="../../jenkins">JENKINS</a></li>
+            <li><a href="../../jsp">JSP</a></li>
+            <li><a href="../../operating-system">OPERATING SYSTEM</a></li>
+            <li><a href="../../servlet">SERVLET</a></li>
+       </ul>
+
+</li>
+<li><a href="http://studytonight.com/studyroom/">Q &amp; A FORUM</a></li>
+<li><a href="http://studytonight.com/tests/">TESTS</a></li>
+<li><a href="http://studytonight.com/code/">HTML COURSE<sup id='beta'>NEW</sup></a></li>
+</ul>
+
+
+<ul class="nav nav-fb-responsive">
+<li class="nav-header">
+<div class="fb-like" data-href="http://facebook.com/studytonight" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
+</li>
+</ul>
+
+
+<ul class="nav pull-right-menuoption nav-right-responsive">
+<li>
+<form class="navbar-search" action="http://www.studytonight.com/search.php" method="GET"> 
+<table>
+<tr>
+<td><input type="text" name="q" maxlength="255" value="" class="search-query span2" placeholder="Search" title="Search Studytonight for Lessons and Topics"/></td>
+</tr>
+</table>
+</form>
+</li>
+<li><a href="../../login">LogIn</a></li>
+<li><a style="font-weight:bold;color:#f84906;" href="../../register">SignUp</a></li>
+<li><a href="../../suggest">Suggest</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div style="float:right;margin-right:100px;">
+<div class="bookmark-responsive">
+<div class="bookmark-ribbon traditional font-calibri">
+<a href="../../collaborate" target="_blank"><div id="bookmark-text">
+<div>WRITE</div><div>FOR US &amp;</div><div>GET PAID!</div>
+</div></a>
+</div></div></div>
+
+<!--  Event Bannner Space
+
+<div class="container">
+<div class="row">
+<div class="span12"><a href="http://studytonight.com/event"><img src="http://studytonight.com/css/codetonight-banner.png" alt="Codetonight for Java Programmers" title="Click to Register for Codetonight"/></a></div>
+</div></div> -->
+<div class="row">
+
+<div class="head-bar-java">
+<div class="container"><div id="subject-name">
+CORE JAVA
+</div></div>
+<div id="subject-info">
+<div class="container">
+<div id="sm-button">
+
+<!-- AddThis Button BEGIN -->
+<div class="addthis">
+<div class="addthis_toolbox addthis_default_style">
+<a class="addthis_button_facebook"></a>
+<a class="addthis_button_twitter"></a>
+<script type="text/javascript">
+<!--
+document.write('<a class="addthis_button_google_plusone" g:plusone:count="false"></a>');
+//-->
+</script>
+<a class="addthis_button_linkedin"></a>
+<a class="addthis_button_email"></a>
+
+<!-- <a class="addthis_button_compact"></a> -->
+
+</div>
+<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4fcb15e01d1a671c"></script>
+</div>
+<!-- AddThis Button END -->
+
+</div>
+<div>" Google's Android Operating System is developed on Java platform. "</div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- Common sub nav bar for all the lesson page, currently holding Google Adsense Code -->
+
+<div class="center plain-text-ad-style" style="margin-bottom:10px;">
+<div class="container">
+<div class="row">
+<div class="span12">
+	<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Sidebar Responsive Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6137246359299957"
+     data-ad-slot="5741724623"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>	
+</div>
+</div>
+<div class="container">
+<div id="quiz_container">
+
+<div id="quiz_content_head">
+<div id="quiz_content_head_left">
+<img src="../../css/resource/test.png" class="course-structure-img-small"/>
+</div>
+<div id="quiz_content_head_right">
+<h3>Package, Interface and Abstract Class</h3>
+<p>This Test will cover Packages, Interfaces and Abstract classes. Including all the related topics to these.</p>
+</div>
+</div><!-- Quiz Head Ends here--> 
+
+<div id="quiz_container_inner">
+
+<div class="quiz_content">
+
+<div class="quiz_question">Q. Which of the given statement is not true about an Java Package ?</div>
+<div class="quiz_options">
+<table class="quiz">
+<tr>
+<td><input type="radio" id="r1" value="a" name="que1"/>
+<label for="r1"><span></span>A package can be defined as a group of similar types of classes and interface.</label>
+ </td>
+</tr><tr>
+<td><input type="radio" id="r2" value="b" name="que1"/>
+<label for="r2"><span></span>Package are used in order to avoid name conflicts and to control access of classes and interface.</label></td>
+</tr>
+<tr>
+<td><input type="radio" id="r3" value="c" name="que1"/>
+<label for="r3"><span></span>A package cannot not have another package inside it.</label></td>
+</tr><tr>
+<td><input type="radio" id="r4" value="d" name="que1"/>
+<label for="r4"><span></span>Java uses file system directory to store package</label></td>
+</tr>
+</table>
+</div>
+<div class="quiz_answer_holder"></div>
+</div>
+
+<div class="quiz_content">
+<div class="quiz_question">Q. Given two files, what will be the Output ?</div>
+<pre>
+<b>package pck1;</b>
+ public class A
+ {
+  int x = 10;
+  public int y = 20; 
+ }
+
+<b>package pck2;</b>
+ import pck1.*;
+ class Test
+ {
+  public static void main(String []args)
+  {
+    A a = new A();	         // line 7
+    System.out.println(a.x);	 // line 8
+    System.out.println(a.y);	 // line 9
+  }
+}
+</pre>
+<div class="quiz_options">
+<table class="quiz">
+<tr>
+<td><input type="radio" id="r5" value="a" name="que2"/>
+<label for="r5"><span></span>10 20</label></td>
+<td><input type="radio" id="r6" value="b" name="que2"/>
+<label for="r6"><span></span>compilation error at line 7</label></td>
+</tr>
+<tr>
+<td><input type="radio" id="r7" value="c" name="que2"/>
+<label for="r7"><span></span>compilation error at line 8</label></td>
+<td><input type="radio" id="r8" value="d" name="que2"/>
+<label for="r8"><span></span>compilation error at line 9</label></td>
+</tr>
+</table>
+</div>
+<div class="quiz_answer_holder"></div>
+</div>
+
+<div class="quiz_content">
+<div class="quiz_question">Q. import keyword is used to ?</div>
+<div class="quiz_options">
+<table class="quiz">
+<tr>
+<td><input type="radio" id="r9" value="a" name="que3"/>
+<label for="r9"><span></span>both built-in packages and user-defined packages into your java source file.</label></td>
+</tr>
+<tr>
+<td><input type="radio" id="r10" value="b" name="que3"/>
+<label for="r10"><span></span>import only built-in packages into your java source file</label></td>
+</tr>
+<tr>
+<td><input type="radio" id="r11" value="c" name="que3"/>
+<label for="r11"><span></span>import only user-defined packages into your java source file</label></td>
+</tr>
+<tr>
+<td><input type="radio" id="r12" value="d" name="que3"/>
+<label for="r12"><span></span>None of the above</label></td>
+</tr>
+</table>
+</div>
+<div class="quiz_answer_holder"></div>
+</div>
+
+<div class="quiz_content">
+<div class="quiz_question">Q. You can import only static members of a class present in some other package using ?</div>
+<div class="quiz_options">
+<table class="quiz">
+<tr>
+<td><input type="radio" id="r13" value="a" name="que4"/>
+<label for="r13"><span></span>import keyword</label></td>
+<td><input type="radio" id="r14" value="b" name="que4"/>
+<label for="r14"><span></span>import static keyword</label></td>
+</tr>
+<tr>
+<td><input type="radio" id="r15" value="c" name="que4"/>
+<label for="r15"><span></span>package keyword</label></td>
+<td><input type="radio" id="r16" value="d" name="que4"/>
+<label for="r16"><span></span>static import keyword
+</label></td>
+</tr>
+</table>
+</div>
+<div class="quiz_answer_holder"></div>
+</div>
+
+<div class="quiz_content">
+<div class="quiz_question">Q. Which of the statement is false about an abstract class ?</div>
+
+<div class="quiz_options">
+<table class="quiz">
+<tr>
+<td><input type="radio" id="r17" value="a" name="que5"/>
+<label for="r17"><span></span>An abstract class is a class that contains one or more abstract methods.</label></td>
+</tr>
+<tr>
+<td><input type="radio" id="r18" value="b" name="que5"/>
+<label for="r18"><span></span>An abstract class cannot have normal method.</label> </td>
+</tr>
+<tr>
+<td><input type="radio" id="r19" value="c" name="que5"/>
+<label for="r19"><span></span>An abstract class cannot be instantiated.</label></td>
+</tr>
+<tr>
+<td><input type="radio" id="r20" value="d" name="que5"/>
+<label for="r20"><span></span>An abstract class can be extended.</label></td>
+</tr>
+</table>
+</div>
+<div class="quiz_answer_holder"></div>
+</div>
+
+<div class="quiz_content">
+<div class="quiz_question">Q. Fill the blank to compile the code succesfully ?</div>
+<pre>
+abstract class A 
+{
+  int a = 100;
+  public abstract void showA(); }
+
+public class B extends A
+{
+  _ _ _ _ _ _ _ _ _         // Fill the blank
+
+  public static void main(String []args)
+  { 
+    A objA = new B();
+    objA.showA(); 
+  }
+}
+</pre>
+<div class="quiz_options">
+<table class="quiz">
+<tr>
+<td><input type="radio" id="r21" value="a" name="que6"/>
+<label for="r21"><span></span>public abstract void showA() { }</label></td>
+<td><input type="radio" id="r22" value="b" name="que6"/>
+<label for="r22"><span></span>public void showA() { }</label></td>
+</tr>
+<tr>
+<td><input type="radio" id="r23" value="c" name="que6"/>
+<label for="r23"><span></span>void showA() { }</label></td>
+<td><input type="radio" id="r24" value="d" name="que6"/>
+<label for="r24"><span></span>public B showA() { }</label></td>
+</tr>
+</table>
+</div>
+<div class="quiz_answer_holder"></div>
+</div>
+
+<div class="quiz_content">
+<div class="quiz_question">Q. Which is a valid declaration within an Interface ?</div>
+
+<div class="quiz_options">
+<table class="quiz">
+<tr>
+<td><input type="radio" id="r25" value="a" name="que7"/>
+<label for="r25"><span></span>public static short stop = 23;</label></td>
+<td><input type="radio" id="r26" value="b" name="que7"/>
+<label for="r26"><span></span>protected short stop = 23;</label></td>
+</tr>
+<tr>
+<td><input type="radio" id="r27" value="c" name="que7"/>
+<label for="r27"><span></span>transient short stop = 23;</label></td>
+<td><input type="radio" id="r28" value="d" name="que7"/>
+<label for="r28"><span></span>final void start(short stop);</label></td>
+</tr>
+</table>
+</div>
+<div class="quiz_answer_holder"></div>
+</div>
+
+<div class="quiz_content">
+<div class="quiz_question">Q. Which of the following statement is true about an Interface ?</div>
+<div class="quiz_options">
+<table class="quiz">
+<tr>
+<td><input type="radio" id="r29" value="a" name="que8"/>
+<label for="r29"><span></span>Methods inside Interface can be static, final, native or strictfp.</label></td>
+</tr>
+<tr>
+<td><input type="radio" id="r30" value="b" name="que8"/>
+<label for="r30"><span></span>Interface can not extend one or more other interface.</label></td>
+</tr>
+<tr>
+<td><input type="radio" id="r31" value="c" name="que8"/>
+<label for="r31"><span></span>Interface cannot implement a class.</label></td>
+</tr>
+<tr>
+<td><input type="radio" id="r32" value="d" name="que8"/>
+<label for="r32"><span></span>Interface can not be nested inside another interface.</label></td>
+</tr>
+</table>
+</div>
+<div class="quiz_answer_holder"></div>
+</div>
+
+<div class="quiz_content">
+<div class="quiz_question">Q. Which of following is a valid class using the given code?</div>
+<pre>public interface A { public void showA(); }  </pre>
+<div class="quiz_options">
+<table class="quiz">
+<tr>
+<td><input type="radio" id="r33" value="a" name="que9"/>
+<label for="r33"><span></span><code>public class B extends A {
+public void showA(){}
+}</code></label></td>
+</tr>
+<tr>
+<td><input type="radio" id="r34" value="b" name="que9"/>
+<label for="r34"><span></span><code>public class B implements A {
+public abstract void showA(){}
+}</code></label></td>
+</tr>
+<tr>
+<td><input type="radio" id="r333" value="c" name="que9"/>
+<label for="r333"><span></span><code>public class B implements A {
+ void showA(){}
+}</code></label></td>
+</tr>
+<tr>
+<td><input type="radio" id="r344" value="d" name="que9"/>
+<label for="r344"><span></span><code>public class B implements A {
+public void showA(){}
+}</code></label></td>
+</tr>
+</table>
+</div>
+<div class="quiz_answer_holder"></div>
+</div>
+
+
+<div class="quiz_content">
+<div class="quiz_question">Q. Given the following declarations, which assignment is legal ?</div>
+<pre>
+// Class declarations :
+interface A {}
+class B {}
+class C extends B implements A {}
+class D implements A {}
+ 
+// Declaration statements :
+B b = new B();
+C c = new C();
+D d = new D();
+</pre>
+<div class="quiz_options">
+<table class="quiz">
+<tr>
+<td><input type="radio" id="r35" value="a" name="que10"/>
+<label for="r35"><span></span>c = d;</label></td>
+<td><input type="radio" id="r36" value="b" name="que10"/>
+<label for="r36"><span></span>d = c;</label></td>
+</tr>
+<tr>
+<td><input type="radio" id="r37" value="c" name="que10"/>
+<label for="r37"><span></span>A a = d;</label></td>
+<td><input type="radio" id="r38" value="d" name="que10"/>
+<label for="r38"><span></span>d = (D)c;</label></td>
+</tr>
+</table>
+</div>
+<div class="quiz_answer_holder"></div>
+</div>
+
+
+
+<br/>
+<div><a href="4" id="get_result" class="btn btn-lg btn-success">SUBMIT TEST</a>
+</div>
+<div id="overlay_form" style="display:none">
+<div id="result"></div>
+<div id='score-info'><a href='4#' id='close_popup_show_answers' class='simplebutton'>See Answers</a></div>
+</div>
+<div id="shadow" class="popup"></div>
+
+</div><!-- Quiz Inner container Ends here--> 
+
+</div><!-- Quiz Container Ends here--> 
+
+</div><!-- Container Ends here--> 
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39722043-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<div id="footer">
+<div class="container">
+<div id="footer-box">
+
+<div id="footer-box-right">Check Out :  
+<a href="../../library"><span class="label">Library</span></a>&nbsp;&nbsp;
+<a href="../../online-courses"><span class="label">Video Courses</span></a>&nbsp;&nbsp;
+<a href="../../studyroom"><span class="label">Studyroom</span></a>&nbsp;&nbsp;
+<a href="../../flashcards"><span class="label">Flashcards</span></a>&nbsp;&nbsp;
+</div>
+
+<div id="footer-box-left">
+
+<p>&copy; Studytonight 2014 &middot; <span><img src="../../css/resource/icon-heart-small.png"/>Handcrafted with Love</span></p>
+
+<p><a href="../../about">About Us</a> &middot; <a href="../../suggest">Suggest</a> &middot; <a href="../../terms">Terms</a> &middot; <a href="../../contact">Contact Us</a> &middot; <a href="../../collaborate">Collaborate</a> &middot; <a href="../../authors.1">Authors</a> &middot; <a href="http://studytonight.tumblr.com/">Blog</a></p>
+
+
+</div>
+
+</div>  <!-- /footer-box -->
+<div class="row">
+<div class="span12 center">
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive Footer Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6137246359299957"
+     data-ad-slot="1965829825"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+</div> <!-- /container -->
+</div>  <!-- /footer -->
+</body>
+</html>

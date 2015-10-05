@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Automating the Build in Maven | Apache Maven Tutorial | Studytonight</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Learn about how to Automate the build in Maven when two projects are dependent. How to setup and use Jenkins Server for Automation of build in Maven."/>
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!-- Le styles -->
+<link href="../css/bootstrap.css" rel="stylesheet">
+<link rel="icon" type="image/png" href="../css/resource/favicon.png">
+</head>
+<body>
+<style>
+
+.dropdown:hover ul{
+    display:block;
+}
+.dropdown ul { 
+    display: none;  
+    position:absolute;
+    background: rgba(0, 0, 0, 0.80); 
+    width: 150px;   
+    list-style-type:none;
+    padding:10px;
+} 
+.dropdown ul li{
+    padding:4px;
+}
+.dropdown ul li a{ 
+    line-height:30px;
+    cursor:pointer;
+    text-decoration:none;
+    color:white;
+} 
+.dropdown ul li a:hover{
+   color:orange;
+} 
+.dropdown ul.second
+{
+    left: 300px;
+}
+
+</style>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=183470395085546";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="navbar navbar-inverse navbar-fixed-top">
+<div class="navbar-inner">
+<div class="nav-container">
+<a class="brand" href="../index.html" title="Take me Home :)"><img id="brand-icon" src="../css/resource/st-icon.png" alt="studytonight logo"/></a>
+
+<!-- <font color="orange">Study</font>tonight<sup><span id="beta">&#946;eta</span></sup> --> 
+
+<ul class="nav navbar-nav nav-left-responsive">
+<li><a href="http://studytonight.com/online-courses/">VIDEO PLAYLISTS</a></li>
+<li class="dropdown"><a href="http://studytonight.com/library/">TUTORIALS</a>
+
+	<ul class="first">
+            <li><a href="../android-app-using-mit-appinventor">ANDROID</a></li>
+            <li><a href="../maven">APACHE MAVEN</a></li>
+            <li><a href="../c">C LANGUAGE</a></li>
+            <li><a href="../cpp.1">C++</a></li>
+            <li><a href="../computer-networks">COMPUTER NETWORKS</a></li>
+            <li><a href="../java">CORE JAVA</a></li>
+      </ul>
+      <ul class="second">
+      	    <li><a href="../dbms">DBMS</a></li>
+            <li><a href="../data-structures">DATA STRUCTURE</a></li>
+            <li><a href="../jenkins">JENKINS</a></li>
+            <li><a href="../jsp">JSP</a></li>
+            <li><a href="../operating-system">OPERATING SYSTEM</a></li>
+            <li><a href="../servlet">SERVLET</a></li>
+       </ul>
+
+</li>
+<li><a href="http://studytonight.com/studyroom/">Q &amp; A FORUM</a></li>
+<li><a href="http://studytonight.com/tests/">TESTS</a></li>
+<li><a href="http://studytonight.com/code/">HTML COURSE<sup id='beta'>NEW</sup></a></li>
+</ul>
+
+
+<ul class="nav nav-fb-responsive">
+<li class="nav-header">
+<div class="fb-like" data-href="http://facebook.com/studytonight" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
+</li>
+</ul>
+
+
+<ul class="nav pull-right-menuoption nav-right-responsive">
+<li>
+<form class="navbar-search" action="http://www.studytonight.com/search.php" method="GET"> 
+<table>
+<tr>
+<td><input type="text" name="q" maxlength="255" value="" class="search-query span2" placeholder="Search" title="Search Studytonight for Lessons and Topics"/></td>
+</tr>
+</table>
+</form>
+</li>
+<li><a href="../login">LogIn</a></li>
+<li><a style="font-weight:bold;color:#f84906;" href="../register">SignUp</a></li>
+<li><a href="../suggest">Suggest</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div style="float:right;margin-right:100px;">
+<div class="bookmark-responsive">
+<div class="bookmark-ribbon traditional font-calibri">
+<a href="../collaborate" target="_blank"><div id="bookmark-text">
+<div>WRITE</div><div>FOR US &amp;</div><div>GET PAID!</div>
+</div></a>
+</div></div></div>
+
+<!--  Event Bannner Space
+
+<div class="container">
+<div class="row">
+<div class="span12"><a href="http://studytonight.com/event"><img src="http://studytonight.com/css/codetonight-banner.png" alt="Codetonight for Java Programmers" title="Click to Register for Codetonight"/></a></div>
+</div></div> --><div class="row">
+<div class="head-bar-maven">
+  <div class="container">
+	<div id="subject-name">
+	APACHE MAVEN
+	</div>
+   </div>
+<div id="subject-info"> <div class="container">
+
+<div id="sm-button">
+<!-- AddThis Button BEGIN -->
+<div class="addthis">
+<div class="addthis_toolbox addthis_default_style">
+<a class="addthis_button_facebook"></a>
+<a class="addthis_button_twitter"></a>
+<script type="text/javascript">
+<!--
+document.write('<a class="addthis_button_google_plusone" g:plusone:count="false"></a>');
+//-->
+</script>
+<a class="addthis_button_linkedin"></a>
+<a class="addthis_button_email"></a>
+
+<!-- <a class="addthis_button_compact"></a> -->
+
+</div>
+<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4fcb15e01d1a671c"></script>
+</div>
+<!-- AddThis Button END -->
+
+</div>
+<div>" Maven is a Yiddish word meaning <i>accumulator of knowledge</i> "</div>
+
+</div> </div>
+
+</div>
+</div>
+<!-- Common sub nav bar for all the lesson page, currently holding Google Adsense Code -->
+
+<div class="center plain-text-ad-style" style="margin-bottom:10px;">
+<div class="container">
+<div class="row">
+<div class="span12">
+	<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Sidebar Responsive Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6137246359299957"
+     data-ad-slot="5741724623"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>	
+</div>
+</div>
+
+<div class="container">
+<div class="row">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="../js/jquery.tipsy.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function() {
+
+$('.sidebar-social-button').tipsy({gravity: 'e'});
+
+$('#slide-toggle-sidebar').on('click', function(){
+        $('#sidebar-menu').css('width','100%');
+	$('#sidebar-menu').slideToggle();
+});
+
+});
+</script>
+
+<link href="../css/tipsy_title.css" rel="stylesheet">
+
+<div class="span3">
+
+<div class="sidebar-collpsed-responsive">
+<a href="maven-build-automation#" id="slide-toggle-sidebar"><span class="pull-right"><img src="../css/resource/collapsed-menu.png" alt="Menu"/></span><span>SEE THE INDEX</span></a>
+</div>
+
+
+<div id="sidebar-menu">
+<div class="sidebar-social-button" title="Share this Lesson with your friends">
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style">
+<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+<a class="addthis_counter addthis_pill_style"></a>
+</div>
+<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4fcb15e01d1a671c"></script>
+<!-- AddThis Button END -->
+</div>
+<hr/>
+<ul class="sidebar">
+<li class="main">Apache Maven Tutorial</li>
+<li><a href="introduction-to-maven">Introduction to Maven</a></li>
+<li><a href="setting-up-maven">Setting up Maven Environment</a></li>
+<li><a href="pom-in-maven">What is POM?</a></li>
+<li><a href="repositories-in-maven">Repositories in Maven</a></li>
+
+
+<li class="main">Maven Build Life Cycle</li>
+<li><a href="maven-build-life-cycle">Build Life Cycle</a></li>
+<li><a href="build-profiles-in-maven">Build Profiles</a></li>
+<li><a href="maven-plugins">Maven Plugins</a></li>
+<li><a href="project-creation-in-maven">First Project in Maven</a></li>
+<li><a href="build-and-test-maven-project">Build & Test your Project</a></li>
+<li><a href="managing-external-dependency-in-maven">Managing External Dependencies</a></li>
+
+<li class="main">Maven Build Automation</li>
+<li><a href="maven-build-automation">Build Automation</a></li>
+<li><a href="maven-snapshot">Maven Snapshot</a></li>
+<li><a href="generating-javadocs-in-maven">Generating Javadocs</a></li>
+<li><a href="maven-web-application">Maven Web Application</a></li>
+<li><a href="maven-deployment-automation">Maven Deployment Automation</a></li>
+<li><a href="maven-with-eclipse-ide">Integration into Eclipse IDE</a></li>
+
+</ul>
+
+<br/>
+<p style="margin-left:2px;">
+<script id="mNCC" language="javascript">  medianet_width='200';  medianet_height= '200';  medianet_crid='187662268';  </script>  <script id="mNSC" src="http://contextual.media.net/nmedianet.js?cid=8CUK82SPR" language="javascript"></script>
+</p>
+</div>
+</div><div class="span9">
+<div id="body-content">
+<h2>Maven Build Automation</h2>
+<p><b>Build automation</b> is the process in which a project gets initiated with the build process whenever a change is made in the workspace and also to ensure that project is stable along with its dependent projects (if the project is used by any other projects).</p>
+<p>This is very much essential in the software development life cycle as it is difficult to manage with the failed builds during the development phase. Hence, a process is required in order to ensure the health status of the build all the time and keep an eye on the same.
+</p>
+<p>
+Consider the project <b>JavaSamples</b> in this scenario. Here, lot of programs varying across different oops concept will be written and tested. But, it is always difficult to test every class independently for the compilation issue since they are modularized under different set of packages.</p> 
+<p>In order to achieve this, maven provides a feature to automate the same. Consider, developers want to check the build stability after each check in done to the project. Also, consider that this JavaSamples project is a dependent project of another project called <b>CoreJavaTutorials</b>. Hence, it is mandatory to maintain a stable build of JavaSamples.
+</p>
+<p>Below mentioned are the pom.xml files for two dependent projects.</p>
+<p><b>CoreJavaTutorials Project</b></p>
+<pre>
+&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; 
+   xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+   xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 
+   http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
+   &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+   &lt;groupId&gt;<b>CoreJavaTutorials</b>&lt;/groupId&gt;
+   &lt;artifactId&gt;CoreJavaTutorials &lt;/artifactId&gt;
+   &lt;version&gt;1.0&lt;/version&gt;
+   &lt;packaging&gt;jar&lt;/packaging&gt;
+   &lt;dependencies&gt;
+      &lt;dependency&gt;
+      &lt;groupId&gt;<b>JavaSamples</b>&lt;/groupId&gt;
+         &lt;artifactId&gt;JavaSamples&lt;/artifactId&gt;
+         &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;
+      &lt;/dependency&gt;
+   &lt;/dependencies&gt;
+&lt;/project&gt;
+</pre>
+<br>
+<p><b>JavaSamples Project</b></p>
+<pre>
+&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; 
+   xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+   xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 
+   http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
+   &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+   &lt;groupId&gt;<b>JavaSamples</b>&lt;/groupId&gt;
+   &lt;artifactId&gt;JavaSamples&lt;/artifactId&gt;
+   &lt;version&gt;1.0&lt;/version&gt;
+   &lt;packaging&gt;jar&lt;/packaging&gt;
+&lt;/project&gt;
+</pre>
+<br>
+<p>Now consider that there are some changes made on the JavaSamples project. Developer need to update the pom.xml of the JavaSamples project by adding a <b>post build goal</b> on the same.</p>
+<p><b>post build goal</b> is nothing but, a goal which defines a specific set of tasks once the build is successful. For e.g. generating javadocs is a post build goal. We will study about generating Javadocs in coming tutorials.</p>
+<pre>
+&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; 
+   xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+   xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 
+   http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;
+   &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;
+   &lt;groupId&gt;<b>JavaSamples</b>&lt;/groupId&gt;
+   &lt;artifactId&gt;<b>JavaSamples</b>&lt;/artifactId&gt;
+   &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;
+   &lt;packaging&gt;jar&lt;/packaging&gt;
+   &lt;build&gt;
+   &lt;plugins&gt;
+   &lt;plugin&gt;
+   &lt;artifactId&gt;maven-invoker-plugin&lt;/artifactId&gt;
+   &lt;version&gt;1.6&lt;/version&gt;
+            <i>&lt;executions&gt;
+         &lt;execution&gt;
+            &lt;id&gt;build&lt;/id&gt;
+            &lt;goals&gt;
+               &lt;goal&gt;run&lt;/goal&gt;
+            &lt;/goals&gt;
+         &lt;/execution&gt;
+      &lt;/executions&gt;</i>
+   &lt;/plugin&gt;
+   &lt;/plugins&gt;
+   &lt;build&gt;
+&lt;/project&gt;
+</pre>
+<hr>
+<h2>Build Automation using Jenkins Server</h2>
+<p><b>Jenkins Server</b> is a continuous integration tool. Using Jenkins build can be automated, tested for the health status of the builds and also multiple builds can be managed. It is a handy tool which is easily available to download and very easy to set up.</p><br>
+<h4>Setting up Jenkins Server</h4>
+<ul class="content">
+<li><p>Download the latest Jenkins.war from following link : <a href="http://jenkins-ci.org/" rel="nofollow" target="_blank"><span class="orange">http://jenkins-ci.org/</span></a></p>
+<p class="center"><img src="images/downloading-jenkins.jpg" alt="Installing Jenkins Server"/></p>
+</li>
+<li>Deploy the Jenkins.war file in the local web server of our machine. E.g. Tomcat</li>
+<li><p>Start the server and open the browser and hit the URL <b>http://localhost:8080/jenkins</b></p>
+<p class="center"><img src="images/setting-up-jenkins-1.jpg" alt="Setting up Jenkins Server and Automating Maven Build"/></p>
+</li>
+</ul>
+<hr>
+<h4>Creating a new Job and Deploying the Build</h4>
+<p>Click on the <b>Create new jobs</b> link, shown in picture above, to configure a project for build automation. Enter the details of the project as shown below and click <b>OK</b>. You must enter the Name and select the radio button for Maven Project.</p>
+<p class="center"><img src="images/setting-up-jenkins-2.jpg" alt="Setting up Jenkins Server and Automating Maven Build"/></p>
+<br>
+<p>In the next page, fill all the required details like – Description, Path of the project&apos;s pom.xml and other details and click save. Please check the below picture for help. Fill all the information and click on <b>SAVE</b></p>
+<p class="center"><img src="images/setting-up-jenkins-3.jpg" alt="Setting up Jenkins Server and Automating Maven Build"/></p>
+<p class="center"><img src="images/setting-up-jenkins-4.jpg" alt="Setting up Jenkins Server and Automating Maven Build"/></p>
+<p class="center"><img src="images/setting-up-jenkins-5.jpg" alt="Setting up Jenkins Server and Automating Maven Build"/></p>
+<br>
+<p>A Project/Job is now created in Jenkins. As shown below :</p>
+<p class="center"><img src="images/setting-up-jenkins-6.jpg" alt="Setting up Jenkins Server and Automating Maven Build"/></p>
+<br>
+<p>Click on the <b>Build now</b> option as shown above. This will read the <b>pom.xml</b> and pull out the latest code and executes a build process and generates the <b>jar/war</b> file accordingly.</p>
+<p class="center"><img src="images/setting-up-jenkins-7.jpg" alt="Setting up Jenkins Server and Automating Maven Build"/></p>
+<br/>
+<p>Click on the build number link and it opens up the build details. Click on the <b>Console Output</b> to see the logs of the build.</p>
+<p class="center"><img src="images/build-automation-1.jpg" alt="Build Automation in Maven using Jenkins Server"/></p>
+<br>
+<p>Check the logs and see your project building successfully.</p>
+<p class="center"><img src="images/build-automation-2.jpg" alt="Build Automation in Maven using Jenkins Server"/></p>
+<p class="center"><img src="images/build-automation-3.jpg" alt="Build Automation in Maven using Jenkins Server"/></p>
+
+<div><ul class="pager">
+<li class="previous">
+<a href="managing-external-dependency-in-maven">&larr; Prev</a>
+</li>
+<li class="next">
+<a href="maven-snapshot">Next &rarr;</a>
+</li>
+</ul></div>
+</div>
+</div>
+</div><!-- body span9 ends-->
+</div><!-- Container Ends here--> 
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39722043-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<div id="footer">
+<div class="container">
+<div id="footer-box">
+
+<div id="footer-box-right">Check Out :  
+<a href="../library"><span class="label">Library</span></a>&nbsp;&nbsp;
+<a href="../online-courses"><span class="label">Video Courses</span></a>&nbsp;&nbsp;
+<a href="../studyroom"><span class="label">Studyroom</span></a>&nbsp;&nbsp;
+<a href="../flashcards"><span class="label">Flashcards</span></a>&nbsp;&nbsp;
+</div>
+
+<div id="footer-box-left">
+
+<p>&copy; Studytonight 2014 &middot; <span><img src="../css/resource/icon-heart-small.png"/>Handcrafted with Love</span></p>
+
+<p><a href="../about">About Us</a> &middot; <a href="../suggest">Suggest</a> &middot; <a href="../terms">Terms</a> &middot; <a href="../contact">Contact Us</a> &middot; <a href="../collaborate">Collaborate</a> &middot; <a href="../authors.1">Authors</a> &middot; <a href="http://studytonight.tumblr.com/">Blog</a></p>
+
+
+</div>
+
+</div>  <!-- /footer-box -->
+<div class="row">
+<div class="span12 center">
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive Footer Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6137246359299957"
+     data-ad-slot="1965829825"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+</div> <!-- /container -->
+</div>  <!-- /footer --></body>
+</html>

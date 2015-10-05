@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Interview Question MCQ | Core Java Topical Test - Studytonight</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="Core java, Java tutorials, Java notes, Topical Tests, Quick tests, Interview questions, best interview question, interview test, objective questions, core java test, java interview"/> 
+<meta name="description" content="Core java Topical Tests have the best questions to make you understand the topic well. After each section you study, give the related topical test."/>
+
+<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="../../js/studytonight.js" type="text/javascript"></script>
+
+<!-- Le styles -->
+<link href="../../css/bootstrap.css" rel="stylesheet">
+<link href="../../css/docs.css" rel="stylesheet">
+<link rel="icon" type="image/png" href="../../css/resource/favicon.png">
+
+<script type="text/javascript">
+$(function() {
+$("#get_result").click(function() 
+{
+var ans1 = $('input:radio[name=que1]:checked').val();
+var ans2 = $('input:radio[name=que2]:checked').val();
+var ans3 = $('input:radio[name=que3]:checked').val();
+var ans4 = $('input:radio[name=que4]:checked').val();
+var ans5 = $('input:radio[name=que5]:checked').val();
+var ans6 = $('input:radio[name=que6]:checked').val();
+var ans7 = $('input:radio[name=que7]:checked').val();
+var ans8 = $('input:radio[name=que8]:checked').val();
+var ans9 = $('input:radio[name=que9]:checked').val();
+var ans10 = $('input:radio[name=que10]:checked').val();
+var ans11 = $('input:radio[name=que11]:checked').val();
+var ans12 = $('input:radio[name=que12]:checked').val();
+var ans13 = $('input:radio[name=que13]:checked').val();
+var ans14 = $('input:radio[name=que14]:checked').val();
+var ans15 = $('input:radio[name=que15]:checked').val();
+
+
+dataString = 'ans1='+ ans1+ '&ans2=' +ans2 + '&ans3=' +ans3 + '&ans4=' +ans4 + '&ans5=' +ans5 + '&ans6=' +ans6 + '&ans7=' +ans7 + '&ans8=' +ans8 + '&ans9=' +ans9 + '&ans10=' +ans10 + '&ans11=' +ans11 + '&ans12=' +ans12 + '&ans13=' +ans13 + '&ans14=' +ans14 + '&ans15=' +ans15;
+
+$.ajax({
+type: "POST",
+url: "11_result.php?subject=java&number=11",
+data: dataString,
+cache: false,
+success: function(html){
+$("#result").html(html);
+}
+});
+return false;
+}); 
+});
+
+</script>
+
+</head>
+<body>
+
+<style>
+
+.dropdown:hover ul{
+    display:block;
+}
+.dropdown ul { 
+    display: none;  
+    position:absolute;
+    background: rgba(0, 0, 0, 0.80); 
+    width: 150px;   
+    list-style-type:none;
+    padding:10px;
+} 
+.dropdown ul li{
+    padding:4px;
+}
+.dropdown ul li a{ 
+    line-height:30px;
+    cursor:pointer;
+    text-decoration:none;
+    color:white;
+} 
+.dropdown ul li a:hover{
+   color:orange;
+} 
+.dropdown ul.second
+{
+    left: 300px;
+}
+
+</style>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=183470395085546";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="navbar navbar-inverse navbar-fixed-top">
+<div class="navbar-inner">
+<div class="nav-container">
+<a class="brand" href="../../index.html" title="Take me Home :)"><img id="brand-icon" src="../../css/resource/st-icon.png" alt="studytonight logo"/></a>
+
+<!-- <font color="orange">Study</font>tonight<sup><span id="beta">&#946;eta</span></sup> --> 
+
+<ul class="nav navbar-nav nav-left-responsive">
+<li><a href="http://studytonight.com/online-courses/">VIDEO PLAYLISTS</a></li>
+<li class="dropdown"><a href="http://studytonight.com/library/">TUTORIALS</a>
+
+	<ul class="first">
+            <li><a href="../../android-app-using-mit-appinventor">ANDROID</a></li>
+            <li><a href="../../maven">APACHE MAVEN</a></li>
+            <li><a href="../../c">C LANGUAGE</a></li>
+            <li><a href="../../cpp.1">C++</a></li>
+            <li><a href="../../computer-networks">COMPUTER NETWORKS</a></li>
+            <li><a href="../../java">CORE JAVA</a></li>
+      </ul>
+      <ul class="second">
+      	    <li><a href="../../dbms">DBMS</a></li>
+            <li><a href="../../data-structures">DATA STRUCTURE</a></li>
+            <li><a href="../../jenkins">JENKINS</a></li>
+            <li><a href="../../jsp">JSP</a></li>
+            <li><a href="../../operating-system">OPERATING SYSTEM</a></li>
+            <li><a href="../../servlet">SERVLET</a></li>
+       </ul>
+
+</li>
+<li><a href="http://studytonight.com/studyroom/">Q &amp; A FORUM</a></li>
+<li><a href="http://studytonight.com/tests/">TESTS</a></li>
+<li><a href="http://studytonight.com/code/">HTML COURSE<sup id='beta'>NEW</sup></a></li>
+</ul>
+
+
+<ul class="nav nav-fb-responsive">
+<li class="nav-header">
+<div class="fb-like" data-href="http://facebook.com/studytonight" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
+</li>
+</ul>
+
+
+<ul class="nav pull-right-menuoption nav-right-responsive">
+<li>
+<form class="navbar-search" action="http://www.studytonight.com/search.php" method="GET"> 
+<table>
+<tr>
+<td><input type="text" name="q" maxlength="255" value="" class="search-query span2" placeholder="Search" title="Search Studytonight for Lessons and Topics"/></td>
+</tr>
+</table>
+</form>
+</li>
+<li><a href="../../login">LogIn</a></li>
+<li><a style="font-weight:bold;color:#f84906;" href="../../register">SignUp</a></li>
+<li><a href="../../suggest">Suggest</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div style="float:right;margin-right:100px;">
+<div class="bookmark-responsive">
+<div class="bookmark-ribbon traditional font-calibri">
+<a href="../../collaborate" target="_blank"><div id="bookmark-text">
+<div>WRITE</div><div>FOR US &amp;</div><div>GET PAID!</div>
+</div></a>
+</div></div></div>
+
+<!--  Event Bannner Space
+
+<div class="container">
+<div class="row">
+<div class="span12"><a href="http://studytonight.com/event"><img src="http://studytonight.com/css/codetonight-banner.png" alt="Codetonight for Java Programmers" title="Click to Register for Codetonight"/></a></div>
+</div></div> -->
+<div class="row">
+
+<div class="head-bar-java">
+<div class="container"><div id="subject-name">
+CORE JAVA
+</div></div>
+<div id="subject-info">
+<div class="container">
+<div id="sm-button">
+
+<!-- AddThis Button BEGIN -->
+<div class="addthis">
+<div class="addthis_toolbox addthis_default_style">
+<a class="addthis_button_facebook"></a>
+<a class="addthis_button_twitter"></a>
+<script type="text/javascript">
+<!--
+document.write('<a class="addthis_button_google_plusone" g:plusone:count="false"></a>');
+//-->
+</script>
+<a class="addthis_button_linkedin"></a>
+<a class="addthis_button_email"></a>
+
+<!-- <a class="addthis_button_compact"></a> -->
+
+</div>
+<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4fcb15e01d1a671c"></script>
+</div>
+<!-- AddThis Button END -->
+
+</div>
+<div>" Google's Android Operating System is developed on Java platform. "</div>
+
+</div>
+</div>
+</div>
+</div>
+<!-- Common sub nav bar for all the lesson page, currently holding Google Adsense Code -->
+
+<div class="center plain-text-ad-style" style="margin-bottom:10px;">
+<div class="container">
+<div class="row">
+<div class="span12">
+	<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Sidebar Responsive Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6137246359299957"
+     data-ad-slot="5741724623"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>	
+</div>
+</div>
+<div class="container">
+<div id="quiz_container">
+
+<div id="quiz_content_head">
+<div id="quiz_content_head_left">
+<img src="../../css/resource/test.png" class="course-structure-img-small"/>
+</div>
+<div id="quiz_content_head_right">
+<h3>Interview MCQs Test for Core Java - Level 2</h3>
+<p>This Test will cover complete Java with very important questions, starting off from basics to advanced level.</p>
+</div>
+</div><!-- Quiz Head Ends here--> 
+
+<div id="quiz_container_inner">
+
+<div class="quiz_content">
+<div class="quiz_question">Q. Which of these is not a bitwise operator?</div>
+<div class="quiz_options">
+<table class="quiz">
+<tr>
+<td><input type="radio" id="r1" value="a" name="que1"/>
+<label for="r1"><span></span>&amp;</label>
+ </td>
+<td><input type="radio" id="r2" value="b" name="que1"/>
+<label for="r2"><span></span>&amp;=</label></td>
+</tr>
+<tr>
+<td><input type="radio" id="r3" value="c" name="que1"/>
+<label for="r3"><span></span>|=</label></td>
+<td><input type="radio" id="r4" value="d" name="que1"/>
+<label for="r4"><span></span>&lt;=</label></td>
+</tr>
+</table>
+</div>
+<div class="quiz_answer_holder"></div>
+</div>
+
+<div class="quiz_content">
+<div class="quiz_question">Q. Which operator is used to invert all the digits in binary representation of a number?</div>
+<div class="quiz_options">
+<table class="quiz">
+<tr>
+<td><input type="radio" id="r5" value="a" name="que2"/>
+<label for="r5"><span></span>~</label>
+ </td>
+<td><input type="radio" id="r6" value="b" name="que2"/>
+<label for="r6"><span></span>&lt;&lt;&lt;</label></td>
+</tr>
+<tr>
+<td><input type="radio" id="r7" value="c" name="que2"/>
+<label for="r7"><span></span>&gt;&gt;&gt;</label></td>
+<td><input type="radio" id="r8" value="d" name="que2"/>
+<label for="r8"><span></span>^</label></td>
+</tr>
+</table>
+</div>
+<div class="quiz_answer_holder"></div>
+</div>
+
+<div class="quiz_content">
+<div class="quiz_question">Q. How can you stop the finally() block from executing, after try-catch block execution?</div>
+<div class="quiz_options">
+<table class="quiz">
+<tr>
+<td><input type="radio" id="r9" value="a" name="que3"/>
+<label for="r9"><span></span>by calling return statement from try or catch block</label>
+ </td></tr>
+ <tr>
+<td><input type="radio" id="r10" value="b" name="que3"/>
+<label for="r10"><span></span>by calling System.exit from try or catch block</label></td>
+</tr>
+<tr>
+<td><input type="radio" id="r11" value="c" name="que3"/>
+<label for="r11"><span></span>by Both return and System.exit</label></td></tr>
+<tr>
+<td><input type="radio" id="r12" value="d" name="que3"/>
+<label for="r12"><span></span>None of the above</label></td>
+</tr>
+</table>
+</div>
+<div class="quiz_answer_holder"></div>
+</div>
+
+<div class="quiz_content">
+<div class="quiz_question">Q. What will happen when you attempt to compile and run the following code?</div>
+<pre>int Output = 10;
+boolean b1 = false;
+if((b1 == true) && ((Output += 10) == 20))
+{
+    System.out.println("We are equal " + Output);
+}
+else
+{
+    System.out.println("Not equal! " + Output);
+}  </pre>
+<div class="quiz_options">
+<table class="quiz">
+<tr>
+<td><input type="radio" id="r13" value="a" name="que4"/>
+<label for="r13"><span></span>Compilation error, attempting to perform binary comparison on logical data type.</label>
+ </td></tr>
+ <tr>
+<td><input type="radio" id="r14" value="b" name="que4"/>
+<label for="r14"><span></span>Compilation and output of "We are equal 10".</label></td>
+</tr>
+<tr>
+<td><input type="radio" id="r15" value="c" name="que4"/>
+<label for="r15"><span></span>Compilation and output of "Not equal! 20".</label></td></tr>
+<tr>
+<td><input type="radio" id="r16" value="d" name="que4"/>
+<label for="r16"><span></span>Compilation and output of "Not equal! 10".</label></td>
+</tr>
+</table>
+</div>
+<div class="quiz_answer_holder"></div>
+</div>
+
+<div class="quiz_content">
+<div class="quiz_question">Q. Can you override private or static method in Java. Yes or No?</div>
+<div class="quiz_options">
+<table class="quiz">
+<tr>
+<td><input type="radio" id="r17" value="a" name="que5"/>
+<label for="r17"><span></span>Yes</label>
+ </td>
+<td><input type="radio" id="r18" value="b" name="que5"/>
+<label for="r18"><span></span>No</label></td>
+</tr>
+</table>
+</div>
+<div class="quiz_answer_holder"></div>
+</div>
+
+<div class="quiz_content">
+<div class="quiz_question">Q. Can you access non static variable in static context?</div>
+<div class="quiz_options">
+<table class="quiz">
+<tr>
+<td><input type="radio" id="r19" value="a" name="que6"/>
+<label for="r19"><span></span>Yes</label>
+ </td>
+<td><input type="radio" id="r20" value="b" name="que6"/>
+<label for="r20"><span></span>No</label></td>
+</tr>
+</table>
+</div>
+<div class="quiz_answer_holder"></div>
+</div>
+
+<div class="quiz_content">
+<div class="quiz_question">Q. What is the output of this program?</div>
+<pre>class bitwise_operator {
+        public static void main(String args[])
+        {
+            int var1 = 42;
+            int var2 = ~var1;
+            System.out.print(var1 + " " + var2);     	
+        } 
+    }</pre>
+<div class="quiz_options">
+<table class="quiz">
+<tr>
+<td><input type="radio" id="r21" value="a" name="que7"/>
+<label for="r21"><span></span>42 42</label>
+ </td>
+<td><input type="radio" id="r22" value="b" name="que7"/>
+<label for="r22"><span></span>43 43</label></td>
+</tr>
+<tr>
+<td><input type="radio" id="r23" value="c" name="que7"/>
+<label for="r23"><span></span>42 -43</label>
+ </td>
+<td><input type="radio" id="r24" value="d" name="que7"/>
+<label for="r24"><span></span>42 -42</label></td>
+</tr>
+</table>
+</div>
+<div class="quiz_answer_holder"></div>
+</div>
+
+<div class="quiz_content">
+<div class="quiz_question">Q. What is the output of this program?</div>
+<pre>class leftshift_operator {
+        public static void main(String args[]) 
+        {        
+             byte x = 64;
+             int i;
+             byte y; 
+             i = x << 2;
+             y = (byte) (x << 2)
+             System.out.print(i + " " + y);
+        } 
+    }</pre>
+<div class="quiz_options">
+<table class="quiz">
+<tr>
+<td><input type="radio" id="r25" value="a" name="que8"/>
+<label for="r25"><span></span>64 0</label>
+ </td>
+<td><input type="radio" id="r26" value="b" name="que8"/>
+<label for="r26"><span></span>0 64</label></td>
+</tr>
+<tr>
+<td><input type="radio" id="r27" value="c" name="que8"/>
+<label for="r27"><span></span>0 256</label>
+ </td>
+<td><input type="radio" id="r28" value="d" name="que8"/>
+<label for="r28"><span></span>256 0</label></td>
+</tr>
+</table>
+</div>
+<div class="quiz_answer_holder"></div>
+</div>
+
+<div class="quiz_content">
+<div class="quiz_question">Q. What is the output of this program?</div>
+<pre>class selection_statements {
+        public static void main(String args[])
+        {
+            int var1 = 5; 
+            int var2 = 6;
+            if ((var2 = 1) == var1)
+                System.out.print(var2);
+            else 
+                System.out.print(++var2);
+        } 
+    }</pre>
+<div class="quiz_options">
+<table class="quiz">
+<tr>
+<td><input type="radio" id="r29" value="a" name="que9"/>
+<label for="r29"><span></span>1</label>
+ </td>
+<td><input type="radio" id="r30" value="b" name="que9"/>
+<label for="r30"><span></span>2</label></td>
+</tr>
+<tr>
+<td><input type="radio" id="r31" value="c" name="que9"/>
+<label for="r31"><span></span>3</label>
+ </td>
+<td><input type="radio" id="r32" value="d" name="que9"/>
+<label for="r32"><span></span>4</label></td>
+</tr>
+</table>
+</div>
+<div class="quiz_answer_holder"></div>
+</div>
+
+
+<div class="quiz_content">
+<div class="quiz_question">Q. How do you ensure that N thread can access N resources without deadlock?</div>
+<div class="quiz_options">
+<table class="quiz">
+<tr>
+<td><input type="radio" id="r33" value="a" name="que10"/>
+<label for="r33"><span></span>By acquiring resources in a particular order and release resources in reverse order.</label>
+ </td></tr>
+<tr> 
+<td><input type="radio" id="r34" value="b" name="que10"/>
+<label for="r34"><span></span>By acquiring resources in a particular order and release resources in same order</label></td>
+</tr>
+<tr>
+<td><input type="radio" id="r35" value="c" name="que10"/>
+<label for="r35"><span></span>By acquiring resources in a particular order and not releasing resources.</label>
+ </td></tr>
+<tr> 
+<td><input type="radio" id="r36" value="d" name="que10"/>
+<label for="r36"><span></span>Not Possible</label></td>
+</tr>
+</table>
+</div>
+<div class="quiz_answer_holder"></div>
+</div>
+
+<div class="quiz_content">
+<div class="quiz_question">Q. What is the output of this program?</div>
+<pre>class comma_operator {
+        public static void main(String args[]) 
+        {    
+             int sum = 0;
+             for (int i = 0, j = 0; i < 5 & j < 5; ++i, j = i + 1)
+                 sum += i;
+ 	     System.out.println(sum);
+        } 
+    }</pre>
+<div class="quiz_options">
+<table class="quiz">
+<tr>
+<td><input type="radio" id="r37" value="a" name="que11"/>
+<label for="r37"><span></span>5</label>
+ </td>
+<td><input type="radio" id="r38" value="b" name="que11"/>
+<label for="r38"><span></span>6</label></td>
+</tr>
+<tr>
+<td><input type="radio" id="r39" value="c" name="que11"/>
+<label for="r39"><span></span>14</label>
+ </td>
+<td><input type="radio" id="r40" value="d" name="que11"/>
+<label for="r40"><span></span>compilation error</label></td>
+</tr>
+</table>
+</div>
+<div class="quiz_answer_holder"></div>
+</div>
+
+<div class="quiz_content">
+<div class="quiz_question">Q. Java is designed for the distributed environment of the Internet, because it handles _________ protocols.</div>
+<div class="quiz_options">
+<table class="quiz">
+<tr>
+<td><input type="radio" id="r41" value="a" name="que12"/>
+<label for="r41"><span></span>UDP</label>
+ </td>
+<td><input type="radio" id="r42" value="b" name="que12"/>
+<label for="r42"><span></span>TCP/IP</label></td>
+</tr>
+<tr>
+<td><input type="radio" id="r43" value="c" name="que12"/>
+<label for="r43"><span></span>FTP</label>
+ </td>
+<td><input type="radio" id="r44" value="d" name="que12"/>
+<label for="r44"><span></span>TEL</label></td>
+</tr>
+</table>
+</div>
+<div class="quiz_answer_holder"></div>
+</div>
+
+<div class="quiz_content">
+<div class="quiz_question">Q. Which of the following is not an exception in Java?</div>
+<div class="quiz_options">
+<table class="quiz">
+<tr>
+<td><input type="radio" id="r45" value="a" name="que13"/>
+<label for="r45"><span></span>Nullpointer Exception</label>
+ </td>
+<td><input type="radio" id="r46" value="b" name="que13"/>
+<label for="r46"><span></span>Arithmetic Exception</label></td>
+</tr>
+<tr>
+<td><input type="radio" id="r47" value="c" name="que13"/>
+<label for="r47"><span></span>ArrayoutofBounds Exception</label>
+ </td>
+<td><input type="radio" id="r48" value="d" name="que13"/>
+<label for="r48"><span></span>Logical Exception</label></td>
+</tr>
+</table>
+</div>
+<div class="quiz_answer_holder"></div>
+</div>
+
+<div class="quiz_content">
+<div class="quiz_question">Q. Can you pass <code>List&lt;String&gt;</code> to a method which accepts <code>List&lt;Object&gt;</code>?</div>
+<div class="quiz_options">
+<table class="quiz">
+<tr>
+<td><input type="radio" id="r49" value="a" name="que14"/>
+<label for="r49"><span></span>Yes</label>
+ </td></tr>
+<tr> 
+<td><input type="radio" id="r50" value="b" name="que14"/>
+<label for="r50"><span></span>No, but it wont give any error</label></td>
+</tr>
+<tr>
+<td><input type="radio" id="r51" value="c" name="que14"/>
+<label for="r51"><span></span>This will lead to Compilation Error</label>
+ </td></tr>
+<tr> 
+<td><input type="radio" id="r52" value="d" name="que14"/>
+<label for="r52"><span></span>This will lead to Runtime Error</label></td>
+</tr>
+</table>
+</div>
+<div class="quiz_answer_holder"></div>
+</div>
+
+<div class="quiz_content">
+<div class="quiz_question">Q. What is the Output of this program?</div>
+<pre>class Output {
+        public static void main(String args[]) 
+        {    
+             int x, y = 1;
+             x = 10;
+             if (x != 10 && x / 0 == 0)
+                 System.out.println(y);
+             else
+                 System.out.println(++y);
+        } 
+    }</pre>
+<div class="quiz_options">
+<table class="quiz">
+<tr>
+<td><input type="radio" id="r53" value="a" name="que15"/>
+<label for="r53"><span></span>1</label>
+ </td>
+<td><input type="radio" id="r54" value="b" name="que15"/>
+<label for="r54"><span></span>2</label></td>
+</tr>
+<tr>
+<td><input type="radio" id="r55" value="c" name="que15"/>
+<label for="r55"><span></span>Runtime error owing to division by zero</label>
+ </td>
+<td><input type="radio" id="r56" value="d" name="que15"/>
+<label for="r56"><span></span>Unpredictable behaviour</label></td>
+</tr>
+</table>
+</div>
+<div class="quiz_answer_holder"></div>
+</div>
+
+
+<br/>
+<div><a href="11" id="get_result" class="btn btn-lg btn-success">SUBMIT TEST</a>
+</div>
+<div id="overlay_form" style="display:none">
+<div id="result"></div>
+<div id='score-info'><a href='11#' id='close_popup_show_answers' class='simplebutton'>See Answers</a></div>
+
+</div>
+<div id="shadow" class="popup"></div>
+
+</div><!-- Quiz Inner container Ends here--> 
+
+</div><!-- Quiz Container Ends here--> 
+
+</div><!-- Container Ends here--> 
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39722043-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<div id="footer">
+<div class="container">
+<div id="footer-box">
+
+<div id="footer-box-right">Check Out :  
+<a href="../../library"><span class="label">Library</span></a>&nbsp;&nbsp;
+<a href="../../online-courses"><span class="label">Video Courses</span></a>&nbsp;&nbsp;
+<a href="../../studyroom"><span class="label">Studyroom</span></a>&nbsp;&nbsp;
+<a href="../../flashcards"><span class="label">Flashcards</span></a>&nbsp;&nbsp;
+</div>
+
+<div id="footer-box-left">
+
+<p>&copy; Studytonight 2014 &middot; <span><img src="../../css/resource/icon-heart-small.png"/>Handcrafted with Love</span></p>
+
+<p><a href="../../about">About Us</a> &middot; <a href="../../suggest">Suggest</a> &middot; <a href="../../terms">Terms</a> &middot; <a href="../../contact">Contact Us</a> &middot; <a href="../../collaborate">Collaborate</a> &middot; <a href="../../authors.1">Authors</a> &middot; <a href="http://studytonight.tumblr.com/">Blog</a></p>
+
+
+</div>
+
+</div>  <!-- /footer-box -->
+<div class="row">
+<div class="span12 center">
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Responsive Footer Ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6137246359299957"
+     data-ad-slot="1965829825"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+</div> <!-- /container -->
+</div>  <!-- /footer -->
+</body>
+</html>
