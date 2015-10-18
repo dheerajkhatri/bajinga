@@ -7,20 +7,12 @@ vector<int> /*Solution::*/allFactors(int A) {
     if(A<1)return factors;
 
     for(i=1;i<=sn;i++){
-        if(!(A%i))factors.push_back(i);
-    }
-    int len = factors.size();
-
-    if(len>0 && factors[len-1]*factors[len-1]==A){
-        i = len-2;
-    }else{
-        i = len-1;
-    }
-    
-    while(i>=0){
-        factors.push_back(A/factors[i]);
-        i--;
-    }
+        if(!(A%i)){
+            factors.push_back(i);
+            factors.push_back(A/factors[i]);
+        }
+    }    
+    sort(factors.begin(),factors.end());
     return factors;
 }
 

@@ -99,7 +99,7 @@ vector<int>inOrder(Node* node){
 	return result;
 }
 
-vector<int>preOrder(Node* node){
+/*vector<int>preOrder(Node* node){
 	if(!node)return vector<int>();
 	Node* cur = node;
 	stack<Node*>s;
@@ -121,7 +121,7 @@ vector<int>preOrder(Node* node){
 
 vector<int>preOrder(Node* node){
 
-}
+}*/
 
 Node* inpostPreUtil(vector<int>& in,int istart, int iend, vector<int>& post, int pstart, int pend, bool possible){
 	if(istart>iend || pstart>pend || !possible)return NULL;
@@ -164,7 +164,7 @@ Node* inpostPre(vector<int>& in ,vector<int>& post){
 	}
 }
 
-int main(){
+int main(){	
 	vector<int> in = {4,2,5,1,6,8,3,7,9};
 	vector<int>post = {4,5,2,8,6,9,7,3,1};
 	vector<int>pre = {1,2,4,5,3,6,8,7,9};
@@ -182,8 +182,8 @@ int main(){
 	vector<int>invec = inOrder(root);
 	printVec(invec);
 
-	cout<<"Preorder by stack.."<<endl;
+/*	cout<<"Preorder by stack.."<<endl;
 	vector<int>prevec = preOrder(root);
-	printVec(prevec);	
+	printVec(prevec);	*/
 
 }
